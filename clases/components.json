@@ -84,6 +84,27 @@
       }
     },
     {
+      "id": "classPhoto-0",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-lindy-hop.webp",
+        "alt": "Una pareja de Dipsy Doo! bailando Lindy Hop.",
+        "width": 1440,
+        "height": 1440,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "aspectRatio": "4 / 3",
+          "objectFit": "cover",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
       "id": "classKicker-0",
       "type": "text",
       "config": {
@@ -120,7 +141,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "El pulso sincopado del jazz deja espacio para improvisar. En clase practicas las bases, el ritmo y la conexión con tu pareja de baile.",
+        "text": "El Lindy Hop se baila con jazz swing. Su cadencia sincopada deja espacio para improvisar, jugar con la música y crear tus propias variaciones. En clase trabajamos las bases técnicas, el ritmo y la conexión en pareja.",
         "styles": {
           "margin": "0",
           "fontWeight": "400",
@@ -130,18 +151,75 @@
       }
     },
     {
+      "id": "classAsk-0",
+      "type": "link",
+      "config": {
+        "text": "Preguntar por Lindy Hop",
+        "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20interesan%20sus%20clases%20de%20Lindy%20Hop.%20%C2%BFQu%C3%A9%20grupo%20me%20recomiendan%3F",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "marginTop": "12px"
+        }
+      }
+    },
+    {
+      "id": "classCopy-0",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "classKicker-0",
+          "classHeading-0",
+          "classDetail-0",
+          "classAsk-0"
+        ],
+        "styles": {}
+      }
+    },
+    {
       "id": "class-0",
       "type": "container",
       "config": {
         "tag": "article",
         "components": [
-          "classKicker-0",
-          "classHeading-0",
-          "classDetail-0"
+          "classPhoto-0",
+          "classCopy-0"
         ],
         "styles": {
-          "borderTop": "3px solid #d61983",
-          "paddingBlock": "18px 22px"
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "clamp(24px, 5vw, 50px)",
+          "alignItems": "center",
+          "borderTop": "1px solid #decddd",
+          "paddingBlock": "28px 34px"
+        },
+        "id": "lindy-hop",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "classPhoto-1",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/pareja-baile.webp",
+        "alt": "Una pareja de la comunidad Dipsy Doo! en una pose de baile frente a un mural.",
+        "width": 1440,
+        "height": 1440,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "aspectRatio": "4 / 3",
+          "objectFit": "cover",
+          "borderRadius": "8px"
         }
       }
     },
@@ -182,7 +260,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Aprende a enlazar los pasos básicos y a bailar en pareja con la energía del rock and roll.",
+        "text": "La energía del rock and roll y el rhythm and blues se encuentra con el baile en pareja. Aprende a enlazar los pasos básicos y a reconocer el pulso de la música con acompañamiento y retroalimentación.",
         "styles": {
           "margin": "0",
           "fontWeight": "400",
@@ -192,18 +270,75 @@
       }
     },
     {
+      "id": "classAsk-1",
+      "type": "link",
+      "config": {
+        "text": "Preguntar por Rockabilly Jive",
+        "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20interesan%20sus%20clases%20de%20Rockabilly%20Jive.%20%C2%BFQu%C3%A9%20grupo%20me%20recomiendan%3F",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "marginTop": "12px"
+        }
+      }
+    },
+    {
+      "id": "classCopy-1",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "classKicker-1",
+          "classHeading-1",
+          "classDetail-1",
+          "classAsk-1"
+        ],
+        "styles": {}
+      }
+    },
+    {
       "id": "class-1",
       "type": "container",
       "config": {
         "tag": "article",
         "components": [
-          "classKicker-1",
-          "classHeading-1",
-          "classDetail-1"
+          "classPhoto-1",
+          "classCopy-1"
         ],
         "styles": {
-          "borderTop": "3px solid #004d9d",
-          "paddingBlock": "18px 22px"
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "clamp(24px, 5vw, 50px)",
+          "alignItems": "center",
+          "borderTop": "1px solid #decddd",
+          "paddingBlock": "28px 34px"
+        },
+        "id": "rockabilly-jive",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "classPhoto-2",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-charleston.webp",
+        "alt": "Una pareja de Dipsy Doo! bailando Charleston.",
+        "width": 1440,
+        "height": 1440,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "aspectRatio": "4 / 3",
+          "objectFit": "cover",
+          "borderRadius": "8px"
         }
       }
     },
@@ -244,7 +379,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Explora el juego de pies y las variaciones rítmicas del Charleston. El grupo de los jueves se reúne en Guerrero.",
+        "text": "Explora el juego de pies y las variaciones rítmicas del Charleston. Un espacio para descubrir otra manera de disfrutar el swing. El grupo de los jueves se reúne en Guerrero.",
         "styles": {
           "margin": "0",
           "fontWeight": "400",
@@ -254,19 +389,55 @@
       }
     },
     {
+      "id": "classAsk-2",
+      "type": "link",
+      "config": {
+        "text": "Preguntar por Charleston",
+        "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20interesan%20sus%20clases%20de%20Charleston.%20%C2%BFQu%C3%A9%20grupo%20me%20recomiendan%3F",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "marginTop": "12px"
+        }
+      }
+    },
+    {
+      "id": "classCopy-2",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "classKicker-2",
+          "classHeading-2",
+          "classDetail-2",
+          "classAsk-2"
+        ],
+        "styles": {}
+      }
+    },
+    {
       "id": "class-2",
       "type": "container",
       "config": {
         "tag": "article",
         "components": [
-          "classKicker-2",
-          "classHeading-2",
-          "classDetail-2"
+          "classPhoto-2",
+          "classCopy-2"
         ],
         "styles": {
-          "borderTop": "3px solid #e95c0c",
-          "paddingBlock": "18px 22px"
-        }
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "clamp(24px, 5vw, 50px)",
+          "alignItems": "center",
+          "borderTop": "1px solid #decddd",
+          "paddingBlock": "28px 34px"
+        },
+        "id": "charleston",
+        "tabindex": -1
       }
     },
     {
@@ -299,6 +470,234 @@
           "class-1",
           "class-2",
           "classSchedule"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)"
+        }
+      }
+    },
+    {
+      "id": "classVideosHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Asómate a la pista",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(27px, 4vw, 42px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em"
+        }
+      }
+    },
+    {
+      "id": "classVideosIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Conoce el ambiente y el movimiento con estos videos de la escuela.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "12px 24px"
+        }
+      }
+    },
+    {
+      "id": "classPracticePlayer",
+      "type": "media",
+      "config": {
+        "tag": "video",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-clase.mp4",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "aspectRatio": "9 / 16",
+          "maxHeight": "480px",
+          "objectFit": "contain",
+          "background": "#251938",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
+      "id": "classPracticeCaption",
+      "type": "text",
+      "config": {
+        "tag": "figcaption",
+        "text": "Práctica en clase",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "marginTop": "12px",
+          "fontSize": "20px"
+        }
+      }
+    },
+    {
+      "id": "classPracticeDescription",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Una mirada a la práctica y al baile en pareja dentro de la escuela.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginTop": "5px",
+          "maxWidth": "55ch"
+        }
+      }
+    },
+    {
+      "id": "classPracticeDirect",
+      "type": "link",
+      "config": {
+        "text": "Abrir video de práctica en clase ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-clase.mp4",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "classPractice",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "classPracticePlayer",
+          "classPracticeCaption",
+          "classPracticeDescription",
+          "classPracticeDirect"
+        ],
+        "styles": {
+          "margin": "0",
+          "minWidth": "0"
+        },
+        "ariaLabel": "Práctica en clase"
+      }
+    },
+    {
+      "id": "charlestonPracticePlayer",
+      "type": "media",
+      "config": {
+        "tag": "video",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-charleston.mp4",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "aspectRatio": "9 / 16",
+          "maxHeight": "480px",
+          "objectFit": "contain",
+          "background": "#251938",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
+      "id": "charlestonPracticeCaption",
+      "type": "text",
+      "config": {
+        "tag": "figcaption",
+        "text": "Charleston en movimiento",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "marginTop": "12px",
+          "fontSize": "20px"
+        }
+      }
+    },
+    {
+      "id": "charlestonPracticeDescription",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Ritmo y juego de pies en un video compartido por la escuela.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginTop": "5px",
+          "maxWidth": "55ch"
+        }
+      }
+    },
+    {
+      "id": "charlestonPracticeDirect",
+      "type": "link",
+      "config": {
+        "text": "Abrir video de charleston en movimiento ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-charleston.mp4",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "charlestonPractice",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "charlestonPracticePlayer",
+          "charlestonPracticeCaption",
+          "charlestonPracticeDescription",
+          "charlestonPracticeDirect"
+        ],
+        "styles": {
+          "margin": "0",
+          "minWidth": "0"
+        },
+        "ariaLabel": "Charleston en movimiento"
+      }
+    },
+    {
+      "id": "classVideoGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "classPractice",
+          "charlestonPractice"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "25px"
+        }
+      }
+    },
+    {
+      "id": "classVideos",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "classVideosHeading",
+          "classVideosIntro",
+          "classVideoGrid"
         ],
         "styles": {
           "width": "min(100%, 1160px)",
@@ -388,6 +787,25 @@
       }
     },
     {
+      "id": "headerLogo",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/dipsy-doo.webp",
+        "alt": "",
+        "width": 500,
+        "height": 500,
+        "loading": "eager",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "48px",
+          "height": "48px",
+          "borderRadius": "50%"
+        }
+      }
+    },
+    {
       "id": "brandHome",
       "type": "link",
       "config": {
@@ -402,8 +820,12 @@
           "fontWeight": "700",
           "fontFamily": "Georgia, serif",
           "fontSize": "25px",
-          "textDecoration": "none"
-        }
+          "textDecoration": "none",
+          "gap": "10px"
+        },
+        "components": [
+          "headerLogo"
+        ]
       }
     },
     {
@@ -568,6 +990,20 @@
       }
     },
     {
+      "id": "footerBrand",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Dipsy Doo!",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "26px"
+        }
+      }
+    },
+    {
       "id": "footerText",
       "type": "text",
       "config": {
@@ -581,19 +1017,121 @@
       }
     },
     {
-      "id": "footerContact",
+      "id": "footerCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "footerBrand",
+          "footerText"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "footerNav-0",
       "type": "link",
       "config": {
-        "text": "Contacto y preguntas frecuentes",
+        "text": "Inicio",
+        "href": "/",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-1",
+      "type": "link",
+      "config": {
+        "text": "Clases",
+        "href": "/clases",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-2",
+      "type": "link",
+      "config": {
+        "text": "Horarios y sedes",
+        "href": "/horarios-y-sedes",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-3",
+      "type": "link",
+      "config": {
+        "text": "Comunidad",
+        "href": "/comunidad",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-4",
+      "type": "link",
+      "config": {
+        "text": "Contacto",
         "href": "/contacto",
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
           "minHeight": "44px",
           "boxSizing": "border-box",
-          "color": "#004d9d",
-          "fontWeight": "700"
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
         }
+      }
+    },
+    {
+      "id": "footerNavigation",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "components": [
+          "footerNav-0",
+          "footerNav-1",
+          "footerNav-2",
+          "footerNav-3",
+          "footerNav-4"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "4px 18px"
+        },
+        "ariaLabel": "Pie de página"
       }
     },
     {
@@ -603,8 +1141,8 @@
         "tag": "div",
         "components": [
           "footerLogo",
-          "footerText",
-          "footerContact"
+          "footerCopy",
+          "footerNavigation"
         ],
         "styles": {
           "width": "min(100%, 1160px)",
@@ -615,7 +1153,8 @@
           "flexWrap": "wrap",
           "alignItems": "center",
           "gap": "12px 22px",
-          "paddingBlock": "18px"
+          "paddingBlock": "30px",
+          "justifyContent": "space-between"
         }
       }
     },
@@ -628,7 +1167,8 @@
           "footerLayout"
         ],
         "styles": {
-          "borderTop": "1px solid #decddd"
+          "background": "#251938",
+          "color": "#ffffff"
         }
       }
     },
@@ -659,6 +1199,7 @@
         "components": [
           "pageIntro",
           "classList",
+          "classVideos",
           "firstVisit"
         ],
         "styles": {},
