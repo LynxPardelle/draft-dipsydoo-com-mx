@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "domain": "dipsydoo.com.mx",
+  "aliases": [
+    "www.dipsydoo.com.mx"
+  ],
+  "defaultPageId": "default",
+  "routes": [
+    {
+      "path": "/",
+      "pageId": "default",
+      "label": "Inicio"
+    }
+  ],
+  "runtime": {
+    "analytics": {
+      "enabled": false,
+      "consentUI": "none",
+      "track": []
+    },
+    "features": {
+      "debugMode": false
+    }
+  },
+  "environments": {
+    "test": {
+      "aliases": []
+    }
+  },
+  "site": {
+    "appIdentity": {
+      "identifier": "dipsydoo",
+      "name": "Dipsy Doo!",
+      "version": "0.1.0",
+      "description": "Clases presenciales de Lindy Hop, Rockabilly Jive y Charleston en la Ciudad de México. Consulta horarios, sedes y colegiaturas."
+    },
+    "theme": {
+      "defaultMode": "light",
+      "palettes": {
+        "light": {
+          "bgColor": "#fff9f3",
+          "textColor": "#251938",
+          "titleColor": "#251938",
+          "linkColor": "#004d9d",
+          "accentColor": "#004d9d",
+          "secondaryBgColor": "#f2deef",
+          "secondaryTextColor": "#251938",
+          "secondaryTitleColor": "#251938",
+          "secondaryLinkColor": "#004d9d",
+          "secondaryAccentColor": "#d61983",
+          "successColor": "#296346",
+          "onSuccessColor": "#ffffff",
+          "errorColor": "#a52121",
+          "onErrorColor": "#ffffff",
+          "warningColor": "#7a4700",
+          "onWarningColor": "#ffffff",
+          "infoColor": "#004d9d",
+          "onInfoColor": "#ffffff"
+        },
+        "dark": {
+          "bgColor": "#fff9f3",
+          "textColor": "#251938",
+          "titleColor": "#251938",
+          "linkColor": "#004d9d",
+          "accentColor": "#004d9d",
+          "secondaryBgColor": "#f2deef",
+          "secondaryTextColor": "#251938",
+          "secondaryTitleColor": "#251938",
+          "secondaryLinkColor": "#004d9d",
+          "secondaryAccentColor": "#d61983",
+          "successColor": "#296346",
+          "onSuccessColor": "#ffffff",
+          "errorColor": "#a52121",
+          "onErrorColor": "#ffffff",
+          "warningColor": "#7a4700",
+          "onWarningColor": "#ffffff",
+          "infoColor": "#004d9d",
+          "onInfoColor": "#ffffff"
+        }
+      }
+    },
+    "i18n": {
+      "defaultLanguage": "es",
+      "supportedLanguages": [
+        {
+          "code": "es",
+          "label": "Español"
+        }
+      ]
+    },
+    "seo": {
+      "siteName": "Dipsy Doo!",
+      "title": "Dipsy Doo! | Clases de swing y Rockabilly Jive en CDMX",
+      "description": "Clases presenciales de Lindy Hop, Rockabilly Jive y Charleston en la Ciudad de México. Consulta horarios, sedes y colegiaturas.",
+      "canonicalOrigin": "https://dipsydoo.com.mx"
+    }
+  }
+}
