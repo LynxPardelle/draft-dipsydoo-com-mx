@@ -10,6 +10,26 @@
       "path": "/",
       "pageId": "default",
       "label": "Inicio"
+    },
+    {
+      "path": "/clases",
+      "pageId": "clases",
+      "label": "Clases"
+    },
+    {
+      "path": "/horarios-y-sedes",
+      "pageId": "horarios-y-sedes",
+      "label": "Horarios y sedes"
+    },
+    {
+      "path": "/comunidad",
+      "pageId": "comunidad",
+      "label": "Comunidad"
+    },
+    {
+      "path": "/contacto",
+      "pageId": "contacto",
+      "label": "Contacto"
     }
   ],
   "runtime": {
@@ -31,8 +51,8 @@
     "appIdentity": {
       "identifier": "dipsydoo",
       "name": "Dipsy Doo!",
-      "version": "0.1.0",
-      "description": "Clases presenciales de Lindy Hop, Rockabilly Jive y Charleston en la Ciudad de México. Consulta horarios, sedes y colegiaturas."
+      "version": "0.2.0",
+      "description": "Clases presenciales de Lindy Hop, Rockabilly Jive y Charleston en la Ciudad de México."
     },
     "theme": {
       "defaultMode": "light",
@@ -91,7 +111,7 @@
     "seo": {
       "siteName": "Dipsy Doo!",
       "title": "Dipsy Doo! | Clases de swing y Rockabilly Jive en CDMX",
-      "description": "Clases presenciales de Lindy Hop, Rockabilly Jive y Charleston en la Ciudad de México. Consulta horarios, sedes y colegiaturas.",
+      "description": "Clases presenciales de Lindy Hop, Rockabilly Jive y Charleston en la Ciudad de México.",
       "canonicalOrigin": "https://dipsydoo.com.mx"
     }
   }

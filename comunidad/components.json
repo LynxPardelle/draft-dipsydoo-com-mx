@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "domain": "dipsydoo.com.mx",
+  "pageId": "comunidad",
+  "components": [
+    {
+      "id": "introKicker",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Dipsy Doo! · Comunidad",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "800",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "pageHeading",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "El swing también se baila en comunidad",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(33px, 5vw, 64px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em",
+          "marginBlock": "10px 16px"
+        }
+      }
+    },
+    {
+      "id": "introDescription",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Entre clases y bailes sociales hay espacio para probar lo aprendido, escuchar música y conocer a otras personas que disfrutan bailar.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontSize": "clamp(17px, 2vw, 21px)",
+          "maxWidth": "57ch"
+        }
+      }
+    },
+    {
+      "id": "pageIntroLayout",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "introKicker",
+          "pageHeading",
+          "introDescription"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)"
+        }
+      }
+    },
+    {
+      "id": "pageIntro",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "pageIntroLayout"
+        ],
+        "styles": {
+          "background": "linear-gradient(115deg, #ffdfc7, #f6d9ef 54%, #deb6d7)",
+          "borderBlock": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "socialHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Baile social",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(27px, 4vw, 42px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em"
+        }
+      }
+    },
+    {
+      "id": "socialDetails",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "El calendario de la escuela anuncia un baile social gratuito cada mes. Pregunta por la próxima fecha y por talleres especiales.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "12px 18px"
+        }
+      }
+    },
+    {
+      "id": "socialContact",
+      "type": "link",
+      "config": {
+        "text": "Preguntar por el próximo baile",
+        "href": "https://wa.me/525585657947?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFCu%C3%A1ndo%20ser%C3%A1%20su%20pr%C3%B3ximo%20baile%20social%3F",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "white",
+          "fontWeight": "700",
+          "padding": "12px 20px",
+          "borderRadius": "28px",
+          "background": "#004d9d",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "communityCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "socialHeading",
+          "socialDetails",
+          "socialContact"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "communityPhoto",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/comunidad-baile.webp",
+        "alt": "Grupo de Dipsy Doo! reunido en un quiosco al aire libre.",
+        "width": 1050,
+        "height": 1050,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "borderRadius": "16px"
+        }
+      }
+    },
+    {
+      "id": "communityFigure",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "communityPhoto"
+        ],
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "social",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "communityCopy",
+          "communityFigure"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)",
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "25px",
+          "alignItems": "center"
+        }
+      }
+    },
+    {
+      "id": "brandHome",
+      "type": "link",
+      "config": {
+        "text": "Dipsy Doo!",
+        "href": "/",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#251938",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "25px",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "nav-0",
+      "type": "link",
+      "config": {
+        "text": "Inicio",
+        "href": "/",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "15px",
+          "textUnderlineOffset": "4px",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "nav-1",
+      "type": "link",
+      "config": {
+        "text": "Clases",
+        "href": "/clases",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "15px",
+          "textUnderlineOffset": "4px",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "nav-2",
+      "type": "link",
+      "config": {
+        "text": "Horarios y sedes",
+        "href": "/horarios-y-sedes",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "15px",
+          "textUnderlineOffset": "4px",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "nav-3",
+      "type": "link",
+      "config": {
+        "text": "Comunidad",
+        "href": "/comunidad",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "15px",
+          "textUnderlineOffset": "4px",
+          "textDecoration": "underline"
+        },
+        "ariaCurrent": "page"
+      }
+    },
+    {
+      "id": "nav-4",
+      "type": "link",
+      "config": {
+        "text": "Contacto",
+        "href": "/contacto",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "15px",
+          "textUnderlineOffset": "4px",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "menu",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "components": [
+          "nav-0",
+          "nav-1",
+          "nav-2",
+          "nav-3",
+          "nav-4"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "12px 22px",
+          "columnGap": "18px",
+          "rowGap": "0"
+        },
+        "ariaLabel": "Principal"
+      }
+    },
+    {
+      "id": "header",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "components": [
+          "brandHome",
+          "menu"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "12px 22px",
+          "justifyContent": "space-between",
+          "paddingBlock": "9px"
+        }
+      }
+    },
+    {
+      "id": "footerLogo",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/dipsy-doo.webp",
+        "alt": "Dipsy Doo!",
+        "width": 500,
+        "height": 500,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "76px",
+          "height": "auto",
+          "borderRadius": "50%"
+        }
+      }
+    },
+    {
+      "id": "footerText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Clases presenciales de baile en Ciudad de México.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerContact",
+      "type": "link",
+      "config": {
+        "text": "Contacto y preguntas frecuentes",
+        "href": "/contacto",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "footerLayout",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "footerLogo",
+          "footerText",
+          "footerContact"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "12px 22px",
+          "paddingBlock": "18px"
+        }
+      }
+    },
+    {
+      "id": "footer",
+      "type": "container",
+      "config": {
+        "tag": "footer",
+        "components": [
+          "footerLayout"
+        ],
+        "styles": {
+          "borderTop": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "skip",
+      "type": "link",
+      "config": {
+        "text": "Saltar al contenido",
+        "href": "#contenido",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "justifyContent": "center",
+          "fontSize": "13px",
+          "background": "#f2deef"
+        }
+      }
+    },
+    {
+      "id": "content",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "components": [
+          "pageIntro",
+          "social"
+        ],
+        "styles": {},
+        "id": "contenido",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "page",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "skip",
+          "header",
+          "content",
+          "footer"
+        ],
+        "styles": {
+          "minHeight": "100vh",
+          "fontFamily": "Arial, sans-serif",
+          "color": "#251938",
+          "background": "#fff9f3",
+          "lineHeight": "1.55"
+        }
+      }
+    }
+  ]
+}
