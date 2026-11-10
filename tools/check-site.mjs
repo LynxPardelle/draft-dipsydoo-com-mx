@@ -37,6 +37,8 @@ for (const [path, page] of pages) {
     if (url.origin === 'https://dipsydoo.com.mx') {
       assert(pages.has(url.pathname), 'Unknown route ' + component.config.href);
       if (url.hash) assert(pages.get(url.pathname).anchors.has(decodeURIComponent(url.hash.slice(1))), 'Unknown anchor ' + component.config.href);
+      assert(!component.config.href.startsWith('/') || !url.hash, 'Cross-page anchor can run before the destination is rendered');
+      assert.equal(component.config.scrollRestoration?.mode, 'top', 'Route navigation must start at the top');
       assert(!url.search, 'Preview parameters in authored links');
     } else {
       assert.equal(url.protocol, 'https:');

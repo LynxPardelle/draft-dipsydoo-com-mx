@@ -72,6 +72,10 @@
       "config": {
         "text": "Ver horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -92,6 +96,10 @@
       "config": {
         "text": "Explorar las clases",
         "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -241,6 +249,10 @@
       "config": {
         "text": "Ver estilos de baile",
         "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -321,6 +333,10 @@
       "config": {
         "text": "Consultar horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -399,8 +415,12 @@
       "id": "costosLink",
       "type": "link",
       "config": {
-        "text": "Ver las colegiaturas",
-        "href": "/horarios-y-sedes#colegiaturas",
+        "text": "Ver horarios y colegiaturas",
+        "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -481,6 +501,10 @@
       "config": {
         "text": "Ir a contacto y preguntas frecuentes",
         "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -619,6 +643,10 @@
       "config": {
         "text": "Conoce la comunidad y los bailes sociales",
         "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -690,6 +718,10 @@
       "config": {
         "text": "Dipsy Doo!",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -713,6 +745,10 @@
       "config": {
         "text": "Inicio",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -733,6 +769,10 @@
       "config": {
         "text": "Clases",
         "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -752,6 +792,10 @@
       "config": {
         "text": "Horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -771,6 +815,10 @@
       "config": {
         "text": "Comunidad",
         "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -790,6 +838,10 @@
       "config": {
         "text": "Contacto",
         "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -913,6 +965,10 @@
       "config": {
         "text": "Inicio",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -930,6 +986,10 @@
       "config": {
         "text": "Clases",
         "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -947,6 +1007,10 @@
       "config": {
         "text": "Horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -964,6 +1028,10 @@
       "config": {
         "text": "Comunidad",
         "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -981,6 +1049,10 @@
       "config": {
         "text": "Contacto",
         "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1057,6 +1129,10 @@
       "config": {
         "text": "Saltar al contenido",
         "href": "#contenido",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "flex",
           "alignItems": "center",

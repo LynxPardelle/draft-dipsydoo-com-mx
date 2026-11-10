@@ -118,6 +118,10 @@
       "config": {
         "text": "Abrir WhatsApp ↗",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20gustar%C3%ADa%20saber%20qu%C3%A9%20grupos%20tienen%20disponibles.",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -138,6 +142,30 @@
       "config": {
         "text": "Consultar horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "contactQuestions",
+      "type": "link",
+      "config": {
+        "text": "Ver preguntas frecuentes",
+        "href": "#preguntas",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -155,7 +183,8 @@
         "tag": "div",
         "components": [
           "whatsapp",
-          "contactSchedule"
+          "contactSchedule",
+          "contactQuestions"
         ],
         "styles": {
           "display": "flex",
@@ -344,8 +373,12 @@
       "id": "contactCommunityLink",
       "type": "link",
       "config": {
-        "text": "Conoce los bailes sociales y el código de conducta",
-        "href": "/comunidad#convivencia",
+        "text": "Conoce la comunidad y sus bailes sociales",
+        "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -416,6 +449,10 @@
       "config": {
         "text": "Dipsy Doo!",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -439,6 +476,10 @@
       "config": {
         "text": "Inicio",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -458,6 +499,10 @@
       "config": {
         "text": "Clases",
         "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -477,6 +522,10 @@
       "config": {
         "text": "Horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -496,6 +545,10 @@
       "config": {
         "text": "Comunidad",
         "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -515,6 +568,10 @@
       "config": {
         "text": "Contacto",
         "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -639,6 +696,10 @@
       "config": {
         "text": "Inicio",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -656,6 +717,10 @@
       "config": {
         "text": "Clases",
         "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -673,6 +738,10 @@
       "config": {
         "text": "Horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -690,6 +759,10 @@
       "config": {
         "text": "Comunidad",
         "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -707,6 +780,10 @@
       "config": {
         "text": "Contacto",
         "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -783,6 +860,10 @@
       "config": {
         "text": "Saltar al contenido",
         "href": "#contenido",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "flex",
           "alignItems": "center",
