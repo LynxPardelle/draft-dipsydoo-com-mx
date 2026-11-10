@@ -156,6 +156,10 @@
       "config": {
         "text": "Preguntar por Lindy Hop",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20interesan%20sus%20clases%20de%20Lindy%20Hop.%20%C2%BFQu%C3%A9%20grupo%20me%20recomiendan%3F",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -275,6 +279,10 @@
       "config": {
         "text": "Preguntar por Rockabilly Jive",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20interesan%20sus%20clases%20de%20Rockabilly%20Jive.%20%C2%BFQu%C3%A9%20grupo%20me%20recomiendan%3F",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -394,6 +402,10 @@
       "config": {
         "text": "Preguntar por Charleston",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20interesan%20sus%20clases%20de%20Charleston.%20%C2%BFQu%C3%A9%20grupo%20me%20recomiendan%3F",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -446,6 +458,10 @@
       "config": {
         "text": "Buscar un grupo y horario",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -560,6 +576,10 @@
       "config": {
         "text": "Abrir video de práctica en clase ↗",
         "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-clase.mp4",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -642,6 +662,10 @@
       "config": {
         "text": "Abrir video de charleston en movimiento ↗",
         "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-charleston.mp4",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -742,8 +766,12 @@
       "id": "classFaq",
       "type": "link",
       "config": {
-        "text": "Ver preguntas para tu primera clase",
-        "href": "/contacto#preguntas",
+        "text": "Ir a contacto y preguntas frecuentes",
+        "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -811,6 +839,10 @@
       "config": {
         "text": "Dipsy Doo!",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -834,6 +866,10 @@
       "config": {
         "text": "Inicio",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -853,6 +889,10 @@
       "config": {
         "text": "Clases",
         "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -873,6 +913,10 @@
       "config": {
         "text": "Horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -892,6 +936,10 @@
       "config": {
         "text": "Comunidad",
         "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -911,6 +959,10 @@
       "config": {
         "text": "Contacto",
         "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1034,6 +1086,10 @@
       "config": {
         "text": "Inicio",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1051,6 +1107,10 @@
       "config": {
         "text": "Clases",
         "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1068,6 +1128,10 @@
       "config": {
         "text": "Horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1085,6 +1149,10 @@
       "config": {
         "text": "Comunidad",
         "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1102,6 +1170,10 @@
       "config": {
         "text": "Contacto",
         "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1178,6 +1250,10 @@
       "config": {
         "text": "Saltar al contenido",
         "href": "#contenido",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "flex",
           "alignItems": "center",

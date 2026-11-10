@@ -84,6 +84,90 @@
       }
     },
     {
+      "id": "communityVideosShortcut",
+      "type": "link",
+      "config": {
+        "text": "Videos de la comunidad",
+        "href": "#momentos",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "communityGalleryShortcut",
+      "type": "link",
+      "config": {
+        "text": "Galería de encuentros",
+        "href": "#galeria",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "communityConductShortcut",
+      "type": "link",
+      "config": {
+        "text": "Código de conducta",
+        "href": "#convivencia",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "communityShortcuts",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "components": [
+          "communityVideosShortcut",
+          "communityGalleryShortcut",
+          "communityConductShortcut"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "12px 22px",
+          "paddingBlock": "18px"
+        },
+        "ariaLabel": "En esta página"
+      }
+    },
+    {
       "id": "socialHeading",
       "type": "text",
       "config": {
@@ -118,6 +202,10 @@
       "config": {
         "text": "Preguntar por el próximo baile",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFCu%C3%A1ndo%20ser%C3%A1%20su%20pr%C3%B3ximo%20baile%20social%3F",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -281,6 +369,10 @@
       "config": {
         "text": "Abrir video de nuestra comunidad ↗",
         "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-comunidad.mp4",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -363,6 +455,10 @@
       "config": {
         "text": "Abrir video de día de muertos ↗",
         "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-dia-de-muertos.mp4",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -426,7 +522,9 @@
           "boxSizing": "border-box",
           "paddingInline": "clamp(20px, 6vw, 76px)",
           "paddingBlock": "clamp(40px, 6vw, 76px)"
-        }
+        },
+        "id": "momentos",
+        "tabindex": -1
       }
     },
     {
@@ -622,7 +720,9 @@
           "boxSizing": "border-box",
           "paddingInline": "clamp(20px, 6vw, 76px)",
           "paddingBlock": "clamp(40px, 6vw, 76px)"
-        }
+        },
+        "id": "galeria",
+        "tabindex": -1
       }
     },
     {
@@ -886,6 +986,10 @@
       "config": {
         "text": "Ver código de conducta · parte 1 ↗",
         "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-codigo-de-conducta-1.webp",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -904,6 +1008,10 @@
       "config": {
         "text": "Ver código de conducta · parte 2 ↗",
         "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-codigo-de-conducta-2.webp",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1005,6 +1113,10 @@
       "config": {
         "text": "Consultar próximas actividades",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20gustar%C3%ADa%20conocer%20sus%20pr%C3%B3ximos%20bailes%20sociales%20y%20talleres.",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1063,6 +1175,10 @@
       "config": {
         "text": "Dipsy Doo!",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1086,6 +1202,10 @@
       "config": {
         "text": "Inicio",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1105,6 +1225,10 @@
       "config": {
         "text": "Clases",
         "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1124,6 +1248,10 @@
       "config": {
         "text": "Horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1143,6 +1271,10 @@
       "config": {
         "text": "Comunidad",
         "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1163,6 +1295,10 @@
       "config": {
         "text": "Contacto",
         "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1286,6 +1422,10 @@
       "config": {
         "text": "Inicio",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1303,6 +1443,10 @@
       "config": {
         "text": "Clases",
         "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1320,6 +1464,10 @@
       "config": {
         "text": "Horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1337,6 +1485,10 @@
       "config": {
         "text": "Comunidad",
         "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1354,6 +1506,10 @@
       "config": {
         "text": "Contacto",
         "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1430,6 +1586,10 @@
       "config": {
         "text": "Saltar al contenido",
         "href": "#contenido",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "flex",
           "alignItems": "center",
@@ -1450,6 +1610,7 @@
         "tag": "main",
         "components": [
           "pageIntro",
+          "communityShortcuts",
           "social",
           "communityVideos",
           "communityGallery",

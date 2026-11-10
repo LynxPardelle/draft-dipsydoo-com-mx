@@ -66,7 +66,7 @@ const text = (id, value, tag = 'p', css = {}) =>
 const box = (id, children, css = {}, tag = 'div', attributes = {}) =>
   add(id, 'container', {tag, components: children, styles: css, ...attributes});
 const link = (id, label, href, css = {}, attributes = {}) =>
-  add(id, 'link', {text: label, href, styles: {...tap, color: blue, fontWeight: '700', ...css}, ...attributes});
+  add(id, 'link', {text: label, href, scrollRestoration: {mode: 'top', behavior: 'instant'}, styles: {...tap, color: blue, fontWeight: '700', ...css}, ...attributes});
 const image = (id, src, alt, w, h, options = {}) =>
   add(id, 'media', {tag: 'image', src, alt, width: w, height: h, loading: 'lazy', decoding: 'async', ...options});
 const photograph = (id, src, alt, w = 1440, h = 1440) => image(id, src, alt, w, h, {
@@ -118,7 +118,7 @@ function renderHome() {
   const destinations = [
     ['estilos', '01 · Las clases', 'Del swing al rock and roll', 'Conoce los tres estilos y qué practicarás en cada uno.', 'Ver estilos de baile', paths.classes],
     ['horarios', '02 · La semana', 'Encuentra un grupo', 'Consulta el horario y el punto de referencia de las cuatro zonas.', 'Consultar horarios y sedes', paths.schedule],
-    ['costos', '03 · Colegiaturas', 'Elige tu frecuencia', 'Compara las mensualidades entre semana y en fin de semana.', 'Ver las colegiaturas', paths.schedule + '#colegiaturas'],
+    ['costos', '03 · Colegiaturas', 'Elige tu frecuencia', 'Compara las mensualidades entre semana y en fin de semana.', 'Ver horarios y colegiaturas', paths.schedule],
     ['contacto', '04 · Primera visita', 'Resuelve tus dudas', 'Pregunta por cupo, qué llevar o cómo observar una clase.', 'Ir a contacto y preguntas frecuentes', paths.contact]
   ];
   const overview = box('overview', [
@@ -168,7 +168,7 @@ function renderClasses() {
     box('firstVisit', [box('firstVisitLayout', [
       heading('firstVisitHeading', 'Así es una clase'),
       text('firstVisitDetails', 'Empezamos con calentamiento, trabajamos las bases y cerramos con práctica en pareja. La rotación te permite practicar con distintas personas y recibir retroalimentación.', 'p', {maxWidth: '61ch', marginBlock: '12px 10px'}),
-      link('classFaq', 'Ver preguntas para tu primera clase', paths.contact + '#preguntas')
+      link('classFaq', 'Ir a contacto y preguntas frecuentes', paths.contact)
     ], section)], {background: blush}, 'section')
   ];
 }
@@ -216,6 +216,11 @@ function renderSchedule() {
 function renderCommunity() {
   return [
     pageIntro('Dipsy Doo! · Comunidad', 'El swing también se baila en comunidad', 'Entre clases y bailes sociales hay espacio para probar lo aprendido, escuchar música y conocer a otras personas que disfrutan bailar.'),
+    box('communityShortcuts', [
+      link('communityVideosShortcut', 'Videos de la comunidad', '#momentos'),
+      link('communityGalleryShortcut', 'Galería de encuentros', '#galeria'),
+      link('communityConductShortcut', 'Código de conducta', '#convivencia')
+    ], {...width, ...flex, paddingBlock: '18px'}, 'nav', {ariaLabel: 'En esta página'}),
     box('social', [
       box('communityCopy', [
         heading('socialHeading', 'Baile social'),
@@ -233,7 +238,7 @@ function renderCommunity() {
         videoFigure('communityDance', 'comunidad', 'Nuestra comunidad', 'Un encuentro de baile compartido por Dipsy Doo!'),
         videoFigure('communityPerformance', 'dia-de-muertos', 'Día de Muertos', 'Una coreografía de la comunidad durante su presentación de Día de Muertos.')
       ], grid)
-    ], section, 'section'),
+    ], section, 'section', sectionId('momentos')),
     box('communityGallery', [
       heading('communityGalleryHeading', 'De la clase a los encuentros'),
       box('communityGalleryGrid', [
@@ -250,7 +255,7 @@ function renderCommunity() {
           text('teamCaption', 'Compartir también es parte del baile', 'figcaption', {fontWeight: '700', marginTop: '12px'})
         ], {margin: '0'}, 'figure')
       ], {...grid, marginTop: '24px'})
-    ], section, 'section'),
+    ], section, 'section', sectionId('galeria')),
     box('conduct', [box('conductLayout', [
       text('conductKicker', 'Cuidemos la pista', 'p', {...eyebrow, color: blue}),
       heading('conductHeading', 'Bailar con respeto'),
@@ -286,7 +291,8 @@ function renderContact() {
       text('contactDetails', 'Indícanos el grupo que te interesa. Te podemos confirmar el cupo y el punto de encuentro.', 'p', {marginBlock: '10px 18px'}),
       box('contactLinks', [
         link('whatsapp', 'Abrir WhatsApp ↗', whatsapp('Hola, Dipsy Doo! Me gustaría saber qué grupos tienen disponibles.'), action),
-        link('contactSchedule', 'Consultar horarios y sedes', paths.schedule)
+        link('contactSchedule', 'Consultar horarios y sedes', paths.schedule),
+        link('contactQuestions', 'Ver preguntas frecuentes', '#preguntas')
       ], flex)
     ], section, 'section'),
     box('faq', [box('faqLayout', [
@@ -298,7 +304,7 @@ function renderContact() {
       box('contactCommunityCopy', [
         heading('contactCommunityHeading', 'Te esperamos en la pista'),
         text('contactCommunityDetails', 'Puedes empezar sin experiencia y venir sin pareja. Antes de tu visita, confirma con la escuela el grupo y el punto de encuentro.', 'p', {marginBlock: '14px'}),
-        link('contactCommunityLink', 'Conoce los bailes sociales y el código de conducta', paths.community + '#convivencia')
+        link('contactCommunityLink', 'Conoce la comunidad y sus bailes sociales', paths.community)
       ])
     ], {...section, ...grid, alignItems: 'center', gap: 'clamp(24px, 5vw, 50px)'}, 'section')
   ];

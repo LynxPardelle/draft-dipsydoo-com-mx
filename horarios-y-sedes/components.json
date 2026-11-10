@@ -167,6 +167,10 @@
       "config": {
         "text": "Ver todas las colegiaturas",
         "href": "#colegiaturas",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -183,6 +187,10 @@
       "config": {
         "text": "Confirmar sede y cupo por WhatsApp",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20gustar%C3%ADa%20confirmar%20el%20cupo%20y%20el%20punto%20de%20encuentro%20de%20una%20clase.",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -278,6 +286,10 @@
       "config": {
         "text": "Pedir el punto de encuentro",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFMe%20comparten%20el%20punto%20de%20encuentro%20de%20la%20sede%20Guerrero%3F",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -336,6 +348,10 @@
       "config": {
         "text": "Pedir el punto de encuentro",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFMe%20comparten%20el%20punto%20de%20encuentro%20de%20la%20sede%20Nueva%20Santa%20Mar%C3%ADa%3F",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -394,6 +410,10 @@
       "config": {
         "text": "Pedir el punto de encuentro",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFMe%20comparten%20el%20punto%20de%20encuentro%20de%20la%20sede%20Jard%C3%ADn%20Pushkin%3F",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -452,6 +472,10 @@
       "config": {
         "text": "Pedir el punto de encuentro",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFMe%20comparten%20el%20punto%20de%20encuentro%20de%20la%20sede%20Parque%20Hundido%3F",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -863,6 +887,10 @@
       "config": {
         "text": "Ver opciones de contacto",
         "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -880,6 +908,10 @@
       "config": {
         "text": "Consultar el cartel de horarios de la escuela ↗",
         "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-horarios.webp",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "flex",
           "alignItems": "center",
@@ -955,6 +987,10 @@
       "config": {
         "text": "Dipsy Doo!",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -978,6 +1014,10 @@
       "config": {
         "text": "Inicio",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -997,6 +1037,10 @@
       "config": {
         "text": "Clases",
         "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1016,6 +1060,10 @@
       "config": {
         "text": "Horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1036,6 +1084,10 @@
       "config": {
         "text": "Comunidad",
         "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1055,6 +1107,10 @@
       "config": {
         "text": "Contacto",
         "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1178,6 +1234,10 @@
       "config": {
         "text": "Inicio",
         "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1195,6 +1255,10 @@
       "config": {
         "text": "Clases",
         "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1212,6 +1276,10 @@
       "config": {
         "text": "Horarios y sedes",
         "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1229,6 +1297,10 @@
       "config": {
         "text": "Comunidad",
         "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1246,6 +1318,10 @@
       "config": {
         "text": "Contacto",
         "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -1322,6 +1398,10 @@
       "config": {
         "text": "Saltar al contenido",
         "href": "#contenido",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
         "styles": {
           "display": "flex",
           "alignItems": "center",

@@ -24,4 +24,5 @@ Run `npm start` from the hub and open the [local preview](http://127.0.0.1:4200/
 - Update the published schedule after December 2026. The supplied schedule poster takes precedence over the older price range in the introductory questionnaire.
 - Publish exact studio addresses, workshop dates, testimonials, rules and the gender-violence prevention protocol after receiving verified publishable information.
 - The supplied social-dance code is available as readable text and links to its original posters. Obtain the separately requested formal prevention protocol before adding it.
+- Route links open the destination from the top. Section shortcuts use same-page fragments so scrolling runs after the target content is present.
 - Keep the draft out of search results while reviewing it in test. Follow the hub's [draft lifecycle](https://github.com/LynxPardelle/zoolandingpage/blob/main/docs/11-draft-lifecycle.md) for release.
