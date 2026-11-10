@@ -1,0 +1,1306 @@
+{
+  "version": 1,
+  "domain": "dipsydoo.com.mx",
+  "pageId": "default",
+  "components": [
+    {
+      "id": "logo",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "/drafts/dipsydoo.com.mx/assets/dipsy-doo.webp",
+        "alt": "Dipsy Doo!",
+        "width": 500,
+        "height": 500,
+        "loading": "eager",
+        "styles": {
+          "display": "block",
+          "width": "min(100%, 390px)",
+          "height": "auto",
+          "margin": "0 auto",
+          "mixBlendMode": "multiply"
+        }
+      }
+    },
+    {
+      "id": "navSchedule",
+      "type": "link",
+      "config": {
+        "text": "Horarios",
+        "href": "#horarios",
+        "styles": {
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "navStyles",
+      "type": "link",
+      "config": {
+        "text": "Estilos",
+        "href": "#estilos",
+        "styles": {
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "navPrices",
+      "type": "link",
+      "config": {
+        "text": "Costos",
+        "href": "#costos",
+        "styles": {
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "navContact",
+      "type": "link",
+      "config": {
+        "text": "Contacto",
+        "href": "#contacto",
+        "styles": {
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "menu",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "components": [
+          "navSchedule",
+          "navStyles",
+          "navPrices",
+          "navContact"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "8px 18px"
+        },
+        "ariaLabel": "Principal"
+      }
+    },
+    {
+      "id": "wordmark",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Dipsy Doo!",
+        "styles": {
+          "margin": "0",
+          "fontFamily": "Georgia, serif",
+          "fontWeight": "700",
+          "fontSize": "25px"
+        }
+      }
+    },
+    {
+      "id": "header",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "components": [
+          "wordmark",
+          "menu"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "14px 24px",
+          "justifyContent": "space-between",
+          "paddingBlock": "18px"
+        }
+      }
+    },
+    {
+      "id": "heroTag",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Escuela de baile · Ciudad de México",
+        "styles": {
+          "margin": "0",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "fontWeight": "800",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "heroTitle",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "¡Clases Swingcreíbles!",
+        "styles": {
+          "margin": "0",
+          "fontFamily": "Georgia, serif",
+          "fontWeight": "700",
+          "fontSize": "clamp(36px, 4.6vw, 67px)",
+          "lineHeight": "1.04",
+          "letterSpacing": "-.05em",
+          "marginBlock": "14px 20px",
+          "overflowWrap": "anywhere"
+        }
+      }
+    },
+    {
+      "id": "heroDescription",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Aprende Lindy Hop, Rockabilly Jive y Charleston. Puedes empezar desde cero y venir sin pareja.",
+        "styles": {
+          "margin": "0",
+          "fontSize": "clamp(17px, 2.2vw, 22px)",
+          "maxWidth": "33ch"
+        }
+      }
+    },
+    {
+      "id": "heroSchedule",
+      "type": "link",
+      "config": {
+        "text": "Ver horarios y sedes ↓",
+        "href": "#horarios",
+        "styles": {
+          "color": "white",
+          "fontWeight": "700",
+          "display": "inline-flex",
+          "alignItems": "center",
+          "padding": "12px 20px",
+          "minHeight": "24px",
+          "borderRadius": "30px",
+          "background": "#004d9d",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "heroLinks",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "heroSchedule"
+        ],
+        "styles": {
+          "marginTop": "24px"
+        }
+      }
+    },
+    {
+      "id": "heroCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "heroTag",
+          "heroTitle",
+          "heroDescription",
+          "heroLinks"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "heroLayout",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "heroCopy",
+          "logo"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(45px, 7vw, 90px)",
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "35px",
+          "alignItems": "center"
+        }
+      }
+    },
+    {
+      "id": "hero",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "heroLayout"
+        ],
+        "styles": {
+          "background": "linear-gradient(115deg, #ffdfc7 2%, #f6d9ef 54%, #deb6d7 100%)",
+          "borderBlock": "1px solid #cfa9cd"
+        }
+      }
+    },
+    {
+      "id": "schedulePeriod",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Noviembre–diciembre de 2026",
+        "styles": {
+          "margin": "0",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "fontWeight": "800",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "scheduleHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Encuentra tu clase",
+        "styles": {
+          "margin": "0",
+          "fontFamily": "Georgia, serif",
+          "fontWeight": "700",
+          "fontSize": "clamp(35px, 6vw, 68px)",
+          "lineHeight": "1.04",
+          "letterSpacing": "-.05em"
+        }
+      }
+    },
+    {
+      "id": "scheduleIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Elige un horario para ver el estilo, la zona y la mensualidad de referencia.",
+        "styles": {
+          "margin": "0",
+          "marginBlock": "12px 20px"
+        }
+      }
+    },
+    {
+      "id": "groups",
+      "type": "accordion",
+      "config": {
+        "mode": "multiple",
+        "items": [
+          {
+            "id": "group-0",
+            "title": "Lunes · 17:00 · Rockabilly Jive",
+            "content": "Sede: Nueva Santa María. Entre semana, la mensualidad parte de $350 MXN por una hora semanal. Confirma el cupo y el punto de encuentro por WhatsApp."
+          },
+          {
+            "id": "group-1",
+            "title": "Lunes · 20:00 · Lindy Hop",
+            "content": "Sede: Guerrero. Entre semana, la mensualidad parte de $350 MXN por una hora semanal. Confirma el cupo y el punto de encuentro por WhatsApp."
+          },
+          {
+            "id": "group-2",
+            "title": "Jueves · 19:00 · Charleston",
+            "content": "Sede: Guerrero. Entre semana, la mensualidad parte de $350 MXN por una hora semanal. Confirma el cupo y el punto de encuentro por WhatsApp."
+          },
+          {
+            "id": "group-3",
+            "title": "Jueves · 20:00 · Lindy Hop",
+            "content": "Sede: Guerrero. Entre semana, la mensualidad parte de $350 MXN por una hora semanal. Confirma el cupo y el punto de encuentro por WhatsApp."
+          },
+          {
+            "id": "group-4",
+            "title": "Viernes · 17:00 · Lindy Hop",
+            "content": "Sede: Nueva Santa María. Entre semana, la mensualidad parte de $350 MXN por una hora semanal. Confirma el cupo y el punto de encuentro por WhatsApp."
+          },
+          {
+            "id": "group-5",
+            "title": "Sábado · 11:30 · Rockabilly Jive",
+            "content": "Sede: Jardín Pushkin. En fin de semana, la mensualidad parte de $450 MXN por hora y media semanal. Confirma el cupo y el punto de encuentro por WhatsApp."
+          },
+          {
+            "id": "group-6",
+            "title": "Domingo · 11:30 · Lindy Hop",
+            "content": "Sede: Parque Hundido. En fin de semana, la mensualidad parte de $450 MXN por hora y media semanal. Confirma el cupo y el punto de encuentro por WhatsApp."
+          }
+        ],
+        "defaultItemContainerClasses": "ank-borderBottom-1px-solid-HASHdecddd",
+        "defaultItemButtonConfig": {
+          "classes": "ank-display-flex ank-width-100per ank-padding-14px ank-bg-transparent ank-color-HASH004d9d ank-border-0 ank-textAlign-left ank-fontWeight-700"
+        },
+        "defaultItemPanelClasses": "ank-padding-14px"
+      }
+    },
+    {
+      "id": "schedulePricing",
+      "type": "link",
+      "config": {
+        "text": "Ver todas las mensualidades ↓",
+        "href": "#costos",
+        "styles": {
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "display": "inline-block",
+          "marginTop": "18px"
+        }
+      }
+    },
+    {
+      "id": "schedule",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "schedulePeriod",
+          "scheduleHeading",
+          "scheduleIntro",
+          "groups",
+          "schedulePricing"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(45px, 7vw, 90px)"
+        },
+        "id": "horarios"
+      }
+    },
+    {
+      "id": "stylesKicker",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Catálogo de clases",
+        "styles": {
+          "margin": "0",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "fontWeight": "800",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "stylesHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Tres formas de bailar",
+        "styles": {
+          "margin": "0",
+          "fontFamily": "Georgia, serif",
+          "fontWeight": "700",
+          "fontSize": "clamp(35px, 6vw, 68px)",
+          "lineHeight": "1.04",
+          "letterSpacing": "-.05em"
+        }
+      }
+    },
+    {
+      "id": "styleNumber-0",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "01",
+        "styles": {
+          "margin": "0",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "fontWeight": "800",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "styleTitle-0",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Lindy Hop",
+        "styles": {
+          "margin": "0",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "28px",
+          "lineHeight": "1.15",
+          "marginBlock": "8px 10px"
+        }
+      }
+    },
+    {
+      "id": "styleBody-0",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Baila al ritmo del jazz swing. En clase practicas las bases, la conexión en pareja y maneras de improvisar con la música.",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "style-0",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "styleNumber-0",
+          "styleTitle-0",
+          "styleBody-0"
+        ],
+        "styles": {
+          "borderTop": "3px solid #d61983",
+          "paddingTop": "16px"
+        }
+      }
+    },
+    {
+      "id": "styleNumber-1",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "02",
+        "styles": {
+          "margin": "0",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "fontWeight": "800",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "styleTitle-1",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Rockabilly Jive",
+        "styles": {
+          "margin": "0",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "28px",
+          "lineHeight": "1.15",
+          "marginBlock": "8px 10px"
+        }
+      }
+    },
+    {
+      "id": "styleBody-1",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Baila rock and roll y rhythm and blues. Aprende los pasos básicos y practica cómo enlazarlos en pareja.",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "style-1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "styleNumber-1",
+          "styleTitle-1",
+          "styleBody-1"
+        ],
+        "styles": {
+          "borderTop": "3px solid #004d9d",
+          "paddingTop": "16px"
+        }
+      }
+    },
+    {
+      "id": "styleNumber-2",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "03",
+        "styles": {
+          "margin": "0",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "fontWeight": "800",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "styleTitle-2",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Charleston",
+        "styles": {
+          "margin": "0",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "28px",
+          "lineHeight": "1.15",
+          "marginBlock": "8px 10px"
+        }
+      }
+    },
+    {
+      "id": "styleBody-2",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Trabaja el ritmo y el juego de pies con este estilo de baile swing. Consulta el grupo de los jueves en Guerrero.",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "style-2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "styleNumber-2",
+          "styleTitle-2",
+          "styleBody-2"
+        ],
+        "styles": {
+          "borderTop": "3px solid #e95c0c",
+          "paddingTop": "16px"
+        }
+      }
+    },
+    {
+      "id": "styleList",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "style-0",
+          "style-1",
+          "style-2"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "25px",
+          "marginTop": "27px"
+        }
+      }
+    },
+    {
+      "id": "socialHeading",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Baile social",
+        "styles": {
+          "margin": "0",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "28px",
+          "marginTop": "30px"
+        }
+      }
+    },
+    {
+      "id": "socialDescription",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Dipsy Doo! anuncia un baile social gratuito cada mes. Pregunta por la próxima fecha y por talleres especiales.",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "stylesLayout",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "stylesKicker",
+          "stylesHeading",
+          "styleList",
+          "socialHeading",
+          "socialDescription"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(45px, 7vw, 90px)"
+        }
+      }
+    },
+    {
+      "id": "styles",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "stylesLayout"
+        ],
+        "styles": {
+          "background": "#f2deef"
+        },
+        "id": "estilos"
+      }
+    },
+    {
+      "id": "pricesKicker",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Noviembre–diciembre de 2026 · MXN",
+        "styles": {
+          "margin": "0",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "fontWeight": "800",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "pricesHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Colegiaturas mensuales",
+        "styles": {
+          "margin": "0",
+          "fontFamily": "Georgia, serif",
+          "fontWeight": "700",
+          "fontSize": "clamp(35px, 6vw, 68px)",
+          "lineHeight": "1.04",
+          "letterSpacing": "-.05em"
+        }
+      }
+    },
+    {
+      "id": "priceLabel-0",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Entre semana",
+        "styles": {
+          "margin": "0",
+          "fontSize": "21px",
+          "marginBottom": "8px"
+        }
+      }
+    },
+    {
+      "id": "plan-0-0-label",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "1 hora por semana",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "plan-0-0-value",
+      "type": "text",
+      "config": {
+        "tag": "strong",
+        "text": "$350",
+        "styles": {
+          "margin": "0",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "plan-0-0",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "plan-0-0-label",
+          "plan-0-0-value"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "14px 24px",
+          "justifyContent": "space-between",
+          "paddingBlock": "10px",
+          "borderTop": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "plan-0-1-label",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "2 horas por semana",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "plan-0-1-value",
+      "type": "text",
+      "config": {
+        "tag": "strong",
+        "text": "$650",
+        "styles": {
+          "margin": "0",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "plan-0-1",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "plan-0-1-label",
+          "plan-0-1-value"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "14px 24px",
+          "justifyContent": "space-between",
+          "paddingBlock": "10px",
+          "borderTop": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "plan-0-2-label",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "3 horas o más",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "plan-0-2-value",
+      "type": "text",
+      "config": {
+        "tag": "strong",
+        "text": "$750",
+        "styles": {
+          "margin": "0",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "plan-0-2",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "plan-0-2-label",
+          "plan-0-2-value"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "14px 24px",
+          "justifyContent": "space-between",
+          "paddingBlock": "10px",
+          "borderTop": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "plans-0",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "plan-0-0",
+          "plan-0-1",
+          "plan-0-2"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "price-0",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "priceLabel-0",
+          "plans-0"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "priceLabel-1",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Fin de semana",
+        "styles": {
+          "margin": "0",
+          "fontSize": "21px",
+          "marginBottom": "8px"
+        }
+      }
+    },
+    {
+      "id": "plan-1-0-label",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "1 hora y media por semana",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "plan-1-0-value",
+      "type": "text",
+      "config": {
+        "tag": "strong",
+        "text": "$450",
+        "styles": {
+          "margin": "0",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "plan-1-0",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "plan-1-0-label",
+          "plan-1-0-value"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "14px 24px",
+          "justifyContent": "space-between",
+          "paddingBlock": "10px",
+          "borderTop": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "plan-1-1-label",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "3 horas o más",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "plan-1-1-value",
+      "type": "text",
+      "config": {
+        "tag": "strong",
+        "text": "$750",
+        "styles": {
+          "margin": "0",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "plan-1-1",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "plan-1-1-label",
+          "plan-1-1-value"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "14px 24px",
+          "justifyContent": "space-between",
+          "paddingBlock": "10px",
+          "borderTop": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "plans-1",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "plan-1-0",
+          "plan-1-1"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "price-1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "priceLabel-1",
+          "plans-1"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "priceColumns",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "price-0",
+          "price-1"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "25px",
+          "marginBlock": "25px 14px"
+        }
+      }
+    },
+    {
+      "id": "priceNote",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Las clases se manejan por mensualidad. Confirma con la escuela el plan que corresponde a tu grupo.",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "prices",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "pricesKicker",
+          "pricesHeading",
+          "priceColumns",
+          "priceNote"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(45px, 7vw, 90px)"
+        },
+        "id": "costos"
+      }
+    },
+    {
+      "id": "faqHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Antes de tu primera clase",
+        "styles": {
+          "margin": "0",
+          "fontFamily": "Georgia, serif",
+          "fontWeight": "700",
+          "fontSize": "clamp(35px, 6vw, 68px)",
+          "lineHeight": "1.04",
+          "letterSpacing": "-.05em"
+        }
+      }
+    },
+    {
+      "id": "questions",
+      "type": "accordion",
+      "config": {
+        "mode": "multiple",
+        "items": [
+          {
+            "id": "partner",
+            "title": "¿Puedo ir sin pareja?",
+            "content": "Sí. En clase se hace rotación de pareja."
+          },
+          {
+            "id": "experience",
+            "title": "¿Puedo empezar si nunca he bailado?",
+            "content": "Sí. Puedes incorporarte desde nivel principiante."
+          },
+          {
+            "id": "observe",
+            "title": "¿Puedo conocer la clase antes de incorporarme?",
+            "content": "Puedes ir a observar una clase. Pregunta al equipo por el grupo que te interesa."
+          },
+          {
+            "id": "single",
+            "title": "¿Puedo pagar una sola clase?",
+            "content": "Las clases se manejan por mensualidad."
+          }
+        ],
+        "defaultItemContainerClasses": "ank-borderBottom-1px-solid-HASHdecddd",
+        "defaultItemButtonConfig": {
+          "classes": "ank-display-flex ank-width-100per ank-padding-14px ank-bg-transparent ank-color-HASH004d9d ank-border-0 ank-textAlign-left ank-fontWeight-700"
+        },
+        "defaultItemPanelClasses": "ank-padding-14px"
+      }
+    },
+    {
+      "id": "faqItems",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "questions"
+        ],
+        "styles": {
+          "marginTop": "20px"
+        }
+      }
+    },
+    {
+      "id": "faq",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "faqHeading",
+          "faqItems"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(45px, 7vw, 90px)",
+          "paddingTop": "10px"
+        }
+      }
+    },
+    {
+      "id": "contactKicker",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Dipsy Doo! · Ciudad de México",
+        "styles": {
+          "margin": "0",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "fontWeight": "800",
+          "textTransform": "uppercase"
+        }
+      }
+    },
+    {
+      "id": "contactHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "¿Qué te gustaría bailar?",
+        "styles": {
+          "margin": "0",
+          "fontFamily": "Georgia, serif",
+          "fontWeight": "700",
+          "fontSize": "clamp(35px, 6vw, 68px)",
+          "lineHeight": "1.04",
+          "letterSpacing": "-.05em"
+        }
+      }
+    },
+    {
+      "id": "contactBody",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cuéntanos qué estilo, horario o sede te interesa. Te ayudamos a encontrar un grupo.",
+        "styles": {
+          "margin": "0",
+          "marginBlock": "12px 22px",
+          "maxWidth": "51ch"
+        }
+      }
+    },
+    {
+      "id": "whatsapp",
+      "type": "link",
+      "config": {
+        "text": "Escribir por WhatsApp ↗",
+        "href": "https://wa.me/525585657947?text=Hola%2C%20Dipsy%20Doo!%20Me%20gustar%C3%ADa%20saber%20qu%C3%A9%20grupos%20tienen%20disponibles.",
+        "styles": {
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "display": "inline-flex",
+          "alignItems": "center",
+          "padding": "12px 20px",
+          "minHeight": "24px",
+          "borderRadius": "30px",
+          "background": "white",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "contactLayout",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "contactKicker",
+          "contactHeading",
+          "contactBody",
+          "whatsapp"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(45px, 7vw, 90px)"
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "contactLayout"
+        ],
+        "styles": {
+          "background": "#004d9d",
+          "color": "white"
+        },
+        "id": "contacto"
+      }
+    },
+    {
+      "id": "skip",
+      "type": "link",
+      "config": {
+        "text": "Saltar a horarios",
+        "href": "#horarios",
+        "styles": {
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "display": "block",
+          "textAlign": "center",
+          "paddingBlock": "6px",
+          "fontSize": "13px",
+          "background": "#f2deef"
+        }
+      }
+    },
+    {
+      "id": "content",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "components": [
+          "hero",
+          "schedule",
+          "styles",
+          "prices",
+          "faq",
+          "contact"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "footerText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Dipsy Doo! · Clases presenciales de baile en CDMX",
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "footer",
+      "type": "container",
+      "config": {
+        "tag": "footer",
+        "components": [
+          "footerText"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "22px",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "page",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "skip",
+          "header",
+          "content",
+          "footer"
+        ],
+        "styles": {
+          "minHeight": "100vh",
+          "fontFamily": "Arial, sans-serif",
+          "color": "#251938",
+          "background": "#fff9f3",
+          "lineHeight": "1.55"
+        }
+      }
+    }
+  ]
+}
