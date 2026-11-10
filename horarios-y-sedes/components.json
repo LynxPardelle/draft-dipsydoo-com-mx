@@ -182,7 +182,7 @@
       "type": "link",
       "config": {
         "text": "Confirmar sede y cupo por WhatsApp",
-        "href": "https://wa.me/525585657947?text=Hola%2C%20Dipsy%20Doo!%20Me%20gustar%C3%ADa%20confirmar%20el%20cupo%20y%20el%20punto%20de%20encuentro%20de%20una%20clase.",
+        "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20gustar%C3%ADa%20confirmar%20el%20cupo%20y%20el%20punto%20de%20encuentro%20de%20una%20clase.",
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -227,6 +227,292 @@
           "boxSizing": "border-box",
           "paddingInline": "clamp(20px, 6vw, 76px)",
           "paddingBlock": "clamp(40px, 6vw, 76px)"
+        }
+      }
+    },
+    {
+      "id": "venuesHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Cuatro zonas para encontrarnos",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(27px, 4vw, 42px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em"
+        }
+      }
+    },
+    {
+      "id": "venueName-0",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Guerrero",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "21px"
+        }
+      }
+    },
+    {
+      "id": "venueDetails-0",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Lunes 20:00 · Lindy Hop / Jueves 19:00 · Charleston / Jueves 20:00 · Lindy Hop",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "8px"
+        }
+      }
+    },
+    {
+      "id": "venueContact-0",
+      "type": "link",
+      "config": {
+        "text": "Pedir el punto de encuentro",
+        "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFMe%20comparten%20el%20punto%20de%20encuentro%20de%20la%20sede%20Guerrero%3F",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "venue-0",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "venueName-0",
+          "venueDetails-0",
+          "venueContact-0"
+        ],
+        "styles": {
+          "borderTop": "1px solid #decddd",
+          "paddingTop": "18px"
+        }
+      }
+    },
+    {
+      "id": "venueName-1",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Nueva Santa María",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "21px"
+        }
+      }
+    },
+    {
+      "id": "venueDetails-1",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Lunes 17:00 · Rockabilly Jive / Viernes 17:00 · Lindy Hop",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "8px"
+        }
+      }
+    },
+    {
+      "id": "venueContact-1",
+      "type": "link",
+      "config": {
+        "text": "Pedir el punto de encuentro",
+        "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFMe%20comparten%20el%20punto%20de%20encuentro%20de%20la%20sede%20Nueva%20Santa%20Mar%C3%ADa%3F",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "venue-1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "venueName-1",
+          "venueDetails-1",
+          "venueContact-1"
+        ],
+        "styles": {
+          "borderTop": "1px solid #decddd",
+          "paddingTop": "18px"
+        }
+      }
+    },
+    {
+      "id": "venueName-2",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Jardín Pushkin",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "21px"
+        }
+      }
+    },
+    {
+      "id": "venueDetails-2",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Sábado 11:30 · Rockabilly Jive",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "8px"
+        }
+      }
+    },
+    {
+      "id": "venueContact-2",
+      "type": "link",
+      "config": {
+        "text": "Pedir el punto de encuentro",
+        "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFMe%20comparten%20el%20punto%20de%20encuentro%20de%20la%20sede%20Jard%C3%ADn%20Pushkin%3F",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "venue-2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "venueName-2",
+          "venueDetails-2",
+          "venueContact-2"
+        ],
+        "styles": {
+          "borderTop": "1px solid #decddd",
+          "paddingTop": "18px"
+        }
+      }
+    },
+    {
+      "id": "venueName-3",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Parque Hundido",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "21px"
+        }
+      }
+    },
+    {
+      "id": "venueDetails-3",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Domingo 11:30 · Lindy Hop",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "8px"
+        }
+      }
+    },
+    {
+      "id": "venueContact-3",
+      "type": "link",
+      "config": {
+        "text": "Pedir el punto de encuentro",
+        "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFMe%20comparten%20el%20punto%20de%20encuentro%20de%20la%20sede%20Parque%20Hundido%3F",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "venue-3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "venueName-3",
+          "venueDetails-3",
+          "venueContact-3"
+        ],
+        "styles": {
+          "borderTop": "1px solid #decddd",
+          "paddingTop": "18px"
+        }
+      }
+    },
+    {
+      "id": "venueList",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "venue-0",
+          "venue-1",
+          "venue-2",
+          "venue-3"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "25px",
+          "marginTop": "22px"
+        }
+      }
+    },
+    {
+      "id": "venues",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "venuesHeading",
+          "venueList"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)",
+          "paddingTop": "0"
         }
       }
     },
@@ -589,6 +875,25 @@
       }
     },
     {
+      "id": "scheduleOriginal",
+      "type": "link",
+      "config": {
+        "text": "Consultar el cartel de horarios de la escuela ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-horarios.webp",
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
       "id": "priceLayout",
       "type": "container",
       "config": {
@@ -598,7 +903,8 @@
           "pricesHeading",
           "priceColumns",
           "priceNote",
-          "priceContact"
+          "priceContact",
+          "scheduleOriginal"
         ],
         "styles": {
           "width": "min(100%, 1160px)",
@@ -625,6 +931,25 @@
       }
     },
     {
+      "id": "headerLogo",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/dipsy-doo.webp",
+        "alt": "",
+        "width": 500,
+        "height": 500,
+        "loading": "eager",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "48px",
+          "height": "48px",
+          "borderRadius": "50%"
+        }
+      }
+    },
+    {
       "id": "brandHome",
       "type": "link",
       "config": {
@@ -639,8 +964,12 @@
           "fontWeight": "700",
           "fontFamily": "Georgia, serif",
           "fontSize": "25px",
-          "textDecoration": "none"
-        }
+          "textDecoration": "none",
+          "gap": "10px"
+        },
+        "components": [
+          "headerLogo"
+        ]
       }
     },
     {
@@ -805,6 +1134,20 @@
       }
     },
     {
+      "id": "footerBrand",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Dipsy Doo!",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "26px"
+        }
+      }
+    },
+    {
       "id": "footerText",
       "type": "text",
       "config": {
@@ -818,19 +1161,121 @@
       }
     },
     {
-      "id": "footerContact",
+      "id": "footerCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "footerBrand",
+          "footerText"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "footerNav-0",
       "type": "link",
       "config": {
-        "text": "Contacto y preguntas frecuentes",
+        "text": "Inicio",
+        "href": "/",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-1",
+      "type": "link",
+      "config": {
+        "text": "Clases",
+        "href": "/clases",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-2",
+      "type": "link",
+      "config": {
+        "text": "Horarios y sedes",
+        "href": "/horarios-y-sedes",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-3",
+      "type": "link",
+      "config": {
+        "text": "Comunidad",
+        "href": "/comunidad",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-4",
+      "type": "link",
+      "config": {
+        "text": "Contacto",
         "href": "/contacto",
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
           "minHeight": "44px",
           "boxSizing": "border-box",
-          "color": "#004d9d",
-          "fontWeight": "700"
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
         }
+      }
+    },
+    {
+      "id": "footerNavigation",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "components": [
+          "footerNav-0",
+          "footerNav-1",
+          "footerNav-2",
+          "footerNav-3",
+          "footerNav-4"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "4px 18px"
+        },
+        "ariaLabel": "Pie de página"
       }
     },
     {
@@ -840,8 +1285,8 @@
         "tag": "div",
         "components": [
           "footerLogo",
-          "footerText",
-          "footerContact"
+          "footerCopy",
+          "footerNavigation"
         ],
         "styles": {
           "width": "min(100%, 1160px)",
@@ -852,7 +1297,8 @@
           "flexWrap": "wrap",
           "alignItems": "center",
           "gap": "12px 22px",
-          "paddingBlock": "18px"
+          "paddingBlock": "30px",
+          "justifyContent": "space-between"
         }
       }
     },
@@ -865,7 +1311,8 @@
           "footerLayout"
         ],
         "styles": {
-          "borderTop": "1px solid #decddd"
+          "background": "#251938",
+          "color": "#ffffff"
         }
       }
     },
@@ -896,6 +1343,7 @@
         "components": [
           "pageIntro",
           "schedule",
+          "venues",
           "prices"
         ],
         "styles": {},

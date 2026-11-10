@@ -117,7 +117,7 @@
       "type": "link",
       "config": {
         "text": "Abrir WhatsApp ↗",
-        "href": "https://wa.me/525585657947?text=Hola%2C%20Dipsy%20Doo!%20Me%20gustar%C3%ADa%20saber%20qu%C3%A9%20grupos%20tienen%20disponibles.",
+        "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20gustar%C3%ADa%20saber%20qu%C3%A9%20grupos%20tienen%20disponibles.",
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
@@ -224,7 +224,17 @@
           {
             "id": "single",
             "title": "¿Puedo pagar una sola clase?",
-            "content": "Las clases se manejan por mensualidad."
+            "content": "Las clases se manejan por mensualidad. Consulta las opciones de acuerdo con tu frecuencia semanal."
+          },
+          {
+            "id": "format",
+            "title": "¿Cómo se desarrolla una clase?",
+            "content": "Comenzamos con calentamiento, trabajamos las bases técnicas y practicamos en pareja. Recibirás retroalimentación durante la clase."
+          },
+          {
+            "id": "social",
+            "title": "¿También organizan bailes sociales?",
+            "content": "Sí. La escuela anuncia un baile social gratuito cada mes. Escríbenos para confirmar la próxima fecha y el lugar."
           }
         ],
         "defaultItemContainerClasses": "ank-borderBottom-1px__solid__HASHdecddd",
@@ -281,6 +291,126 @@
       }
     },
     {
+      "id": "contactTeamPhoto",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-equipo.webp",
+        "alt": "La comunidad de Dipsy Doo! en una foto de grupo.",
+        "width": 860,
+        "height": 591,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "aspectRatio": "4 / 3",
+          "objectFit": "cover",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
+      "id": "contactCommunityHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Te esperamos en la pista",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(27px, 4vw, 42px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em"
+        }
+      }
+    },
+    {
+      "id": "contactCommunityDetails",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Puedes empezar sin experiencia y venir sin pareja. Antes de tu visita, confirma con la escuela el grupo y el punto de encuentro.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "14px"
+        }
+      }
+    },
+    {
+      "id": "contactCommunityLink",
+      "type": "link",
+      "config": {
+        "text": "Conoce los bailes sociales y el código de conducta",
+        "href": "/comunidad#convivencia",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "contactCommunityCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "contactCommunityHeading",
+          "contactCommunityDetails",
+          "contactCommunityLink"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "contactCommunity",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "contactTeamPhoto",
+          "contactCommunityCopy"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)",
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "clamp(24px, 5vw, 50px)",
+          "alignItems": "center"
+        }
+      }
+    },
+    {
+      "id": "headerLogo",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/dipsy-doo.webp",
+        "alt": "",
+        "width": 500,
+        "height": 500,
+        "loading": "eager",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "48px",
+          "height": "48px",
+          "borderRadius": "50%"
+        }
+      }
+    },
+    {
       "id": "brandHome",
       "type": "link",
       "config": {
@@ -295,8 +425,12 @@
           "fontWeight": "700",
           "fontFamily": "Georgia, serif",
           "fontSize": "25px",
-          "textDecoration": "none"
-        }
+          "textDecoration": "none",
+          "gap": "10px"
+        },
+        "components": [
+          "headerLogo"
+        ]
       }
     },
     {
@@ -461,6 +595,20 @@
       }
     },
     {
+      "id": "footerBrand",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Dipsy Doo!",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "26px"
+        }
+      }
+    },
+    {
       "id": "footerText",
       "type": "text",
       "config": {
@@ -474,19 +622,121 @@
       }
     },
     {
-      "id": "footerContact",
+      "id": "footerCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "footerBrand",
+          "footerText"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "footerNav-0",
       "type": "link",
       "config": {
-        "text": "Contacto y preguntas frecuentes",
+        "text": "Inicio",
+        "href": "/",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-1",
+      "type": "link",
+      "config": {
+        "text": "Clases",
+        "href": "/clases",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-2",
+      "type": "link",
+      "config": {
+        "text": "Horarios y sedes",
+        "href": "/horarios-y-sedes",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-3",
+      "type": "link",
+      "config": {
+        "text": "Comunidad",
+        "href": "/comunidad",
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-4",
+      "type": "link",
+      "config": {
+        "text": "Contacto",
         "href": "/contacto",
         "styles": {
           "display": "inline-flex",
           "alignItems": "center",
           "minHeight": "44px",
           "boxSizing": "border-box",
-          "color": "#004d9d",
-          "fontWeight": "700"
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
         }
+      }
+    },
+    {
+      "id": "footerNavigation",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "components": [
+          "footerNav-0",
+          "footerNav-1",
+          "footerNav-2",
+          "footerNav-3",
+          "footerNav-4"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "4px 18px"
+        },
+        "ariaLabel": "Pie de página"
       }
     },
     {
@@ -496,8 +746,8 @@
         "tag": "div",
         "components": [
           "footerLogo",
-          "footerText",
-          "footerContact"
+          "footerCopy",
+          "footerNavigation"
         ],
         "styles": {
           "width": "min(100%, 1160px)",
@@ -508,7 +758,8 @@
           "flexWrap": "wrap",
           "alignItems": "center",
           "gap": "12px 22px",
-          "paddingBlock": "18px"
+          "paddingBlock": "30px",
+          "justifyContent": "space-between"
         }
       }
     },
@@ -521,7 +772,8 @@
           "footerLayout"
         ],
         "styles": {
-          "borderTop": "1px solid #decddd"
+          "background": "#251938",
+          "color": "#ffffff"
         }
       }
     },
@@ -552,7 +804,8 @@
         "components": [
           "pageIntro",
           "contactOptions",
-          "faq"
+          "faq",
+          "contactCommunity"
         ],
         "styles": {},
         "id": "contenido",
