@@ -151,6 +151,129 @@
       }
     },
     {
+      "id": "classScheduleLabel-0",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Horarios · Noviembre–diciembre de 2026",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "marginTop": "14px"
+        }
+      }
+    },
+    {
+      "id": "classTimeText-0-0",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "Lunes a las 20:00 en Guerrero",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "classTime-0-0",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "classTimeText-0-0"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "classTimeText-0-1",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "Jueves a las 20:00 en Guerrero",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "classTime-0-1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "classTimeText-0-1"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "classTimeText-0-2",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "Viernes a las 17:00 en Nueva Santa María",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "classTime-0-2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "classTimeText-0-2"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "classTimeText-0-3",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "Domingo a las 11:30 en Parque Hundido",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "classTime-0-3",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "classTimeText-0-3"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "classScheduleList-0",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "components": [
+          "classTime-0-0",
+          "classTime-0-1",
+          "classTime-0-2",
+          "classTime-0-3"
+        ],
+        "styles": {
+          "paddingInlineStart": "20px",
+          "marginBlock": "4px 0"
+        }
+      }
+    },
+    {
       "id": "classAsk-0",
       "type": "link",
       "config": {
@@ -180,6 +303,8 @@
           "classKicker-0",
           "classHeading-0",
           "classDetail-0",
+          "classScheduleLabel-0",
+          "classScheduleList-0",
           "classAsk-0"
         ],
         "styles": {}
@@ -274,6 +399,81 @@
       }
     },
     {
+      "id": "classScheduleLabel-1",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Horarios · Noviembre–diciembre de 2026",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "marginTop": "14px"
+        }
+      }
+    },
+    {
+      "id": "classTimeText-1-0",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "Lunes a las 17:00 en Nueva Santa María",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "classTime-1-0",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "classTimeText-1-0"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "classTimeText-1-1",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "Sábado a las 11:30 en Jardín Pushkin",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "classTime-1-1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "classTimeText-1-1"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "classScheduleList-1",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "components": [
+          "classTime-1-0",
+          "classTime-1-1"
+        ],
+        "styles": {
+          "paddingInlineStart": "20px",
+          "marginBlock": "4px 0"
+        }
+      }
+    },
+    {
       "id": "classAsk-1",
       "type": "link",
       "config": {
@@ -303,6 +503,8 @@
           "classKicker-1",
           "classHeading-1",
           "classDetail-1",
+          "classScheduleLabel-1",
+          "classScheduleList-1",
           "classAsk-1"
         ],
         "styles": {}
@@ -397,6 +599,57 @@
       }
     },
     {
+      "id": "classScheduleLabel-2",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Horarios · Noviembre–diciembre de 2026",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "16px",
+          "marginTop": "14px"
+        }
+      }
+    },
+    {
+      "id": "classTimeText-2-0",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "Jueves a las 19:00 en Guerrero",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "classTime-2-0",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "classTimeText-2-0"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "classScheduleList-2",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "components": [
+          "classTime-2-0"
+        ],
+        "styles": {
+          "paddingInlineStart": "20px",
+          "marginBlock": "4px 0"
+        }
+      }
+    },
+    {
       "id": "classAsk-2",
       "type": "link",
       "config": {
@@ -426,6 +679,8 @@
           "classKicker-2",
           "classHeading-2",
           "classDetail-2",
+          "classScheduleLabel-2",
+          "classScheduleList-2",
           "classAsk-2"
         ],
         "styles": {}

@@ -28,6 +28,7 @@ const action = {...tap, padding: '12px 20px', borderRadius: '28px', background: 
 const heroBackground = 'linear-gradient(115deg, #ffdfc7, #f6d9ef 54%, #deb6d7)';
 const logo = assets + 'dipsy-doo.webp';
 const dancePhoto = assets + 'pareja-baile.webp';
+const heroPhoto = 'https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/hero-images/portada-web-1200-20261111.webp';
 const photo = (name) => assets + '20261110-' + name + '.webp';
 const videoUrl = (name) => 'https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-' + name + '.mp4';
 const whatsapp = (message) => 'https://wa.me/' + phone.slice(1) + '?text=' + encodeURIComponent(message);
@@ -50,9 +51,10 @@ const prices = [
   ['Fin de semana', [['1 hora y media por semana', '$450'], ['3 horas o más', '$750']]]
 ];
 const faq = [
-  {id: 'partner', title: '¿Puedo ir sin pareja?', content: 'Sí. En clase se hace rotación de pareja.'},
-  {id: 'experience', title: '¿Puedo empezar si nunca he bailado?', content: 'Sí. Puedes incorporarte desde nivel principiante.'},
-  {id: 'observe', title: '¿Puedo observar una clase?', content: 'Sí. Escribe por WhatsApp para preguntar por el grupo y el punto de encuentro.'},
+  {id: 'partner', title: '¿Necesito llevar pareja?', content: 'No. Puedes venir sin pareja. Durante la clase rotamos para practicar con distintas personas.'},
+  {id: 'experience', title: '¿Puedo aprender si nunca he bailado?', content: 'Sí. Puedes empezar desde nivel principiante en Lindy Hop, Rockabilly Jive o Charleston.'},
+  {id: 'observe', title: '¿Puedo observar una clase?', content: 'Sí. Escribe por WhatsApp antes de ir para confirmar qué grupo puedes observar y dónde se reúne.'},
+  {id: 'join', title: '¿Cómo confirmo cupo para mi primera clase?', content: 'Elige un estilo y horario. Escríbenos por WhatsApp con el grupo que te interesa para confirmar cupo y el punto de encuentro.'},
   {id: 'single', title: '¿Puedo pagar una sola clase?', content: 'Las clases se manejan por mensualidad. Consulta las opciones de acuerdo con tu frecuencia semanal.'},
   {id: 'format', title: '¿Cómo se desarrolla una clase?', content: 'Comenzamos con calentamiento, trabajamos las bases técnicas y practicamos en pareja. Recibirás retroalimentación durante la clase.'},
   {id: 'social', title: '¿También organizan bailes sociales?', content: 'Sí. La escuela anuncia un baile social gratuito cada mes. Escríbenos para confirmar la próxima fecha y el lugar.'}
@@ -112,19 +114,28 @@ function pageIntro(kicker, headingText, body) {
 }
 
 function renderHome() {
-  const hero = box('hero', [box('heroLayout', [
-    box('heroCopy', [
-      text('heroKicker', 'Escuela de baile · Ciudad de México', 'p', {...eyebrow, color: '#ffffff'}),
-      text('pageHeading', 'Dipsy Doo!', 'h1', {...headline, marginBlock: '10px 12px', fontSize: 'clamp(58px, 9vw, 108px)', color: '#ffffff'}),
-      text('heroTagline', '¡Clases Swingcreíbles!', 'p', {fontFamily: 'Georgia, serif', fontSize: 'clamp(25px, 3.5vw, 38px)', fontWeight: '700', marginBottom: '14px'}),
-      text('heroDescription', 'Aprende Lindy Hop, Rockabilly Jive y Charleston. Puedes empezar desde cero y venir sin pareja.', 'p', {fontSize: 'clamp(17px, 2.2vw, 22px)', maxWidth: '35ch'}),
-      box('heroLinks', [link('heroSchedule', 'Ver horarios y sedes', paths.schedule, {...action, background: '#ffffff', color: blue}), link('heroClasses', 'Explorar las clases', paths.classes, {color: '#ffffff'})], {...flex, marginTop: '22px'})
-    ], {maxWidth: '640px'})
-  ], {...section, display: 'flex', alignItems: 'center', minHeight: 'min(660px, calc(100svh - 140px))', paddingBlock: 'clamp(44px, 7vw, 90px)'})], {
-    color: '#ffffff', backgroundColor: ink,
-    backgroundImage: 'linear-gradient(90deg, rgba(18, 17, 42, .94), rgba(18, 17, 42, .62) 56%, rgba(18, 17, 42, .28)), url("' + photo('hero-comunidad') + '")',
-    backgroundSize: 'cover', backgroundPosition: 'center 55%'
-  }, 'section');
+  const hero = box('hero', [
+    image('heroPhoto', heroPhoto, '', 1200, 900, {
+      loading: 'eager', fetchPriority: 'high',
+      styles: {display: 'block', position: 'absolute', inset: '0', width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 55%'}
+    }),
+    box('heroShade', [], {
+      position: 'absolute', inset: '0', pointerEvents: 'none',
+      backgroundImage: 'linear-gradient(90deg, rgba(18, 17, 42, .94), rgba(18, 17, 42, .62) 56%, rgba(18, 17, 42, .28))'
+    }),
+    box('heroLayout', [
+      box('heroCopy', [
+        text('heroKicker', 'Escuela de baile · Ciudad de México', 'p', {...eyebrow, color: '#ffffff'}),
+        text('pageHeading', 'Dipsy Doo!', 'h1', {...headline, marginBlock: '10px 12px', fontSize: 'clamp(58px, 9vw, 108px)', color: '#ffffff'}),
+        text('heroTagline', '¡Clases Swingcreíbles!', 'p', {fontFamily: 'Georgia, serif', fontSize: 'clamp(25px, 3.5vw, 38px)', fontWeight: '700', marginBottom: '14px'}),
+        text('heroDescription', 'Aprende Lindy Hop, Rockabilly Jive y Charleston. Puedes empezar desde cero y venir sin pareja.', 'p', {fontSize: 'clamp(17px, 2.2vw, 22px)', maxWidth: '35ch'}),
+        box('heroLinks', [link('heroSchedule', 'Ver horarios y sedes', paths.schedule, {...action, background: '#ffffff', color: blue}), link('heroClasses', 'Explorar las clases', paths.classes, {color: '#ffffff'})], {...flex, marginTop: '22px'})
+      ], {maxWidth: '640px'})
+    ], {
+      ...section, position: 'relative', display: 'flex', alignItems: 'center',
+      minHeight: 'min(660px, calc(100svh - 140px))', paddingBlock: 'clamp(44px, 7vw, 90px)'
+    })
+  ], {position: 'relative', overflow: 'hidden', color: '#ffffff', backgroundColor: ink}, 'section');
   const destinations = [
     ['estilos', '01 · Las clases', 'Del swing al rock and roll', 'Conoce los tres estilos y qué practicarás en cada uno.', 'Ver estilos de baile', paths.classes],
     ['horarios', '02 · La semana', 'Encuentra un grupo', 'Consulta el horario y el punto de referencia de las cuatro zonas.', 'Consultar horarios y sedes', paths.schedule],
@@ -162,6 +173,12 @@ function renderClasses() {
         text('classKicker-' + index, kicker, 'p', {...eyebrow, color: blue}),
         heading('classHeading-' + index, label),
         text('classDetail-' + index, detail, 'p', {maxWidth: '57ch', marginTop: '10px'}),
+        text('classScheduleLabel-' + index, 'Horarios · ' + period, 'h3', {fontSize: '16px', fontWeight: '700', marginTop: '14px'}),
+        box('classScheduleList-' + index, groups
+          .filter(([, , style]) => style === label)
+          .map(([day, time, , venue], row) => box('classTime-' + index + '-' + row, [
+            text('classTimeText-' + index + '-' + row, day + ' a las ' + time + ' en ' + venue, 'span')
+          ], {}, 'li')), {paddingInlineStart: '20px', marginBlock: '4px 0'}, 'ul'),
         link('classAsk-' + index, 'Preguntar por ' + label, whatsapp('Hola, Dipsy Doo! Me interesan sus clases de ' + label + '. ¿Qué grupo me recomiendan?'), {marginTop: '12px'})
         ])
       ], {...grid, alignItems: 'center', gap: 'clamp(24px, 5vw, 50px)', borderTop: '1px solid ' + border, paddingBlock: '28px 34px'}, 'article', sectionId(['lindy-hop', 'rockabilly-jive', 'charleston'][index]))),
@@ -316,8 +333,11 @@ function renderContact() {
       ], flex)
     ], section, 'section'),
     box('faq', [box('faqLayout', [
-      heading('faqHeading', 'Antes de tu primera clase'),
-      box('faqItems', [accordion('questions', faq)], {marginTop: '16px'})
+      heading('faqHeading', 'Preguntas frecuentes antes de tu primera clase'),
+      box('faqItems', faq.map(({id, title, content}) => box('faq-' + id, [
+        text('faq-question-' + id, title, 'h3', {fontSize: '20px', fontWeight: '700', lineHeight: '1.25'}),
+        text('faq-answer-' + id, content, 'p', {marginTop: '8px'})
+      ], {paddingBlock: '16px', borderTop: '1px solid ' + border}, 'article')), {...grid, gap: '8px 26px', marginTop: '22px'})
     ], section)], {background: blush}, 'section', sectionId('preguntas')),
     box('contactCommunity', [
       photograph('contactTeamPhoto', photo('equipo'), 'La comunidad de Dipsy Doo! en una foto de grupo.', 860, 591),
@@ -415,7 +435,7 @@ write('site-config.json', {
     icons: {favicon: logo, themeColor: ink},
     seo: {
       siteName: 'Dipsy Doo!', title, description, canonicalOrigin: origin,
-      defaultImage: photo('hero-comunidad'), openGraph: {locale: 'es_MX'},
+      defaultImage: heroPhoto, openGraph: {locale: 'es_MX'},
       twitter: {card: 'summary_large_image'}
     }
   }

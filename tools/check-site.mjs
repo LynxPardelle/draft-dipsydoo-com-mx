@@ -22,6 +22,14 @@ for (const route of site.routes) {
   titles.add(page.seo.title.es);
   descriptions.add(page.seo.description.es);
   assert.equal(definitions.filter(component => component.config.tag === 'h1').length, 1);
+  if (route.path === '/') {
+    const hero = components.get('heroPhoto')?.config;
+    assert.equal(hero?.tag, 'image', 'Homepage hero must be discoverable as an image in the initial document');
+    assert.equal(hero.loading, 'eager');
+    assert.equal(hero.fetchPriority, 'high');
+    assert.equal(hero.src, site.site.seo.defaultImage);
+  }
+
   for (const id of page.rootIds) assert(components.has(id), 'Missing page root ' + id);
   const anchors = new Set(definitions.map(component => component.config.id).filter(Boolean));
   for (const component of definitions) {
