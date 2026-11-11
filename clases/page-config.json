@@ -8,12 +8,30 @@
   "modalRootIds": [],
   "seo": {
     "title": {
-      "es": "Clases de swing, Jive y Charleston | Dipsy Doo!"
+      "es": "Lindy Hop, Rockabilly Jive y Charleston en CDMX | Dipsy Doo!"
     },
     "description": {
-      "es": "Conoce los estilos que puedes aprender y qué esperar de tu primera clase."
+      "es": "Compara los tres estilos de baile, mira videos de clase y conoce qué practicarás en tu primera visita, aunque empieces desde cero."
     },
     "canonical": "https://dipsydoo.com.mx/clases",
-    "robots": "noindex,nofollow"
+    "robots": "index,follow"
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://dipsydoo.com.mx/clases#clases",
+        "name": "Clases presenciales de Lindy Hop, Rockabilly Jive y Charleston",
+        "url": "https://dipsydoo.com.mx/clases",
+        "provider": {
+          "@id": "https://dipsydoo.com.mx/#organizacion"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Ciudad de México"
+        }
+      }
+    ]
   }
 }

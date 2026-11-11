@@ -1,6 +1,8 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 
 const domain = 'dipsydoo.com.mx';
+const origin = 'https://' + domain;
+const phone = '+525540312687';
 const root = new URL('../', import.meta.url);
 const assets = 'https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/';
 const blue = '#004d9d';
@@ -9,8 +11,8 @@ const ink = '#251938';
 const paper = '#fff9f3';
 const blush = '#f2deef';
 const border = '#decddd';
-const title = 'Dipsy Doo! | Clases de swing y Rockabilly Jive en CDMX';
-const description = 'Clases presenciales de Lindy Hop, Rockabilly Jive y Charleston en la Ciudad de México.';
+const title = 'Clases de swing y Rockabilly Jive en CDMX | Dipsy Doo!';
+const description = 'Aprende Lindy Hop, Rockabilly Jive y Charleston en Ciudad de México. Puedes empezar sin experiencia y venir sin pareja. Consulta horarios y sedes.';
 const period = 'Noviembre–diciembre de 2026';
 const paths = {home: '/', classes: '/clases', schedule: '/horarios-y-sedes', community: '/comunidad', contact: '/contacto'};
 const navigation = [[paths.home, 'Inicio'], [paths.classes, 'Clases'], [paths.schedule, 'Horarios y sedes'], [paths.community, 'Comunidad'], [paths.contact, 'Contacto']];
@@ -28,7 +30,7 @@ const logo = assets + 'dipsy-doo.webp';
 const dancePhoto = assets + 'pareja-baile.webp';
 const photo = (name) => assets + '20261110-' + name + '.webp';
 const videoUrl = (name) => 'https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-' + name + '.mp4';
-const whatsapp = (message) => 'https://wa.me/525540312687?text=' + encodeURIComponent(message);
+const whatsapp = (message) => 'https://wa.me/' + phone.slice(1) + '?text=' + encodeURIComponent(message);
 const groups = [
   ['Lunes', '17:00', 'Rockabilly Jive', 'Nueva Santa María', false],
   ['Lunes', '20:00', 'Lindy Hop', 'Guerrero', false],
@@ -152,7 +154,7 @@ function renderHome() {
 
 function renderClasses() {
   return [
-    pageIntro('Clases presenciales · CDMX', 'Tres formas de bailar', 'Del jazz swing al rock and roll, cada estilo tiene su propia manera de marcar el ritmo y jugar con la música.'),
+    pageIntro('Clases presenciales · CDMX', 'Clases de swing y rock and roll en CDMX', 'Elige entre Lindy Hop, Rockabilly Jive y Charleston. Puedes empezar desde cero en clases presenciales y venir sin pareja.'),
     box('classList', [
       ...styles.map(([label, kicker, detail, src], index) => box('class-' + index, [
         photograph('classPhoto-' + index, src, index === 1 ? 'Una pareja de la comunidad Dipsy Doo! en una pose de baile frente a un mural.' : 'Una pareja de Dipsy Doo! bailando ' + label + '.'),
@@ -183,7 +185,7 @@ function renderClasses() {
 
 function renderSchedule() {
   return [
-    pageIntro(period + ' · CDMX', 'Horarios y sedes', 'Abre el horario que te interesa para ver su sede y la colegiatura de referencia. Confirma con la escuela el cupo y el punto de encuentro.'),
+    pageIntro(period + ' · CDMX', 'Horarios y sedes', 'Consulta las clases en Guerrero, Nueva Santa María, Jardín Pushkin y Parque Hundido. Las mensualidades de referencia empiezan en $350 MXN. Confirma el cupo y el punto de encuentro por WhatsApp.'),
     box('schedule', [
       heading('scheduleHeading', 'Encuentra tu clase'),
       box('scheduleItems', [accordion('groups', groups.map(([day, time, style, venue, weekend], index) => ({
@@ -308,7 +310,7 @@ function renderContact() {
       heading('contactHeading', 'Escríbenos por WhatsApp'),
       text('contactDetails', 'Indícanos el grupo que te interesa. Te podemos confirmar el cupo y el punto de encuentro.', 'p', {marginBlock: '10px 18px'}),
       box('contactLinks', [
-        link('whatsapp', 'Abrir WhatsApp ↗', whatsapp('Hola, Dipsy Doo! Me gustaría saber qué grupos tienen disponibles.'), action),
+        link('whatsapp', 'WhatsApp +52 55 4031 2687 ↗', whatsapp('Hola, Dipsy Doo! Me gustaría saber qué grupos tienen disponibles.'), action),
         link('contactSchedule', 'Consultar horarios y sedes', paths.schedule),
         link('contactQuestions', 'Ver preguntas frecuentes', '#preguntas')
       ], flex)
@@ -330,11 +332,35 @@ function renderContact() {
 
 const pages = [
   ['default', paths.home, 'Inicio', title, description, renderHome],
-  ['clases', paths.classes, 'Clases', 'Clases de swing, Jive y Charleston | Dipsy Doo!', 'Conoce los estilos que puedes aprender y qué esperar de tu primera clase.', renderClasses],
-  ['horarios-y-sedes', paths.schedule, 'Horarios y sedes', 'Horarios, sedes y colegiaturas | Dipsy Doo!', 'Consulta los horarios de clases y las colegiaturas de noviembre–diciembre de 2026.', renderSchedule],
-  ['comunidad', paths.community, 'Comunidad', 'Comunidad y baile social | Dipsy Doo!', 'Descubre los bailes sociales de Dipsy Doo! en la Ciudad de México.', renderCommunity],
-  ['contacto', paths.contact, 'Contacto', 'Contacto y preguntas frecuentes | Dipsy Doo!', 'Contacta con Dipsy Doo! por WhatsApp y resuelve tus dudas antes de clase.', renderContact]
+  ['clases', paths.classes, 'Clases', 'Lindy Hop, Rockabilly Jive y Charleston en CDMX | Dipsy Doo!', 'Compara los tres estilos de baile, mira videos de clase y conoce qué practicarás en tu primera visita, aunque empieces desde cero.', renderClasses],
+  ['horarios-y-sedes', paths.schedule, 'Horarios y sedes', 'Horarios, sedes y precios de clases en CDMX | Dipsy Doo!', 'Consulta los horarios de baile en Guerrero, Nueva Santa María, Jardín Pushkin y Parque Hundido, y las mensualidades de noviembre–diciembre de 2026.', renderSchedule],
+  ['comunidad', paths.community, 'Comunidad', 'Bailes sociales de swing en CDMX | Dipsy Doo!', 'Conoce la comunidad de Dipsy Doo! en Ciudad de México con videos, fotos de los bailes sociales y testimonios del alumnado.', renderCommunity],
+  ['contacto', paths.contact, 'Contacto', 'WhatsApp y primera clase de baile | Dipsy Doo!', 'Pregunta por cupos y sedes por WhatsApp. Descubre si necesitas pareja o experiencia, cómo se desarrolla una clase y si puedes observarla.', renderContact]
 ];
+
+const organizationId = origin + '/#organizacion';
+const mexicoCity = {'@type': 'City', name: 'Ciudad de México'};
+const structuredData = {
+  default: [
+    {
+      '@context': 'https://schema.org', '@type': 'Organization', '@id': organizationId,
+      name: 'Dipsy Doo!', url: origin + '/', logo,
+      description: 'Escuela de Lindy Hop, Rockabilly Jive y Charleston en Ciudad de México.',
+      telephone: phone, areaServed: mexicoCity
+    },
+    {
+      '@context': 'https://schema.org', '@type': 'WebSite', '@id': origin + '/#sitio',
+      name: 'Dipsy Doo!', url: origin + '/', inLanguage: 'es-MX', publisher: {'@id': organizationId}
+    }
+  ],
+  clases: [
+    {
+      '@context': 'https://schema.org', '@type': 'Service', '@id': origin + paths.classes + '#clases',
+      name: 'Clases presenciales de Lindy Hop, Rockabilly Jive y Charleston',
+      url: origin + paths.classes, provider: {'@id': organizationId}, areaServed: mexicoCity
+    }
+  ]
+};
 
 function shell(path, children) {
   const header = box('header', [
@@ -386,7 +412,12 @@ write('site-config.json', {
     appIdentity: {identifier: 'dipsydoo', name: 'Dipsy Doo!', version: '0.3.0', description},
     theme: {defaultMode: 'light', palettes: {light: palette, dark: palette}},
     i18n: {defaultLanguage: 'es', supportedLanguages: [{code: 'es', label: 'Español'}]},
-    seo: {siteName: 'Dipsy Doo!', title, description, canonicalOrigin: 'https://' + domain}
+    icons: {favicon: logo, themeColor: ink},
+    seo: {
+      siteName: 'Dipsy Doo!', title, description, canonicalOrigin: origin,
+      defaultImage: photo('hero-comunidad'), openGraph: {locale: 'es_MX'},
+      twitter: {card: 'summary_large_image'}
+    }
   }
 });
 write('components.json', {version: 1, domain, pageId: 'allPages', components: []});
@@ -398,7 +429,8 @@ for (const [pageId, path, , pageTitle, pageDescription, render] of pages) {
   mkdirSync(new URL(prefix, root), {recursive: true});
   write(prefix + 'page-config.json', {
     version: 1, domain, pageId, rootIds: [page], modalRootIds: [],
-    seo: {title: {es: pageTitle}, description: {es: pageDescription}, canonical: 'https://' + domain + path, robots: 'noindex,nofollow'}
+    seo: {title: {es: pageTitle}, description: {es: pageDescription}, canonical: origin + path, robots: 'index,follow'},
+    ...(structuredData[pageId] ? {structuredData: {entries: structuredData[pageId]}} : {})
   });
   write(prefix + 'components.json', {version: 1, domain, pageId, components});
   writeDefaults(prefix, pageId);

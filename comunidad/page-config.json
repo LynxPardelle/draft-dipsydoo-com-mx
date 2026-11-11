@@ -8,12 +8,12 @@
   "modalRootIds": [],
   "seo": {
     "title": {
-      "es": "Comunidad y baile social | Dipsy Doo!"
+      "es": "Bailes sociales de swing en CDMX | Dipsy Doo!"
     },
     "description": {
-      "es": "Descubre los bailes sociales de Dipsy Doo! en la Ciudad de México."
+      "es": "Conoce la comunidad de Dipsy Doo! en Ciudad de México con videos, fotos de los bailes sociales y testimonios del alumnado."
     },
     "canonical": "https://dipsydoo.com.mx/comunidad",
-    "robots": "noindex,nofollow"
+    "robots": "index,follow"
   }
 }

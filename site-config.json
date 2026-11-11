@@ -52,7 +52,7 @@
       "identifier": "dipsydoo",
       "name": "Dipsy Doo!",
       "version": "0.3.0",
-      "description": "Clases presenciales de Lindy Hop, Rockabilly Jive y Charleston en la Ciudad de México."
+      "description": "Aprende Lindy Hop, Rockabilly Jive y Charleston en Ciudad de México. Puedes empezar sin experiencia y venir sin pareja. Consulta horarios y sedes."
     },
     "theme": {
       "defaultMode": "light",
@@ -108,11 +108,22 @@
         }
       ]
     },
+    "icons": {
+      "favicon": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/dipsy-doo.webp",
+      "themeColor": "#251938"
+    },
     "seo": {
       "siteName": "Dipsy Doo!",
-      "title": "Dipsy Doo! | Clases de swing y Rockabilly Jive en CDMX",
-      "description": "Clases presenciales de Lindy Hop, Rockabilly Jive y Charleston en la Ciudad de México.",
-      "canonicalOrigin": "https://dipsydoo.com.mx"
+      "title": "Clases de swing y Rockabilly Jive en CDMX | Dipsy Doo!",
+      "description": "Aprende Lindy Hop, Rockabilly Jive y Charleston en Ciudad de México. Puedes empezar sin experiencia y venir sin pareja. Consulta horarios y sedes.",
+      "canonicalOrigin": "https://dipsydoo.com.mx",
+      "defaultImage": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-hero-comunidad.webp",
+      "openGraph": {
+        "locale": "es_MX"
+      },
+      "twitter": {
+        "card": "summary_large_image"
+      }
     }
   }
 }

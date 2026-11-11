@@ -12,7 +12,7 @@ A Spanish-language catalog for in-person dance classes in Mexico City.
 
 ## Authoring and preview
 
-From this draft root, run `node tools/build-site.mjs` to regenerate the native route and component payloads. Run `node tools/check-site.mjs` to validate routes, anchors, component references, headings, test indexing, and link structure.
+From this draft root, run `node tools/build-site.mjs` to regenerate the native route and component payloads. Run `node tools/check-site.mjs` to validate routes, anchors, component references, headings, canonical URLs, SEO metadata, and link structure.
 
 The school-supplied photos and four H.264/AAC MP4 videos use public Zoolanding CDN URLs. Web copies are compressed and video metadata is placed before the media payload for streaming. Keep original client materials outside the repository.
 
@@ -26,4 +26,8 @@ Run `npm start` from the hub and open the [local preview](http://127.0.0.1:4200/
 - Publish exact studio addresses, workshop dates, rules and the gender-violence prevention protocol after receiving verified publishable information.
 - The supplied social-dance code is available as readable text and links to its original posters. Obtain the separately requested formal prevention protocol before adding it.
 - Route links open the destination from the top. Section shortcuts use same-page fragments so scrolling runs after the target content is present.
-- Keep the draft out of search results while reviewing it in test. Follow the hub's [draft lifecycle](https://github.com/LynxPardelle/zoolandingpage/blob/main/docs/11-draft-lifecycle.md) for release.
+- Production pages allow indexing. The draft deploy tool applies `noindex,nofollow` to page metadata when it builds the test package. Follow the hub's [draft lifecycle](https://github.com/LynxPardelle/zoolandingpage/blob/main/docs/11-draft-lifecycle.md) for release.
+
+## Sitemap
+
+Run `node tools/build-sitemap.mjs` to print the production sitemap from the configured public routes. When routes change, regenerate it for the dedicated production CloudFront function and check that the live sitemap matches.

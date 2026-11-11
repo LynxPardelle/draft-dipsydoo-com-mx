@@ -6,6 +6,8 @@ const read = (name) => JSON.parse(readFileSync(new URL(name, root), 'utf8'));
 const site = read('site-config.json');
 const pages = new Map();
 const media = new Set();
+const titles = new Set();
+const descriptions = new Set();
 
 for (const route of site.routes) {
   assert(!pages.has(route.path), 'Duplicate route ' + route.path);
@@ -13,7 +15,12 @@ for (const route of site.routes) {
   const definitions = read(route.pageId + '/components.json').components;
   const components = new Map(definitions.map(component => [component.id, component]));
   assert.equal(components.size, definitions.length, 'Duplicate component IDs on ' + route.path);
-  assert.equal(page.seo.robots, 'noindex,nofollow');
+  assert.equal(page.seo.robots, 'index,follow');
+  assert.equal(page.seo.canonical, new URL(route.path, site.site.seo.canonicalOrigin).href);
+  assert(page.seo.title.es?.trim() && !titles.has(page.seo.title.es), 'Missing or duplicate title on ' + route.path);
+  assert(page.seo.description.es?.trim() && !descriptions.has(page.seo.description.es), 'Missing or duplicate description on ' + route.path);
+  titles.add(page.seo.title.es);
+  descriptions.add(page.seo.description.es);
   assert.equal(definitions.filter(component => component.config.tag === 'h1').length, 1);
   for (const id of page.rootIds) assert(components.has(id), 'Missing page root ' + id);
   const anchors = new Set(definitions.map(component => component.config.id).filter(Boolean));
@@ -52,4 +59,4 @@ for (const [path, page] of pages) {
   }
 }
 
-console.log(JSON.stringify({ok: true, pages: pages.size, media: media.size, checks: ['routes', 'anchors', 'component references', 'headings', 'test indexing', 'contact URL structure', 'public media URLs']}, null, 2));
+console.log(JSON.stringify({ok: true, pages: pages.size, media: media.size, checks: ['routes', 'anchors', 'component references', 'headings', 'canonical URLs and unique SEO metadata', 'contact URL structure', 'public media URLs']}, null, 2));

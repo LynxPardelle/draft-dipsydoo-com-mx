@@ -24,7 +24,7 @@
       "type": "text",
       "config": {
         "tag": "h1",
-        "text": "Tres formas de bailar",
+        "text": "Clases de swing y rock and roll en CDMX",
         "styles": {
           "margin": "0",
           "fontWeight": "700",
@@ -41,7 +41,7 @@
       "type": "text",
       "config": {
         "tag": "p",
-        "text": "Del jazz swing al rock and roll, cada estilo tiene su propia manera de marcar el ritmo y jugar con la música.",
+        "text": "Elige entre Lindy Hop, Rockabilly Jive y Charleston. Puedes empezar desde cero en clases presenciales y venir sin pareja.",
         "styles": {
           "margin": "0",
           "fontWeight": "400",
