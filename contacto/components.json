@@ -218,7 +218,7 @@
       "type": "text",
       "config": {
         "tag": "h2",
-        "text": "Antes de tu primera clase",
+        "text": "Preguntas frecuentes antes de tu primera clase",
         "styles": {
           "margin": "0",
           "fontWeight": "700",
@@ -230,47 +230,297 @@
       }
     },
     {
-      "id": "questions",
-      "type": "accordion",
+      "id": "faq-question-partner",
+      "type": "text",
       "config": {
-        "mode": "multiple",
-        "items": [
-          {
-            "id": "partner",
-            "title": "¿Puedo ir sin pareja?",
-            "content": "Sí. En clase se hace rotación de pareja."
-          },
-          {
-            "id": "experience",
-            "title": "¿Puedo empezar si nunca he bailado?",
-            "content": "Sí. Puedes incorporarte desde nivel principiante."
-          },
-          {
-            "id": "observe",
-            "title": "¿Puedo observar una clase?",
-            "content": "Sí. Escribe por WhatsApp para preguntar por el grupo y el punto de encuentro."
-          },
-          {
-            "id": "single",
-            "title": "¿Puedo pagar una sola clase?",
-            "content": "Las clases se manejan por mensualidad. Consulta las opciones de acuerdo con tu frecuencia semanal."
-          },
-          {
-            "id": "format",
-            "title": "¿Cómo se desarrolla una clase?",
-            "content": "Comenzamos con calentamiento, trabajamos las bases técnicas y practicamos en pareja. Recibirás retroalimentación durante la clase."
-          },
-          {
-            "id": "social",
-            "title": "¿También organizan bailes sociales?",
-            "content": "Sí. La escuela anuncia un baile social gratuito cada mes. Escríbenos para confirmar la próxima fecha y el lugar."
-          }
+        "tag": "h3",
+        "text": "¿Necesito llevar pareja?",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "20px",
+          "lineHeight": "1.25"
+        }
+      }
+    },
+    {
+      "id": "faq-answer-partner",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "No. Puedes venir sin pareja. Durante la clase rotamos para practicar con distintas personas.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginTop": "8px"
+        }
+      }
+    },
+    {
+      "id": "faq-partner",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "faq-question-partner",
+          "faq-answer-partner"
         ],
-        "defaultItemContainerClasses": "ank-borderBottom-1px__solid__HASHdecddd",
-        "defaultItemButtonConfig": {
-          "classes": "ank-display-flex ank-width-100per ank-padding-14px ank-bg-transparent ank-color-HASH004d9d ank-border-0 ank-textAlign-left ank-fontWeight-700"
-        },
-        "defaultItemPanelClasses": "ank-padding-14px"
+        "styles": {
+          "paddingBlock": "16px",
+          "borderTop": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "faq-question-experience",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "¿Puedo aprender si nunca he bailado?",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "20px",
+          "lineHeight": "1.25"
+        }
+      }
+    },
+    {
+      "id": "faq-answer-experience",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Sí. Puedes empezar desde nivel principiante en Lindy Hop, Rockabilly Jive o Charleston.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginTop": "8px"
+        }
+      }
+    },
+    {
+      "id": "faq-experience",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "faq-question-experience",
+          "faq-answer-experience"
+        ],
+        "styles": {
+          "paddingBlock": "16px",
+          "borderTop": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "faq-question-observe",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "¿Puedo observar una clase?",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "20px",
+          "lineHeight": "1.25"
+        }
+      }
+    },
+    {
+      "id": "faq-answer-observe",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Sí. Escribe por WhatsApp antes de ir para confirmar qué grupo puedes observar y dónde se reúne.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginTop": "8px"
+        }
+      }
+    },
+    {
+      "id": "faq-observe",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "faq-question-observe",
+          "faq-answer-observe"
+        ],
+        "styles": {
+          "paddingBlock": "16px",
+          "borderTop": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "faq-question-join",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "¿Cómo confirmo cupo para mi primera clase?",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "20px",
+          "lineHeight": "1.25"
+        }
+      }
+    },
+    {
+      "id": "faq-answer-join",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Elige un estilo y horario. Escríbenos por WhatsApp con el grupo que te interesa para confirmar cupo y el punto de encuentro.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginTop": "8px"
+        }
+      }
+    },
+    {
+      "id": "faq-join",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "faq-question-join",
+          "faq-answer-join"
+        ],
+        "styles": {
+          "paddingBlock": "16px",
+          "borderTop": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "faq-question-single",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "¿Puedo pagar una sola clase?",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "20px",
+          "lineHeight": "1.25"
+        }
+      }
+    },
+    {
+      "id": "faq-answer-single",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Las clases se manejan por mensualidad. Consulta las opciones de acuerdo con tu frecuencia semanal.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginTop": "8px"
+        }
+      }
+    },
+    {
+      "id": "faq-single",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "faq-question-single",
+          "faq-answer-single"
+        ],
+        "styles": {
+          "paddingBlock": "16px",
+          "borderTop": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "faq-question-format",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "¿Cómo se desarrolla una clase?",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "20px",
+          "lineHeight": "1.25"
+        }
+      }
+    },
+    {
+      "id": "faq-answer-format",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Comenzamos con calentamiento, trabajamos las bases técnicas y practicamos en pareja. Recibirás retroalimentación durante la clase.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginTop": "8px"
+        }
+      }
+    },
+    {
+      "id": "faq-format",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "faq-question-format",
+          "faq-answer-format"
+        ],
+        "styles": {
+          "paddingBlock": "16px",
+          "borderTop": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "faq-question-social",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "¿También organizan bailes sociales?",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "20px",
+          "lineHeight": "1.25"
+        }
+      }
+    },
+    {
+      "id": "faq-answer-social",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Sí. La escuela anuncia un baile social gratuito cada mes. Escríbenos para confirmar la próxima fecha y el lugar.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginTop": "8px"
+        }
+      }
+    },
+    {
+      "id": "faq-social",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "faq-question-social",
+          "faq-answer-social"
+        ],
+        "styles": {
+          "paddingBlock": "16px",
+          "borderTop": "1px solid #decddd"
+        }
       }
     },
     {
@@ -279,10 +529,19 @@
       "config": {
         "tag": "div",
         "components": [
-          "questions"
+          "faq-partner",
+          "faq-experience",
+          "faq-observe",
+          "faq-join",
+          "faq-single",
+          "faq-format",
+          "faq-social"
         ],
         "styles": {
-          "marginTop": "16px"
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "8px 26px",
+          "marginTop": "22px"
         }
       }
     },
