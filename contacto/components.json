@@ -116,7 +116,7 @@
       "id": "whatsapp",
       "type": "link",
       "config": {
-        "text": "Abrir WhatsApp ↗",
+        "text": "WhatsApp +52 55 4031 2687 ↗",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20gustar%C3%ADa%20saber%20qu%C3%A9%20grupos%20tienen%20disponibles.",
         "scrollRestoration": {
           "mode": "top",

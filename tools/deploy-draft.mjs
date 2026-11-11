@@ -336,6 +336,13 @@ async function main() {
   if (files.length === 0) {
     throw new Error(`No JSON draft files found under ${draftRoot}`);
   }
+  if (environment === 'test' && domain === 'dipsydoo.com.mx') {
+    for (const file of files) {
+      if (file.kind === 'page-config') {
+        file.content.seo = { ...file.content.seo, robots: 'noindex,nofollow' };
+      }
+    }
+  }
   assertValidRuntimeDataSourceConditionReferences({ version: 1, domain, stage: 'draft', files });
   const readiness = await validateDraftFeatureReadiness({ domain, environment, mode: environment, files });
   if (!readiness.ok) {

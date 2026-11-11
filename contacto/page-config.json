@@ -8,12 +8,12 @@
   "modalRootIds": [],
   "seo": {
     "title": {
-      "es": "Contacto y preguntas frecuentes | Dipsy Doo!"
+      "es": "WhatsApp y primera clase de baile | Dipsy Doo!"
     },
     "description": {
-      "es": "Contacta con Dipsy Doo! por WhatsApp y resuelve tus dudas antes de clase."
+      "es": "Pregunta por cupos y sedes por WhatsApp. Descubre si necesitas pareja o experiencia, cómo se desarrolla una clase y si puedes observarla."
     },
     "canonical": "https://dipsydoo.com.mx/contacto",
-    "robots": "noindex,nofollow"
+    "robots": "index,follow"
   }
 }

@@ -8,12 +8,41 @@
   "modalRootIds": [],
   "seo": {
     "title": {
-      "es": "Dipsy Doo! | Clases de swing y Rockabilly Jive en CDMX"
+      "es": "Clases de swing y Rockabilly Jive en CDMX | Dipsy Doo!"
     },
     "description": {
-      "es": "Clases presenciales de Lindy Hop, Rockabilly Jive y Charleston en la Ciudad de México."
+      "es": "Aprende Lindy Hop, Rockabilly Jive y Charleston en Ciudad de México. Puedes empezar sin experiencia y venir sin pareja. Consulta horarios y sedes."
     },
     "canonical": "https://dipsydoo.com.mx/",
-    "robots": "noindex,nofollow"
+    "robots": "index,follow"
+  },
+  "structuredData": {
+    "entries": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://dipsydoo.com.mx/#organizacion",
+        "name": "Dipsy Doo!",
+        "url": "https://dipsydoo.com.mx/",
+        "logo": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/dipsy-doo.webp",
+        "description": "Escuela de Lindy Hop, Rockabilly Jive y Charleston en Ciudad de México.",
+        "telephone": "+525540312687",
+        "areaServed": {
+          "@type": "City",
+          "name": "Ciudad de México"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://dipsydoo.com.mx/#sitio",
+        "name": "Dipsy Doo!",
+        "url": "https://dipsydoo.com.mx/",
+        "inLanguage": "es-MX",
+        "publisher": {
+          "@id": "https://dipsydoo.com.mx/#organizacion"
+        }
+      }
+    ]
   }
 }
