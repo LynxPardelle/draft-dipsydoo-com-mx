@@ -7,7 +7,7 @@ A Spanish-language catalog for in-person dance classes in Mexico City.
 | `/` | School introduction and links to the catalog |
 | `/clases` | Lindy Hop, Rockabilly Jive, Charleston, and the class format |
 | `/horarios-y-sedes` | November–December 2026 class schedule, four venue areas, and monthly tuition |
-| `/comunidad` | Social dance, school videos, event photographs, and the supplied code of conduct |
+| `/comunidad` | Social dance, school videos, event photographs, student testimonials, and the supplied code of conduct |
 | `/contacto` | WhatsApp contact and frequently asked questions |
 
 ## Authoring and preview
@@ -22,7 +22,8 @@ Run `npm start` from the hub and open the [local preview](http://127.0.0.1:4200/
 
 - The business WhatsApp destination was confirmed by the client during this update. Keep all contextual contact links on that same destination.
 - Update the published schedule after December 2026. The supplied schedule poster takes precedence over the older price range in the introductory questionnaire.
-- Publish exact studio addresses, workshop dates, testimonials, rules and the gender-violence prevention protocol after receiving verified publishable information.
+- The testimonials are anonymous excerpts from the school form that invited public testimonials.
+- Publish exact studio addresses, workshop dates, rules and the gender-violence prevention protocol after receiving verified publishable information.
 - The supplied social-dance code is available as readable text and links to its original posters. Obtain the separately requested formal prevention protocol before adding it.
 - Route links open the destination from the top. Section shortcuts use same-page fragments so scrolling runs after the target content is present.
 - Keep the draft out of search results while reviewing it in test. Follow the hub's [draft lifecycle](https://github.com/LynxPardelle/zoolandingpage/blob/main/docs/11-draft-lifecycle.md) for release.

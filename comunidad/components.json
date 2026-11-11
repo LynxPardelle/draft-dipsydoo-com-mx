@@ -124,6 +124,26 @@
       }
     },
     {
+      "id": "communityTestimonialsShortcut",
+      "type": "link",
+      "config": {
+        "text": "Testimonios",
+        "href": "#testimonios",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
       "id": "communityConductShortcut",
       "type": "link",
       "config": {
@@ -151,6 +171,7 @@
         "components": [
           "communityVideosShortcut",
           "communityGalleryShortcut",
+          "communityTestimonialsShortcut",
           "communityConductShortcut"
         ],
         "styles": {
@@ -722,6 +743,262 @@
           "paddingBlock": "clamp(40px, 6vw, 76px)"
         },
         "id": "galeria",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "testimonialsHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Testimonios",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(27px, 4vw, 42px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em"
+        }
+      }
+    },
+    {
+      "id": "testimonialsIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Respuestas del alumnado al formulario de la escuela.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "12px 26px"
+        }
+      }
+    },
+    {
+      "id": "testimonialQuote-0",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "«Me encanta la paciencia y la tolerancia de los profesores, fomentan un excelente ambiente de aprendizaje.»",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(18px, 2vw, 22px)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "testimonial-0",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "testimonialQuote-0"
+        ],
+        "styles": {
+          "margin": "0",
+          "padding": "16px 18px",
+          "borderInlineStart": "3px solid #d61983",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialQuote-1",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "«Los compañeros de las clases son buena onda y me he sentido en un buen ambiente incluyendo a los maestros.»",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(18px, 2vw, 22px)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "testimonial-1",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "testimonialQuote-1"
+        ],
+        "styles": {
+          "margin": "0",
+          "padding": "16px 18px",
+          "borderInlineStart": "3px solid #d61983",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialQuote-2",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "«… he adquirido confianza y fluidez para disfrutar del swing»",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(18px, 2vw, 22px)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "testimonial-2",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "testimonialQuote-2"
+        ],
+        "styles": {
+          "margin": "0",
+          "padding": "16px 18px",
+          "borderInlineStart": "3px solid #d61983",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialQuote-3",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "«La forma de enseñanza usada por los maestros me parece adecuada con un buen trato para cada alumno.»",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(18px, 2vw, 22px)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "testimonial-3",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "testimonialQuote-3"
+        ],
+        "styles": {
+          "margin": "0",
+          "padding": "16px 18px",
+          "borderInlineStart": "3px solid #d61983",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialQuote-4",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "«Saber que puedo día a día aprender algo más, me hace muy feliz y entender que en el baile siempre hay algo nuevo que aprender.»",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(18px, 2vw, 22px)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "testimonial-4",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "testimonialQuote-4"
+        ],
+        "styles": {
+          "margin": "0",
+          "padding": "16px 18px",
+          "borderInlineStart": "3px solid #d61983",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialQuote-5",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "«… es agradable aprender con algo que me gusta hacer»",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(18px, 2vw, 22px)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "testimonial-5",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "testimonialQuote-5"
+        ],
+        "styles": {
+          "margin": "0",
+          "padding": "16px 18px",
+          "borderInlineStart": "3px solid #d61983",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialsGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "testimonial-0",
+          "testimonial-1",
+          "testimonial-2",
+          "testimonial-3",
+          "testimonial-4",
+          "testimonial-5"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "25px"
+        }
+      }
+    },
+    {
+      "id": "testimonials",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "testimonialsHeading",
+          "testimonialsIntro",
+          "testimonialsGrid"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)"
+        },
+        "id": "testimonios",
         "tabindex": -1
       }
     },
@@ -1614,6 +1891,7 @@
           "social",
           "communityVideos",
           "communityGallery",
+          "testimonials",
           "conduct",
           "communityNext"
         ],

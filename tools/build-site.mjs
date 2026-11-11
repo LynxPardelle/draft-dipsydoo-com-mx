@@ -55,6 +55,14 @@ const faq = [
   {id: 'format', title: '¿Cómo se desarrolla una clase?', content: 'Comenzamos con calentamiento, trabajamos las bases técnicas y practicamos en pareja. Recibirás retroalimentación durante la clase.'},
   {id: 'social', title: '¿También organizan bailes sociales?', content: 'Sí. La escuela anuncia un baile social gratuito cada mes. Escríbenos para confirmar la próxima fecha y el lugar.'}
 ];
+const testimonials = [
+  'Me encanta la paciencia y la tolerancia de los profesores, fomentan un excelente ambiente de aprendizaje.',
+  'Los compañeros de las clases son buena onda y me he sentido en un buen ambiente incluyendo a los maestros.',
+  '… he adquirido confianza y fluidez para disfrutar del swing',
+  'La forma de enseñanza usada por los maestros me parece adecuada con un buen trato para cada alumno.',
+  'Saber que puedo día a día aprender algo más, me hace muy feliz y entender que en el baile siempre hay algo nuevo que aprender.',
+  '… es agradable aprender con algo que me gusta hacer'
+];
 
 let components = [];
 const add = (id, type, config) => {
@@ -219,6 +227,7 @@ function renderCommunity() {
     box('communityShortcuts', [
       link('communityVideosShortcut', 'Videos de la comunidad', '#momentos'),
       link('communityGalleryShortcut', 'Galería de encuentros', '#galeria'),
+      link('communityTestimonialsShortcut', 'Testimonios', '#testimonios'),
       link('communityConductShortcut', 'Código de conducta', '#convivencia')
     ], {...width, ...flex, paddingBlock: '18px'}, 'nav', {ariaLabel: 'En esta página'}),
     box('social', [
@@ -256,6 +265,15 @@ function renderCommunity() {
         ], {margin: '0'}, 'figure')
       ], {...grid, marginTop: '24px'})
     ], section, 'section', sectionId('galeria')),
+    box('testimonials', [
+      heading('testimonialsHeading', 'Testimonios'),
+      text('testimonialsIntro', 'Respuestas del alumnado al formulario de la escuela.', 'p', {marginBlock: '12px 26px'}),
+      box('testimonialsGrid', testimonials.map((quote, index) => box('testimonial-' + index, [
+        text('testimonialQuote-' + index, '«' + quote + '»', 'p', {
+          fontFamily: 'Georgia, serif', fontSize: 'clamp(18px, 2vw, 22px)', lineHeight: '1.5'
+        })
+      ], {margin: '0', padding: '16px 18px', borderInlineStart: '3px solid ' + pink, background: '#ffffff'}, 'figure')), grid)
+    ], section, 'section', sectionId('testimonios')),
     box('conduct', [box('conductLayout', [
       text('conductKicker', 'Cuidemos la pista', 'p', {...eyebrow, color: blue}),
       heading('conductHeading', 'Bailar con respeto'),
