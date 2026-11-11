@@ -8,12 +8,12 @@
   "modalRootIds": [],
   "seo": {
     "title": {
-      "es": "Horarios, sedes y colegiaturas | Dipsy Doo!"
+      "es": "Horarios, sedes y precios de clases en CDMX | Dipsy Doo!"
     },
     "description": {
-      "es": "Consulta los horarios de clases y las colegiaturas de noviembre–diciembre de 2026."
+      "es": "Consulta los horarios de baile en Guerrero, Nueva Santa María, Jardín Pushkin y Parque Hundido, y las mensualidades de noviembre–diciembre de 2026."
     },
     "canonical": "https://dipsydoo.com.mx/horarios-y-sedes",
-    "robots": "noindex,nofollow"
+    "robots": "index,follow"
   }
 }
