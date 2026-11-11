@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "domain": "dipsydoo.com.mx",
+  "pageId": "contacto",
+  "rootIds": [
+    "page"
+  ],
+  "modalRootIds": [],
+  "seo": {
+    "title": {
+      "es": "Contacto y preguntas frecuentes | Dipsy Doo!"
+    },
+    "description": {
+      "es": "Contacta con Dipsy Doo! por WhatsApp y resuelve tus dudas antes de clase."
+    },
+    "canonical": "https://dipsydoo.com.mx/contacto",
+    "robots": "noindex,nofollow"
+  }
+}

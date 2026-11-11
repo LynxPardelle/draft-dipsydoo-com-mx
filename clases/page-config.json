@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "domain": "dipsydoo.com.mx",
+  "pageId": "clases",
+  "rootIds": [
+    "page"
+  ],
+  "modalRootIds": [],
+  "seo": {
+    "title": {
+      "es": "Clases de swing, Jive y Charleston | Dipsy Doo!"
+    },
+    "description": {
+      "es": "Conoce los estilos que puedes aprender y qué esperar de tu primera clase."
+    },
+    "canonical": "https://dipsydoo.com.mx/clases",
+    "robots": "noindex,nofollow"
+  }
+}

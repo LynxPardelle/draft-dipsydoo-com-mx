@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "domain": "dipsydoo.com.mx",
+  "pageId": "comunidad",
+  "rootIds": [
+    "page"
+  ],
+  "modalRootIds": [],
+  "seo": {
+    "title": {
+      "es": "Comunidad y baile social | Dipsy Doo!"
+    },
+    "description": {
+      "es": "Descubre los bailes sociales de Dipsy Doo! en la Ciudad de México."
+    },
+    "canonical": "https://dipsydoo.com.mx/comunidad",
+    "robots": "noindex,nofollow"
+  }
+}

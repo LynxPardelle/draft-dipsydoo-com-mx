@@ -1,0 +1,1924 @@
+{
+  "version": 1,
+  "domain": "dipsydoo.com.mx",
+  "pageId": "comunidad",
+  "components": [
+    {
+      "id": "introKicker",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Dipsy Doo! · Comunidad",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "800",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "pageHeading",
+      "type": "text",
+      "config": {
+        "tag": "h1",
+        "text": "El swing también se baila en comunidad",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(33px, 5vw, 64px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em",
+          "marginBlock": "10px 16px"
+        }
+      }
+    },
+    {
+      "id": "introDescription",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Entre clases y bailes sociales hay espacio para probar lo aprendido, escuchar música y conocer a otras personas que disfrutan bailar.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontSize": "clamp(17px, 2vw, 21px)",
+          "maxWidth": "57ch"
+        }
+      }
+    },
+    {
+      "id": "pageIntroLayout",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "introKicker",
+          "pageHeading",
+          "introDescription"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)"
+        }
+      }
+    },
+    {
+      "id": "pageIntro",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "pageIntroLayout"
+        ],
+        "styles": {
+          "background": "linear-gradient(115deg, #ffdfc7, #f6d9ef 54%, #deb6d7)",
+          "borderBlock": "1px solid #decddd"
+        }
+      }
+    },
+    {
+      "id": "communityVideosShortcut",
+      "type": "link",
+      "config": {
+        "text": "Videos de la comunidad",
+        "href": "#momentos",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "communityGalleryShortcut",
+      "type": "link",
+      "config": {
+        "text": "Galería de encuentros",
+        "href": "#galeria",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "communityTestimonialsShortcut",
+      "type": "link",
+      "config": {
+        "text": "Testimonios",
+        "href": "#testimonios",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "communityConductShortcut",
+      "type": "link",
+      "config": {
+        "text": "Código de conducta",
+        "href": "#convivencia",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "communityShortcuts",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "components": [
+          "communityVideosShortcut",
+          "communityGalleryShortcut",
+          "communityTestimonialsShortcut",
+          "communityConductShortcut"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "12px 22px",
+          "paddingBlock": "18px"
+        },
+        "ariaLabel": "En esta página"
+      }
+    },
+    {
+      "id": "socialHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Baile social",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(27px, 4vw, 42px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em"
+        }
+      }
+    },
+    {
+      "id": "socialDetails",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "El calendario de la escuela anuncia un baile social gratuito cada mes. Pregunta por la próxima fecha y por talleres especiales.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "12px 18px"
+        }
+      }
+    },
+    {
+      "id": "socialContact",
+      "type": "link",
+      "config": {
+        "text": "Preguntar por el próximo baile",
+        "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFCu%C3%A1ndo%20ser%C3%A1%20su%20pr%C3%B3ximo%20baile%20social%3F",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "white",
+          "fontWeight": "700",
+          "padding": "12px 20px",
+          "borderRadius": "28px",
+          "background": "#004d9d",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "communityCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "socialHeading",
+          "socialDetails",
+          "socialContact"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "communityPhoto",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-comunidad.webp",
+        "alt": "Grupo de Dipsy Doo! reunido en un quiosco al aire libre.",
+        "width": 1800,
+        "height": 1800,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "aspectRatio": "4 / 3",
+          "objectFit": "cover",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
+      "id": "communityFigure",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "communityPhoto"
+        ],
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "social",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "communityCopy",
+          "communityFigure"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)",
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "25px",
+          "alignItems": "center"
+        }
+      }
+    },
+    {
+      "id": "communityVideosHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Momentos que se bailan juntos",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(27px, 4vw, 42px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em"
+        }
+      }
+    },
+    {
+      "id": "communityVideosIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "El baile continúa fuera de clase, entre encuentros, música y presentaciones de la comunidad.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "12px 24px"
+        }
+      }
+    },
+    {
+      "id": "communityDancePlayer",
+      "type": "media",
+      "config": {
+        "tag": "video",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-comunidad.mp4",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "aspectRatio": "16 / 9",
+          "maxHeight": "none",
+          "objectFit": "contain",
+          "background": "#251938",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
+      "id": "communityDanceCaption",
+      "type": "text",
+      "config": {
+        "tag": "figcaption",
+        "text": "Nuestra comunidad",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "marginTop": "12px",
+          "fontSize": "20px"
+        }
+      }
+    },
+    {
+      "id": "communityDanceDescription",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Un encuentro de baile compartido por Dipsy Doo!",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginTop": "5px",
+          "maxWidth": "55ch"
+        }
+      }
+    },
+    {
+      "id": "communityDanceDirect",
+      "type": "link",
+      "config": {
+        "text": "Abrir video de nuestra comunidad ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-comunidad.mp4",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "communityDance",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "communityDancePlayer",
+          "communityDanceCaption",
+          "communityDanceDescription",
+          "communityDanceDirect"
+        ],
+        "styles": {
+          "margin": "0",
+          "minWidth": "0"
+        },
+        "ariaLabel": "Nuestra comunidad"
+      }
+    },
+    {
+      "id": "communityPerformancePlayer",
+      "type": "media",
+      "config": {
+        "tag": "video",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-dia-de-muertos.mp4",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "aspectRatio": "16 / 9",
+          "maxHeight": "none",
+          "objectFit": "contain",
+          "background": "#251938",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
+      "id": "communityPerformanceCaption",
+      "type": "text",
+      "config": {
+        "tag": "figcaption",
+        "text": "Día de Muertos",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "marginTop": "12px",
+          "fontSize": "20px"
+        }
+      }
+    },
+    {
+      "id": "communityPerformanceDescription",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Una coreografía de la comunidad durante su presentación de Día de Muertos.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginTop": "5px",
+          "maxWidth": "55ch"
+        }
+      }
+    },
+    {
+      "id": "communityPerformanceDirect",
+      "type": "link",
+      "config": {
+        "text": "Abrir video de día de muertos ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-dia-de-muertos.mp4",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "communityPerformance",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "communityPerformancePlayer",
+          "communityPerformanceCaption",
+          "communityPerformanceDescription",
+          "communityPerformanceDirect"
+        ],
+        "styles": {
+          "margin": "0",
+          "minWidth": "0"
+        },
+        "ariaLabel": "Día de Muertos"
+      }
+    },
+    {
+      "id": "communityVideoGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "communityDance",
+          "communityPerformance"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "25px"
+        }
+      }
+    },
+    {
+      "id": "communityVideos",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "communityVideosHeading",
+          "communityVideosIntro",
+          "communityVideoGrid"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)"
+        },
+        "id": "momentos",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "communityGalleryHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "De la clase a los encuentros",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(27px, 4vw, 42px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em"
+        }
+      }
+    },
+    {
+      "id": "anniversaryPhoto",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-aniversario.webp",
+        "alt": "Foto grupal durante el primer aniversario de Dipsy Doo!.",
+        "width": 1800,
+        "height": 1800,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "aspectRatio": "4 / 3",
+          "objectFit": "cover",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
+      "id": "anniversaryCaption",
+      "type": "text",
+      "config": {
+        "tag": "figcaption",
+        "text": "Nuestro primer aniversario",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "marginTop": "12px"
+        }
+      }
+    },
+    {
+      "id": "anniversaryFigure",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "anniversaryPhoto",
+          "anniversaryCaption"
+        ],
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "performancePhoto",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-dia-de-muertos.webp",
+        "alt": "Integrantes de Dipsy Doo! al finalizar una presentación de Día de Muertos.",
+        "width": 1440,
+        "height": 1440,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "aspectRatio": "4 / 3",
+          "objectFit": "cover",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
+      "id": "performanceCaption",
+      "type": "text",
+      "config": {
+        "tag": "figcaption",
+        "text": "Día de Muertos en la pista",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "marginTop": "12px"
+        }
+      }
+    },
+    {
+      "id": "performanceFigure",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "performancePhoto",
+          "performanceCaption"
+        ],
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "teamPhoto",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-equipo.webp",
+        "alt": "Integrantes de la comunidad reunidos para una foto de grupo.",
+        "width": 860,
+        "height": 591,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "aspectRatio": "4 / 3",
+          "objectFit": "cover",
+          "borderRadius": "8px"
+        }
+      }
+    },
+    {
+      "id": "teamCaption",
+      "type": "text",
+      "config": {
+        "tag": "figcaption",
+        "text": "Compartir también es parte del baile",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "marginTop": "12px"
+        }
+      }
+    },
+    {
+      "id": "teamFigure",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "teamPhoto",
+          "teamCaption"
+        ],
+        "styles": {
+          "margin": "0"
+        }
+      }
+    },
+    {
+      "id": "communityGalleryGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "anniversaryFigure",
+          "performanceFigure",
+          "teamFigure"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "25px",
+          "marginTop": "24px"
+        }
+      }
+    },
+    {
+      "id": "communityGallery",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "communityGalleryHeading",
+          "communityGalleryGrid"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)"
+        },
+        "id": "galeria",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "testimonialsHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Testimonios",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(27px, 4vw, 42px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em"
+        }
+      }
+    },
+    {
+      "id": "testimonialsIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Respuestas del alumnado al formulario de la escuela.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "12px 26px"
+        }
+      }
+    },
+    {
+      "id": "testimonialQuote-0",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "«Me encanta la paciencia y la tolerancia de los profesores, fomentan un excelente ambiente de aprendizaje.»",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(18px, 2vw, 22px)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "testimonial-0",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "testimonialQuote-0"
+        ],
+        "styles": {
+          "margin": "0",
+          "padding": "16px 18px",
+          "borderInlineStart": "3px solid #d61983",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialQuote-1",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "«Los compañeros de las clases son buena onda y me he sentido en un buen ambiente incluyendo a los maestros.»",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(18px, 2vw, 22px)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "testimonial-1",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "testimonialQuote-1"
+        ],
+        "styles": {
+          "margin": "0",
+          "padding": "16px 18px",
+          "borderInlineStart": "3px solid #d61983",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialQuote-2",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "«… he adquirido confianza y fluidez para disfrutar del swing»",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(18px, 2vw, 22px)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "testimonial-2",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "testimonialQuote-2"
+        ],
+        "styles": {
+          "margin": "0",
+          "padding": "16px 18px",
+          "borderInlineStart": "3px solid #d61983",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialQuote-3",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "«La forma de enseñanza usada por los maestros me parece adecuada con un buen trato para cada alumno.»",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(18px, 2vw, 22px)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "testimonial-3",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "testimonialQuote-3"
+        ],
+        "styles": {
+          "margin": "0",
+          "padding": "16px 18px",
+          "borderInlineStart": "3px solid #d61983",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialQuote-4",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "«Saber que puedo día a día aprender algo más, me hace muy feliz y entender que en el baile siempre hay algo nuevo que aprender.»",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(18px, 2vw, 22px)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "testimonial-4",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "testimonialQuote-4"
+        ],
+        "styles": {
+          "margin": "0",
+          "padding": "16px 18px",
+          "borderInlineStart": "3px solid #d61983",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialQuote-5",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "«… es agradable aprender con algo que me gusta hacer»",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(18px, 2vw, 22px)",
+          "lineHeight": "1.5"
+        }
+      }
+    },
+    {
+      "id": "testimonial-5",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "testimonialQuote-5"
+        ],
+        "styles": {
+          "margin": "0",
+          "padding": "16px 18px",
+          "borderInlineStart": "3px solid #d61983",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialsGrid",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "testimonial-0",
+          "testimonial-1",
+          "testimonial-2",
+          "testimonial-3",
+          "testimonial-4",
+          "testimonial-5"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "25px"
+        }
+      }
+    },
+    {
+      "id": "testimonials",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "testimonialsHeading",
+          "testimonialsIntro",
+          "testimonialsGrid"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)"
+        },
+        "id": "testimonios",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "conductKicker",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cuidemos la pista",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "800",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "conductHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Bailar con respeto",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(27px, 4vw, 42px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em"
+        }
+      }
+    },
+    {
+      "id": "conductIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "El código de etiqueta y conducta de Dipsy Doo! nos invita a cuidarnos y disfrutar los bailes sociales.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "14px 22px",
+          "maxWidth": "63ch"
+        }
+      }
+    },
+    {
+      "id": "conductText-0",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Respeta cuando alguien no quiere bailar y acepta su respuesta sin insistir.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "conductRule-0",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "conductText-0"
+        ],
+        "styles": {
+          "paddingBlock": "8px"
+        }
+      }
+    },
+    {
+      "id": "conductText-1",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Ajusta tus movimientos a tu pareja y baila con suavidad.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "conductRule-1",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "conductText-1"
+        ],
+        "styles": {
+          "paddingBlock": "8px"
+        }
+      }
+    },
+    {
+      "id": "conductText-2",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cuida el espacio de baile y recoge tu basura.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "conductRule-2",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "conductText-2"
+        ],
+        "styles": {
+          "paddingBlock": "8px"
+        }
+      }
+    },
+    {
+      "id": "conductText-3",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Cuida tu higiene y lleva cambios de ropa cuando los necesites.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "conductRule-3",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "conductText-3"
+        ],
+        "styles": {
+          "paddingBlock": "8px"
+        }
+      }
+    },
+    {
+      "id": "conductText-4",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Evita los impactos y el contacto inapropiado. Si ocurre, discúlpate y procura que no se repita.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "conductRule-4",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "conductText-4"
+        ],
+        "styles": {
+          "paddingBlock": "8px"
+        }
+      }
+    },
+    {
+      "id": "conductText-5",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Comparte observaciones sobre la forma de bailar solo cuando tu pareja te las pida.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "conductRule-5",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "conductText-5"
+        ],
+        "styles": {
+          "paddingBlock": "8px"
+        }
+      }
+    },
+    {
+      "id": "conductText-6",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Reserva los aéreos para exhibiciones y círculos de jam, con personas con quienes los hayas practicado y acordado.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "conductRule-6",
+      "type": "container",
+      "config": {
+        "tag": "li",
+        "components": [
+          "conductText-6"
+        ],
+        "styles": {
+          "paddingBlock": "8px"
+        }
+      }
+    },
+    {
+      "id": "conductList",
+      "type": "container",
+      "config": {
+        "tag": "ul",
+        "components": [
+          "conductRule-0",
+          "conductRule-1",
+          "conductRule-2",
+          "conductRule-3",
+          "conductRule-4",
+          "conductRule-5",
+          "conductRule-6"
+        ],
+        "styles": {
+          "paddingLeft": "22px",
+          "margin": "0",
+          "maxWidth": "75ch"
+        }
+      }
+    },
+    {
+      "id": "conductSupport",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Si percibes una situación incómoda, avisa a las personas organizadoras para que puedan apoyarte.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "marginBlock": "20px 12px"
+        }
+      }
+    },
+    {
+      "id": "conductPoster1",
+      "type": "link",
+      "config": {
+        "text": "Ver código de conducta · parte 1 ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-codigo-de-conducta-1.webp",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "conductPoster2",
+      "type": "link",
+      "config": {
+        "text": "Ver código de conducta · parte 2 ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-codigo-de-conducta-2.webp",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "conductOriginals",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "conductPoster1",
+          "conductPoster2"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "12px 22px"
+        }
+      }
+    },
+    {
+      "id": "conductLayout",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "conductKicker",
+          "conductHeading",
+          "conductIntro",
+          "conductList",
+          "conductSupport",
+          "conductOriginals"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)"
+        }
+      }
+    },
+    {
+      "id": "conduct",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "conductLayout"
+        ],
+        "styles": {
+          "background": "#f2deef"
+        },
+        "id": "convivencia",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "communityNextHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Encuentra tu siguiente baile",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(27px, 4vw, 42px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em"
+        }
+      }
+    },
+    {
+      "id": "communityNextDetails",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Pregunta por el próximo social, las clases regulares y los talleres especiales disponibles.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "12px 18px"
+        }
+      }
+    },
+    {
+      "id": "communityNextContact",
+      "type": "link",
+      "config": {
+        "text": "Consultar próximas actividades",
+        "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20Me%20gustar%C3%ADa%20conocer%20sus%20pr%C3%B3ximos%20bailes%20sociales%20y%20talleres.",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "white",
+          "fontWeight": "700",
+          "padding": "12px 20px",
+          "borderRadius": "28px",
+          "background": "#004d9d",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "communityNext",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "communityNextHeading",
+          "communityNextDetails",
+          "communityNextContact"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)"
+        }
+      }
+    },
+    {
+      "id": "headerLogo",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/dipsy-doo.webp",
+        "alt": "",
+        "width": 500,
+        "height": 500,
+        "loading": "eager",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "48px",
+          "height": "48px",
+          "borderRadius": "50%"
+        }
+      }
+    },
+    {
+      "id": "brandHome",
+      "type": "link",
+      "config": {
+        "text": "Dipsy Doo!",
+        "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#251938",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "25px",
+          "textDecoration": "none",
+          "gap": "10px"
+        },
+        "components": [
+          "headerLogo"
+        ]
+      }
+    },
+    {
+      "id": "nav-0",
+      "type": "link",
+      "config": {
+        "text": "Inicio",
+        "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "15px",
+          "textUnderlineOffset": "4px",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "nav-1",
+      "type": "link",
+      "config": {
+        "text": "Clases",
+        "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "15px",
+          "textUnderlineOffset": "4px",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "nav-2",
+      "type": "link",
+      "config": {
+        "text": "Horarios y sedes",
+        "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "15px",
+          "textUnderlineOffset": "4px",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "nav-3",
+      "type": "link",
+      "config": {
+        "text": "Comunidad",
+        "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "15px",
+          "textUnderlineOffset": "4px",
+          "textDecoration": "underline"
+        },
+        "ariaCurrent": "page"
+      }
+    },
+    {
+      "id": "nav-4",
+      "type": "link",
+      "config": {
+        "text": "Contacto",
+        "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "fontSize": "15px",
+          "textUnderlineOffset": "4px",
+          "textDecoration": "none"
+        }
+      }
+    },
+    {
+      "id": "menu",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "components": [
+          "nav-0",
+          "nav-1",
+          "nav-2",
+          "nav-3",
+          "nav-4"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "12px 22px",
+          "columnGap": "18px",
+          "rowGap": "0"
+        },
+        "ariaLabel": "Principal"
+      }
+    },
+    {
+      "id": "header",
+      "type": "container",
+      "config": {
+        "tag": "header",
+        "components": [
+          "brandHome",
+          "menu"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "12px 22px",
+          "justifyContent": "space-between",
+          "paddingBlock": "9px"
+        }
+      }
+    },
+    {
+      "id": "footerLogo",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/dipsy-doo.webp",
+        "alt": "Dipsy Doo!",
+        "width": 500,
+        "height": 500,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "76px",
+          "height": "auto",
+          "borderRadius": "50%"
+        }
+      }
+    },
+    {
+      "id": "footerBrand",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Dipsy Doo!",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "26px"
+        }
+      }
+    },
+    {
+      "id": "footerText",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Clases presenciales de baile en Ciudad de México.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerCopy",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "footerBrand",
+          "footerText"
+        ],
+        "styles": {}
+      }
+    },
+    {
+      "id": "footerNav-0",
+      "type": "link",
+      "config": {
+        "text": "Inicio",
+        "href": "/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-1",
+      "type": "link",
+      "config": {
+        "text": "Clases",
+        "href": "/clases",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-2",
+      "type": "link",
+      "config": {
+        "text": "Horarios y sedes",
+        "href": "/horarios-y-sedes",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-3",
+      "type": "link",
+      "config": {
+        "text": "Comunidad",
+        "href": "/comunidad",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNav-4",
+      "type": "link",
+      "config": {
+        "text": "Contacto",
+        "href": "/contacto",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#ffffff",
+          "fontWeight": "700",
+          "fontSize": "14px"
+        }
+      }
+    },
+    {
+      "id": "footerNavigation",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "components": [
+          "footerNav-0",
+          "footerNav-1",
+          "footerNav-2",
+          "footerNav-3",
+          "footerNav-4"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "4px 18px"
+        },
+        "ariaLabel": "Pie de página"
+      }
+    },
+    {
+      "id": "footerLayout",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "footerLogo",
+          "footerCopy",
+          "footerNavigation"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "12px 22px",
+          "paddingBlock": "30px",
+          "justifyContent": "space-between"
+        }
+      }
+    },
+    {
+      "id": "footer",
+      "type": "container",
+      "config": {
+        "tag": "footer",
+        "components": [
+          "footerLayout"
+        ],
+        "styles": {
+          "background": "#251938",
+          "color": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "skip",
+      "type": "link",
+      "config": {
+        "text": "Saltar al contenido",
+        "href": "#contenido",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "justifyContent": "center",
+          "fontSize": "13px",
+          "background": "#f2deef"
+        }
+      }
+    },
+    {
+      "id": "content",
+      "type": "container",
+      "config": {
+        "tag": "main",
+        "components": [
+          "pageIntro",
+          "communityShortcuts",
+          "social",
+          "communityVideos",
+          "communityGallery",
+          "testimonials",
+          "conduct",
+          "communityNext"
+        ],
+        "styles": {},
+        "id": "contenido",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "page",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "skip",
+          "header",
+          "content",
+          "footer"
+        ],
+        "styles": {
+          "minHeight": "100vh",
+          "fontFamily": "Arial, sans-serif",
+          "color": "#251938",
+          "background": "#fff9f3",
+          "lineHeight": "1.55"
+        }
+      }
+    }
+  ]
+}
