@@ -4,6 +4,43 @@
   "pageId": "default",
   "components": [
     {
+      "id": "heroPhoto",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/hero-images/portada-web-1200-20261111.webp",
+        "alt": "",
+        "width": 1200,
+        "height": 900,
+        "loading": "eager",
+        "decoding": "async",
+        "fetchPriority": "high",
+        "styles": {
+          "display": "block",
+          "position": "absolute",
+          "inset": "0",
+          "width": "100%",
+          "height": "100%",
+          "objectFit": "cover",
+          "objectPosition": "center 55%"
+        }
+      }
+    },
+    {
+      "id": "heroShade",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [],
+        "styles": {
+          "position": "absolute",
+          "inset": "0",
+          "pointerEvents": "none",
+          "backgroundImage": "linear-gradient(90deg, rgba(18, 17, 42, .94), rgba(18, 17, 42, .62) 56%, rgba(18, 17, 42, .28))"
+        }
+      }
+    },
+    {
       "id": "heroKicker",
       "type": "text",
       "config": {
@@ -159,6 +196,7 @@
           "boxSizing": "border-box",
           "paddingInline": "clamp(20px, 6vw, 76px)",
           "paddingBlock": "clamp(44px, 7vw, 90px)",
+          "position": "relative",
           "display": "flex",
           "alignItems": "center",
           "minHeight": "min(660px, calc(100svh - 140px))"
@@ -171,14 +209,15 @@
       "config": {
         "tag": "section",
         "components": [
+          "heroPhoto",
+          "heroShade",
           "heroLayout"
         ],
         "styles": {
+          "position": "relative",
+          "overflow": "hidden",
           "color": "#ffffff",
-          "backgroundColor": "#251938",
-          "backgroundImage": "linear-gradient(90deg, rgba(18, 17, 42, .94), rgba(18, 17, 42, .62) 56%, rgba(18, 17, 42, .28)), url(\"https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-hero-comunidad.webp\")",
-          "backgroundSize": "cover",
-          "backgroundPosition": "center 55%"
+          "backgroundColor": "#251938"
         }
       }
     },
