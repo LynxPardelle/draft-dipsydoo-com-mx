@@ -12,7 +12,7 @@ A Spanish-language catalog for in-person dance classes in Mexico City.
 
 ## Authoring and preview
 
-From this draft root, run `node tools/build-site.mjs` to regenerate the native route and component payloads. Run `node tools/check-site.mjs` to validate routes, anchors, component references, headings, canonical URLs, SEO metadata, and link structure.
+From this draft root, run `node tools/build-site.mjs` to regenerate the native route and component payloads. Run `node tools/check-site.mjs` to validate routes, anchors, component references, headings, canonical URLs, SEO metadata, and link structure. Run `node --test tools/check-calendar.test.mjs` to verify calendar downloads on both class pages.
 
 The homepage uses a 1200 × 900 WebP with eager loading and high fetch priority. Keep the original photo outside the public asset bucket and upload a versioned web rendition through the grant-protected uploader.
 
@@ -24,7 +24,9 @@ Run `npm start` from the hub and open the [local preview](http://127.0.0.1:4200/
 
 - The business WhatsApp destination was confirmed by the client during this update. Keep all contextual contact links on that same destination.
 - Update the published schedule after December 2026. The class pages derive their visible timetables from the same group data. The supplied schedule poster takes precedence over the older price range in the introductory questionnaire.
+- When extending the schedule, update `calendarDates` in [tools/build-site.mjs](tools/build-site.mjs) and the expected downloads in [tools/check-calendar.test.mjs](tools/check-calendar.test.mjs). The generated downloads are snapshots of the dates in that window, with times set for Mexico City. Imported events do not follow later site changes; calendar apps control whether imported reminders are kept.
 - The testimonials are anonymous excerpts from the school form that invited public testimonials.
+- Maintain venue descriptions, map links and arrival references in [tools/venues.mjs](tools/venues.mjs). When the school provides verified meeting points and publishable photos, update the venue details and add a `photos` array with a public CDN `src`, descriptive `alt`, `width` and `height` for each image.
 - Publish exact studio addresses, workshop dates, rules and the gender-violence prevention protocol after receiving verified publishable information.
 - The supplied social-dance code is available as readable text and links to its original posters. Obtain the separately requested formal prevention protocol before adding it.
 - Route links open the destination from the top. Section shortcuts use same-page fragments so scrolling runs after the target content is present.

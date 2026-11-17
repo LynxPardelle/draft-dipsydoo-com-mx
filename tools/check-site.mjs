@@ -57,7 +57,12 @@ for (const [path, page] of pages) {
       assert(!url.search, 'Preview parameters in authored links');
     } else {
       assert.equal(url.protocol, 'https:');
-      assert(['wa.me', 'assets.zoolandingpage.com.mx'].includes(url.hostname), 'Unexpected external destination');
+      assert(['wa.me', 'assets.zoolandingpage.com.mx', 'www.google.com'].includes(url.hostname), 'Unexpected external destination');
+      if (url.hostname === 'www.google.com') {
+        assert.equal(url.pathname, '/maps/search/', 'Unexpected Google Maps action');
+        assert.equal(url.searchParams.get('api'), '1');
+        assert(url.searchParams.get('query')?.trim(), 'Missing Google Maps location');
+      }
       if (url.hostname === 'wa.me') {
         assert.equal(url.pathname, '/525540312687', 'Incorrect business WhatsApp destination');
         assert(url.searchParams.get('text'), 'Missing WhatsApp message');
