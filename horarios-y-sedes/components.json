@@ -100,52 +100,689 @@
       }
     },
     {
-      "id": "groups",
-      "type": "accordion",
+      "id": "scheduleCalendarHint",
+      "type": "text",
       "config": {
-        "mode": "multiple",
-        "items": [
-          {
-            "id": "group-0",
-            "title": "Lunes · 17:00 · Rockabilly Jive",
-            "content": "Sede: Nueva Santa María. Mensualidad desde $350 MXN por una hora semanal."
-          },
-          {
-            "id": "group-1",
-            "title": "Lunes · 20:00 · Lindy Hop",
-            "content": "Sede: Guerrero. Mensualidad desde $350 MXN por una hora semanal."
-          },
-          {
-            "id": "group-2",
-            "title": "Jueves · 19:00 · Charleston",
-            "content": "Sede: Guerrero. Mensualidad desde $350 MXN por una hora semanal."
-          },
-          {
-            "id": "group-3",
-            "title": "Jueves · 20:00 · Lindy Hop",
-            "content": "Sede: Guerrero. Mensualidad desde $350 MXN por una hora semanal."
-          },
-          {
-            "id": "group-4",
-            "title": "Viernes · 17:00 · Lindy Hop",
-            "content": "Sede: Nueva Santa María. Mensualidad desde $350 MXN por una hora semanal."
-          },
-          {
-            "id": "group-5",
-            "title": "Sábado · 11:30 · Rockabilly Jive",
-            "content": "Sede: Jardín Pushkin. Mensualidad desde $450 MXN por hora y media semanal."
-          },
-          {
-            "id": "group-6",
-            "title": "Domingo · 11:30 · Lindy Hop",
-            "content": "Sede: Parque Hundido. Mensualidad desde $450 MXN por hora y media semanal."
-          }
-        ],
-        "defaultItemContainerClasses": "ank-borderBottom-1px__solid__HASHdecddd",
-        "defaultItemButtonConfig": {
-          "classes": "ank-display-flex ank-width-100per ank-padding-14px ank-bg-transparent ank-color-HASH004d9d ank-border-0 ank-textAlign-left ank-fontWeight-700"
+        "tag": "p",
+        "text": "Abre «Agregar al calendario» y descarga el archivo .ics de una fecha o de la serie semanal. Al importarlo, revisa que tu app haya guardado los dos avisos: un día antes y una hora antes. Confirma posibles cambios con la escuela.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "maxWidth": "66ch",
+          "marginBlock": "12px 18px"
+        }
+      }
+    },
+    {
+      "id": "group-0-time",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Lunes · 17:00",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "800",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "group-0-style",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Rockabilly Jive",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "marginBlock": "4px 0"
+        }
+      }
+    },
+    {
+      "id": "group-0-venue",
+      "type": "link",
+      "config": {
+        "text": "Nueva Santa María",
+        "href": "#nueva-santa-maria",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
         },
-        "defaultItemPanelClasses": "ank-padding-14px"
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "ariaLabel": "Cómo llegar a Nueva Santa María"
+      }
+    },
+    {
+      "id": "group-0-price",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Desde $350 MXN al mes · 60 min por clase",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-0-calendar",
+      "type": "text",
+      "config": {
+        "tag": "div",
+        "html": "<details><summary class=\"ank-cursor-pointer ank-color-HASH004d9d ank-fontWeight-700 ank-paddingBlock-12px\" aria-label=\"Agregar al calendario: Rockabilly Jive, lunes a las 17:00 en Colonia Nueva Santa María, Azcapotzalco, CDMX\">Agregar al calendario</summary><div><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-semanal-2026-11%0D%0A%20-16%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261116T230000Z%0D%0ADTEND%3A20261117T000000Z%0D%0ARRULE%3AFREQ%3DWEEKLY%3BCOUNT%3D7%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-semanal-2026-11-16.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">Serie semanal</a> <p>Hasta el lun 28 de dic.</p></div><p>Para una sola clase, elige la fecha:</p><ul><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-11-16%40dips%0D%0A%20ydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261116T230000Z%0D%0ADTEND%3A20261117T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-11-16.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 16 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-11-23%40dips%0D%0A%20ydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261123T230000Z%0D%0ADTEND%3A20261124T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-11-23.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 23 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-11-30%40dips%0D%0A%20ydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261130T230000Z%0D%0ADTEND%3A20261201T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-11-30.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 30 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-12-07%40dips%0D%0A%20ydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261207T230000Z%0D%0ADTEND%3A20261208T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-12-07.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 7 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-12-14%40dips%0D%0A%20ydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261214T230000Z%0D%0ADTEND%3A20261215T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-12-14.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 14 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-12-21%40dips%0D%0A%20ydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261221T230000Z%0D%0ADTEND%3A20261222T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-12-21.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 21 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-12-28%40dips%0D%0A%20ydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261228T230000Z%0D%0ADTEND%3A20261229T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-lunes-17-00-nueva-santa-maria-2026-12-28.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 28 de dic</a></li></ul></details>",
+        "styles": {
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-0",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "group-0-time",
+          "group-0-style",
+          "group-0-venue",
+          "group-0-price",
+          "group-0-calendar"
+        ],
+        "styles": {
+          "minWidth": "0",
+          "border": "1px solid #decddd",
+          "borderRadius": "12px",
+          "padding": "16px",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "group-1-time",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Lunes · 20:00",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "800",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "group-1-style",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Lindy Hop",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "marginBlock": "4px 0"
+        }
+      }
+    },
+    {
+      "id": "group-1-venue",
+      "type": "link",
+      "config": {
+        "text": "Guerrero",
+        "href": "#guerrero",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "ariaLabel": "Cómo llegar a Guerrero"
+      }
+    },
+    {
+      "id": "group-1-price",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Desde $350 MXN al mes · 60 min por clase",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-1-calendar",
+      "type": "text",
+      "config": {
+        "tag": "div",
+        "html": "<details><summary class=\"ank-cursor-pointer ank-color-HASH004d9d ank-fontWeight-700 ank-paddingBlock-12px\" aria-label=\"Agregar al calendario: Lindy Hop, lunes a las 20:00 en Colonia Guerrero, Cuauhtémoc, CDMX\">Agregar al calendario</summary><div><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-lunes-20-00-guerrero-semanal-2026-11-16%40dipsydoo.co%0D%0A%20m.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261117T020000Z%0D%0ADTEND%3A20261117T030000Z%0D%0ARRULE%3AFREQ%3DWEEKLY%3BCOUNT%3D7%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-lunes-20-00-guerrero-semanal-2026-11-16.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">Serie semanal</a> <p>Hasta el lun 28 de dic.</p></div><p>Para una sola clase, elige la fecha:</p><ul><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-11-16%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261117T020000Z%0D%0ADTEND%3A20261117T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-11-16.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 16 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-11-23%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261124T020000Z%0D%0ADTEND%3A20261124T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-11-23.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 23 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-11-30%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261201T020000Z%0D%0ADTEND%3A20261201T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-11-30.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 30 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-12-07%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261208T020000Z%0D%0ADTEND%3A20261208T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-12-07.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 7 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-12-14%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261215T020000Z%0D%0ADTEND%3A20261215T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-12-14.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 14 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-12-21%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261222T020000Z%0D%0ADTEND%3A20261222T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-12-21.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 21 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-12-28%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261229T020000Z%0D%0ADTEND%3A20261229T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-lunes-20-00-guerrero-2026-12-28.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">lun 28 de dic</a></li></ul></details>",
+        "styles": {
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-1",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "group-1-time",
+          "group-1-style",
+          "group-1-venue",
+          "group-1-price",
+          "group-1-calendar"
+        ],
+        "styles": {
+          "minWidth": "0",
+          "border": "1px solid #decddd",
+          "borderRadius": "12px",
+          "padding": "16px",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "group-2-time",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Jueves · 19:00",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "800",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "group-2-style",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Charleston",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "marginBlock": "4px 0"
+        }
+      }
+    },
+    {
+      "id": "group-2-venue",
+      "type": "link",
+      "config": {
+        "text": "Guerrero",
+        "href": "#guerrero",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "ariaLabel": "Cómo llegar a Guerrero"
+      }
+    },
+    {
+      "id": "group-2-price",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Desde $350 MXN al mes · 60 min por clase",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-2-calendar",
+      "type": "text",
+      "config": {
+        "tag": "div",
+        "html": "<details><summary class=\"ank-cursor-pointer ank-color-HASH004d9d ank-fontWeight-700 ank-paddingBlock-12px\" aria-label=\"Agregar al calendario: Charleston, jueves a las 19:00 en Colonia Guerrero, Cuauhtémoc, CDMX\">Agregar al calendario</summary><div><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-charleston-jueves-19-00-guerrero-semanal-2026-11-16%40dipsydoo.%0D%0A%20com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261120T010000Z%0D%0ADTEND%3A20261120T020000Z%0D%0ARRULE%3AFREQ%3DWEEKLY%3BCOUNT%3D7%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-charleston-jueves-19-00-guerrero-semanal-2026-11-16.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">Serie semanal</a> <p>Hasta el jue 31 de dic.</p></div><p>Para una sola clase, elige la fecha:</p><ul><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-charleston-jueves-19-00-guerrero-2026-11-19%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261120T010000Z%0D%0ADTEND%3A20261120T020000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-charleston-jueves-19-00-guerrero-2026-11-19.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 19 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-charleston-jueves-19-00-guerrero-2026-11-26%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261127T010000Z%0D%0ADTEND%3A20261127T020000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-charleston-jueves-19-00-guerrero-2026-11-26.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 26 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-charleston-jueves-19-00-guerrero-2026-12-03%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261204T010000Z%0D%0ADTEND%3A20261204T020000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-charleston-jueves-19-00-guerrero-2026-12-03.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 3 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-charleston-jueves-19-00-guerrero-2026-12-10%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261211T010000Z%0D%0ADTEND%3A20261211T020000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-charleston-jueves-19-00-guerrero-2026-12-10.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 10 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-charleston-jueves-19-00-guerrero-2026-12-17%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261218T010000Z%0D%0ADTEND%3A20261218T020000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-charleston-jueves-19-00-guerrero-2026-12-17.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 17 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-charleston-jueves-19-00-guerrero-2026-12-24%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261225T010000Z%0D%0ADTEND%3A20261225T020000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-charleston-jueves-19-00-guerrero-2026-12-24.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 24 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-charleston-jueves-19-00-guerrero-2026-12-31%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20270101T010000Z%0D%0ADTEND%3A20270101T020000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Charleston%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-charleston-jueves-19-00-guerrero-2026-12-31.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 31 de dic</a></li></ul></details>",
+        "styles": {
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-2",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "group-2-time",
+          "group-2-style",
+          "group-2-venue",
+          "group-2-price",
+          "group-2-calendar"
+        ],
+        "styles": {
+          "minWidth": "0",
+          "border": "1px solid #decddd",
+          "borderRadius": "12px",
+          "padding": "16px",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "group-3-time",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Jueves · 20:00",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "800",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "group-3-style",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Lindy Hop",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "marginBlock": "4px 0"
+        }
+      }
+    },
+    {
+      "id": "group-3-venue",
+      "type": "link",
+      "config": {
+        "text": "Guerrero",
+        "href": "#guerrero",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "ariaLabel": "Cómo llegar a Guerrero"
+      }
+    },
+    {
+      "id": "group-3-price",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Desde $350 MXN al mes · 60 min por clase",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-3-calendar",
+      "type": "text",
+      "config": {
+        "tag": "div",
+        "html": "<details><summary class=\"ank-cursor-pointer ank-color-HASH004d9d ank-fontWeight-700 ank-paddingBlock-12px\" aria-label=\"Agregar al calendario: Lindy Hop, jueves a las 20:00 en Colonia Guerrero, Cuauhtémoc, CDMX\">Agregar al calendario</summary><div><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-jueves-20-00-guerrero-semanal-2026-11-16%40dipsydoo.c%0D%0A%20om.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261120T020000Z%0D%0ADTEND%3A20261120T030000Z%0D%0ARRULE%3AFREQ%3DWEEKLY%3BCOUNT%3D7%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-jueves-20-00-guerrero-semanal-2026-11-16.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">Serie semanal</a> <p>Hasta el jue 31 de dic.</p></div><p>Para una sola clase, elige la fecha:</p><ul><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-11-19%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261120T020000Z%0D%0ADTEND%3A20261120T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-11-19.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 19 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-11-26%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261127T020000Z%0D%0ADTEND%3A20261127T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-11-26.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 26 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-12-03%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261204T020000Z%0D%0ADTEND%3A20261204T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-12-03.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 3 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-12-10%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261211T020000Z%0D%0ADTEND%3A20261211T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-12-10.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 10 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-12-17%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261218T020000Z%0D%0ADTEND%3A20261218T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-12-17.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 17 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-12-24%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261225T020000Z%0D%0ADTEND%3A20261225T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-12-24.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 24 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-12-31%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20270101T020000Z%0D%0ADTEND%3A20270101T030000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Guerrero%5C%2C%20Cuauht%C3%A9moc%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Guerrero%252C%2520Cuauht%25C3%25A9moc%0D%0A%20%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23guerrero%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-jueves-20-00-guerrero-2026-12-31.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">jue 31 de dic</a></li></ul></details>",
+        "styles": {
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-3",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "group-3-time",
+          "group-3-style",
+          "group-3-venue",
+          "group-3-price",
+          "group-3-calendar"
+        ],
+        "styles": {
+          "minWidth": "0",
+          "border": "1px solid #decddd",
+          "borderRadius": "12px",
+          "padding": "16px",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "group-4-time",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Viernes · 17:00",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "800",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "group-4-style",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Lindy Hop",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "marginBlock": "4px 0"
+        }
+      }
+    },
+    {
+      "id": "group-4-venue",
+      "type": "link",
+      "config": {
+        "text": "Nueva Santa María",
+        "href": "#nueva-santa-maria",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "ariaLabel": "Cómo llegar a Nueva Santa María"
+      }
+    },
+    {
+      "id": "group-4-price",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Desde $350 MXN al mes · 60 min por clase",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-4-calendar",
+      "type": "text",
+      "config": {
+        "tag": "div",
+        "html": "<details><summary class=\"ank-cursor-pointer ank-color-HASH004d9d ank-fontWeight-700 ank-paddingBlock-12px\" aria-label=\"Agregar al calendario: Lindy Hop, viernes a las 17:00 en Colonia Nueva Santa María, Azcapotzalco, CDMX\">Agregar al calendario</summary><div><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-semanal-2026-11-16%40%0D%0A%20dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261120T230000Z%0D%0ADTEND%3A20261121T000000Z%0D%0ARRULE%3AFREQ%3DWEEKLY%3BCOUNT%3D6%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-semanal-2026-11-16.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">Serie semanal</a> <p>Hasta el vie 25 de dic.</p></div><p>Para una sola clase, elige la fecha:</p><ul><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-2026-11-20%40dipsydoo%0D%0A%20.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261120T230000Z%0D%0ADTEND%3A20261121T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-2026-11-20.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">vie 20 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-2026-11-27%40dipsydoo%0D%0A%20.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261127T230000Z%0D%0ADTEND%3A20261128T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-2026-11-27.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">vie 27 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-2026-12-04%40dipsydoo%0D%0A%20.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261204T230000Z%0D%0ADTEND%3A20261205T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-2026-12-04.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">vie 4 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-2026-12-11%40dipsydoo%0D%0A%20.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261211T230000Z%0D%0ADTEND%3A20261212T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-2026-12-11.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">vie 11 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-2026-12-18%40dipsydoo%0D%0A%20.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261218T230000Z%0D%0ADTEND%3A20261219T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-2026-12-18.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">vie 18 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-2026-12-25%40dipsydoo%0D%0A%20.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261225T230000Z%0D%0ADTEND%3A20261226T000000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AColonia%20Nueva%20Santa%20Mar%C3%ADa%5C%2C%20Azcapotzalco%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DColonia%2520Nueva%2520Santa%2520Mar%25C3%25ADa%252C%0D%0A%20%2520Azcapotzalco%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23nueva-santa-maria%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-viernes-17-00-nueva-santa-maria-2026-12-25.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">vie 25 de dic</a></li></ul></details>",
+        "styles": {
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-4",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "group-4-time",
+          "group-4-style",
+          "group-4-venue",
+          "group-4-price",
+          "group-4-calendar"
+        ],
+        "styles": {
+          "minWidth": "0",
+          "border": "1px solid #decddd",
+          "borderRadius": "12px",
+          "padding": "16px",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "group-5-time",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Sábado · 11:30",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "800",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "group-5-style",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Rockabilly Jive",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "marginBlock": "4px 0"
+        }
+      }
+    },
+    {
+      "id": "group-5-venue",
+      "type": "link",
+      "config": {
+        "text": "Jardín Pushkin",
+        "href": "#jardin-pushkin",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "ariaLabel": "Cómo llegar a Jardín Pushkin"
+      }
+    },
+    {
+      "id": "group-5-price",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Desde $450 MXN al mes · 90 min por clase",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-5-calendar",
+      "type": "text",
+      "config": {
+        "tag": "div",
+        "html": "<details><summary class=\"ank-cursor-pointer ank-color-HASH004d9d ank-fontWeight-700 ank-paddingBlock-12px\" aria-label=\"Agregar al calendario: Rockabilly Jive, sábado a las 11:30 en Jardín Pushkin, Av. Cuauhtémoc 104, Roma Norte, CDMX\">Agregar al calendario</summary><div><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-semanal-2026-11-1%0D%0A%206%40dipsydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261121T173000Z%0D%0ADTEND%3A20261121T190000Z%0D%0ARRULE%3AFREQ%3DWEEKLY%3BCOUNT%3D6%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AJard%C3%ADn%20Pushkin%5C%2C%20Av.%20Cuauht%C3%A9moc%20104%5C%2C%20Roma%20Norte%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DJard%25C3%25ADn%2520Alexander%2520Pushkin%252C%2520%0D%0A%20Av.%2520Cuauht%25C3%25A9moc%2520104%252C%2520Roma%2520Norte%252C%2520Ciudad%2520de%2520M%25C3%25A9xi%0D%0A%20co%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23jardin-pushkin%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-semanal-2026-11-16.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">Serie semanal</a> <p>Hasta el sáb 26 de dic.</p></div><p>Para una sola clase, elige la fecha:</p><ul><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-2026-11-21%40dipsyd%0D%0A%20oo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261121T173000Z%0D%0ADTEND%3A20261121T190000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AJard%C3%ADn%20Pushkin%5C%2C%20Av.%20Cuauht%C3%A9moc%20104%5C%2C%20Roma%20Norte%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DJard%25C3%25ADn%2520Alexander%2520Pushkin%252C%2520%0D%0A%20Av.%2520Cuauht%25C3%25A9moc%2520104%252C%2520Roma%2520Norte%252C%2520Ciudad%2520de%2520M%25C3%25A9xi%0D%0A%20co%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23jardin-pushkin%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-2026-11-21.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">sáb 21 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-2026-11-28%40dipsyd%0D%0A%20oo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261128T173000Z%0D%0ADTEND%3A20261128T190000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AJard%C3%ADn%20Pushkin%5C%2C%20Av.%20Cuauht%C3%A9moc%20104%5C%2C%20Roma%20Norte%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DJard%25C3%25ADn%2520Alexander%2520Pushkin%252C%2520%0D%0A%20Av.%2520Cuauht%25C3%25A9moc%2520104%252C%2520Roma%2520Norte%252C%2520Ciudad%2520de%2520M%25C3%25A9xi%0D%0A%20co%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23jardin-pushkin%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-2026-11-28.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">sáb 28 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-2026-12-05%40dipsyd%0D%0A%20oo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261205T173000Z%0D%0ADTEND%3A20261205T190000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AJard%C3%ADn%20Pushkin%5C%2C%20Av.%20Cuauht%C3%A9moc%20104%5C%2C%20Roma%20Norte%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DJard%25C3%25ADn%2520Alexander%2520Pushkin%252C%2520%0D%0A%20Av.%2520Cuauht%25C3%25A9moc%2520104%252C%2520Roma%2520Norte%252C%2520Ciudad%2520de%2520M%25C3%25A9xi%0D%0A%20co%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23jardin-pushkin%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-2026-12-05.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">sáb 5 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-2026-12-12%40dipsyd%0D%0A%20oo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261212T173000Z%0D%0ADTEND%3A20261212T190000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AJard%C3%ADn%20Pushkin%5C%2C%20Av.%20Cuauht%C3%A9moc%20104%5C%2C%20Roma%20Norte%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DJard%25C3%25ADn%2520Alexander%2520Pushkin%252C%2520%0D%0A%20Av.%2520Cuauht%25C3%25A9moc%2520104%252C%2520Roma%2520Norte%252C%2520Ciudad%2520de%2520M%25C3%25A9xi%0D%0A%20co%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23jardin-pushkin%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-2026-12-12.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">sáb 12 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-2026-12-19%40dipsyd%0D%0A%20oo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261219T173000Z%0D%0ADTEND%3A20261219T190000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AJard%C3%ADn%20Pushkin%5C%2C%20Av.%20Cuauht%C3%A9moc%20104%5C%2C%20Roma%20Norte%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DJard%25C3%25ADn%2520Alexander%2520Pushkin%252C%2520%0D%0A%20Av.%2520Cuauht%25C3%25A9moc%2520104%252C%2520Roma%2520Norte%252C%2520Ciudad%2520de%2520M%25C3%25A9xi%0D%0A%20co%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23jardin-pushkin%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-2026-12-19.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">sáb 19 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-2026-12-26%40dipsyd%0D%0A%20oo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261226T173000Z%0D%0ADTEND%3A20261226T190000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0ALOCATION%3AJard%C3%ADn%20Pushkin%5C%2C%20Av.%20Cuauht%C3%A9moc%20104%5C%2C%20Roma%20Norte%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DJard%25C3%25ADn%2520Alexander%2520Pushkin%252C%2520%0D%0A%20Av.%2520Cuauht%25C3%25A9moc%2520104%252C%2520Roma%2520Norte%252C%2520Ciudad%2520de%2520M%25C3%25A9xi%0D%0A%20co%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23jardin-pushkin%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Rockabilly%20Jive%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-rockabilly-jive-sabado-11-30-jardin-pushkin-2026-12-26.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">sáb 26 de dic</a></li></ul></details>",
+        "styles": {
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-5",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "group-5-time",
+          "group-5-style",
+          "group-5-venue",
+          "group-5-price",
+          "group-5-calendar"
+        ],
+        "styles": {
+          "minWidth": "0",
+          "border": "1px solid #decddd",
+          "borderRadius": "12px",
+          "padding": "16px",
+          "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "group-6-time",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Domingo · 11:30",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "800",
+          "fontSize": "13px",
+          "letterSpacing": ".13em",
+          "textTransform": "uppercase",
+          "color": "#004d9d"
+        }
+      }
+    },
+    {
+      "id": "group-6-style",
+      "type": "text",
+      "config": {
+        "tag": "h3",
+        "text": "Lindy Hop",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontSize": "21px",
+          "marginBlock": "4px 0"
+        }
+      }
+    },
+    {
+      "id": "group-6-venue",
+      "type": "link",
+      "config": {
+        "text": "Parque Hundido",
+        "href": "#parque-hundido",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "ariaLabel": "Cómo llegar a Parque Hundido"
+      }
+    },
+    {
+      "id": "group-6-price",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Desde $450 MXN al mes · 90 min por clase",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-6-calendar",
+      "type": "text",
+      "config": {
+        "tag": "div",
+        "html": "<details><summary class=\"ank-cursor-pointer ank-color-HASH004d9d ank-fontWeight-700 ank-paddingBlock-12px\" aria-label=\"Agregar al calendario: Lindy Hop, domingo a las 11:30 en Parque Hundido, Av. Insurgentes Sur s/n, Extremadura Insurgentes, CDMX\">Agregar al calendario</summary><div><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-domingo-11-30-parque-hundido-semanal-2026-11-16%40dip%0D%0A%20sydoo.com.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261122T173000Z%0D%0ADTEND%3A20261122T190000Z%0D%0ARRULE%3AFREQ%3DWEEKLY%3BCOUNT%3D6%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AParque%20Hundido%5C%2C%20Av.%20Insurgentes%20Sur%20s%2Fn%5C%2C%20Extremadura%20Insurgentes%0D%0A%20%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DParque%2520Hundido%252C%2520Av.%2520Insurgentes%0D%0A%20%2520Sur%252C%2520Extremadura%2520Insurgentes%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23parque-hundido%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-domingo-11-30-parque-hundido-semanal-2026-11-16.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">Serie semanal</a> <p>Hasta el dom 27 de dic.</p></div><p>Para una sola clase, elige la fecha:</p><ul><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-domingo-11-30-parque-hundido-2026-11-22%40dipsydoo.co%0D%0A%20m.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261122T173000Z%0D%0ADTEND%3A20261122T190000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AParque%20Hundido%5C%2C%20Av.%20Insurgentes%20Sur%20s%2Fn%5C%2C%20Extremadura%20Insurgentes%0D%0A%20%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DParque%2520Hundido%252C%2520Av.%2520Insurgentes%0D%0A%20%2520Sur%252C%2520Extremadura%2520Insurgentes%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23parque-hundido%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-domingo-11-30-parque-hundido-2026-11-22.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">dom 22 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-domingo-11-30-parque-hundido-2026-11-29%40dipsydoo.co%0D%0A%20m.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261129T173000Z%0D%0ADTEND%3A20261129T190000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AParque%20Hundido%5C%2C%20Av.%20Insurgentes%20Sur%20s%2Fn%5C%2C%20Extremadura%20Insurgentes%0D%0A%20%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DParque%2520Hundido%252C%2520Av.%2520Insurgentes%0D%0A%20%2520Sur%252C%2520Extremadura%2520Insurgentes%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23parque-hundido%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-domingo-11-30-parque-hundido-2026-11-29.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">dom 29 de nov</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-domingo-11-30-parque-hundido-2026-12-06%40dipsydoo.co%0D%0A%20m.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261206T173000Z%0D%0ADTEND%3A20261206T190000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AParque%20Hundido%5C%2C%20Av.%20Insurgentes%20Sur%20s%2Fn%5C%2C%20Extremadura%20Insurgentes%0D%0A%20%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DParque%2520Hundido%252C%2520Av.%2520Insurgentes%0D%0A%20%2520Sur%252C%2520Extremadura%2520Insurgentes%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23parque-hundido%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-domingo-11-30-parque-hundido-2026-12-06.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">dom 6 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-domingo-11-30-parque-hundido-2026-12-13%40dipsydoo.co%0D%0A%20m.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261213T173000Z%0D%0ADTEND%3A20261213T190000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AParque%20Hundido%5C%2C%20Av.%20Insurgentes%20Sur%20s%2Fn%5C%2C%20Extremadura%20Insurgentes%0D%0A%20%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DParque%2520Hundido%252C%2520Av.%2520Insurgentes%0D%0A%20%2520Sur%252C%2520Extremadura%2520Insurgentes%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23parque-hundido%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-domingo-11-30-parque-hundido-2026-12-13.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">dom 13 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-domingo-11-30-parque-hundido-2026-12-20%40dipsydoo.co%0D%0A%20m.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261220T173000Z%0D%0ADTEND%3A20261220T190000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AParque%20Hundido%5C%2C%20Av.%20Insurgentes%20Sur%20s%2Fn%5C%2C%20Extremadura%20Insurgentes%0D%0A%20%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DParque%2520Hundido%252C%2520Av.%2520Insurgentes%0D%0A%20%2520Sur%252C%2520Extremadura%2520Insurgentes%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23parque-hundido%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-domingo-11-30-parque-hundido-2026-12-20.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">dom 20 de dic</a></li><li><a href=\"data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0D%0AVERSION%3A2.0%0D%0APRODID%3A-%2F%2FDipsy%20Doo%2F%2FHorarios%20de%20clases%2F%2FES%0D%0ABEGIN%3AVEVENT%0D%0AUID%3Adipsy-doo-lindy-hop-domingo-11-30-parque-hundido-2026-12-27%40dipsydoo.co%0D%0A%20m.mx%0D%0ADTSTAMP%3A20261116T000000Z%0D%0ADTSTART%3A20261227T173000Z%0D%0ADTEND%3A20261227T190000Z%0D%0ASUMMARY%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0ALOCATION%3AParque%20Hundido%5C%2C%20Av.%20Insurgentes%20Sur%20s%2Fn%5C%2C%20Extremadura%20Insurgentes%0D%0A%20%5C%2C%20CDMX%0D%0ADESCRIPTION%3AConfirma%20el%20cupo%20y%20el%20punto%20de%20encuentro%20con%20Dipsy%20Doo!%20antes%20d%0D%0A%20e%20ir%5C%2C%20especialmente%20en%20d%C3%ADas%20festivos.%5CnMapa%20de%20referencia%3A%20https%3A%2F%2Fwww.g%0D%0A%20oogle.com%2Fmaps%2Fsearch%2F%3Fapi%3D1%26query%3DParque%2520Hundido%252C%2520Av.%2520Insurgentes%0D%0A%20%2520Sur%252C%2520Extremadura%2520Insurgentes%252C%2520Ciudad%2520de%2520M%25C3%25A9xico%0D%0AURL%3Ahttps%3A%2F%2Fdipsydoo.com.mx%2Fhorarios-y-sedes%23parque-hundido%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-P1D%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0ABEGIN%3AVALARM%0D%0AACTION%3ADISPLAY%0D%0ATRIGGER%3A-PT1H%0D%0ADESCRIPTION%3ADipsy%20Doo!%20%C2%B7%20Lindy%20Hop%0D%0AEND%3AVALARM%0D%0AEND%3AVEVENT%0D%0AEND%3AVCALENDAR%0D%0A\" download=\"dipsy-doo-lindy-hop-domingo-11-30-parque-hundido-2026-12-27.ics\" class=\"ank-display-flex ank-alignItems-center ank-paddingBlock-12px ank-color-HASH004d9d ank-fontWeight-700\">dom 27 de dic</a></li></ul></details>",
+        "styles": {
+          "fontSize": "15px"
+        }
+      }
+    },
+    {
+      "id": "group-6",
+      "type": "container",
+      "config": {
+        "tag": "article",
+        "components": [
+          "group-6-time",
+          "group-6-style",
+          "group-6-venue",
+          "group-6-price",
+          "group-6-calendar"
+        ],
+        "styles": {
+          "minWidth": "0",
+          "border": "1px solid #decddd",
+          "borderRadius": "12px",
+          "padding": "16px",
+          "background": "#ffffff"
+        }
       }
     },
     {
@@ -154,10 +791,20 @@
       "config": {
         "tag": "div",
         "components": [
-          "groups"
+          "group-0",
+          "group-1",
+          "group-2",
+          "group-3",
+          "group-4",
+          "group-5",
+          "group-6"
         ],
         "styles": {
-          "marginTop": "16px"
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gap": "25px",
+          "marginTop": "16px",
+          "alignItems": "start"
         }
       }
     },
@@ -226,6 +873,7 @@
         "tag": "section",
         "components": [
           "scheduleHeading",
+          "scheduleCalendarHint",
           "scheduleItems",
           "scheduleLinks"
         ],
@@ -243,7 +891,7 @@
       "type": "text",
       "config": {
         "tag": "h2",
-        "text": "Cuatro zonas para encontrarnos",
+        "text": "Cómo llegar a cada sede",
         "styles": {
           "margin": "0",
           "fontWeight": "700",
@@ -255,7 +903,7 @@
       }
     },
     {
-      "id": "venueName-0",
+      "id": "venueName-guerrero",
       "type": "text",
       "config": {
         "tag": "h3",
@@ -268,7 +916,7 @@
       }
     },
     {
-      "id": "venueDetails-0",
+      "id": "venueDetails-guerrero",
       "type": "text",
       "config": {
         "tag": "p",
@@ -281,10 +929,45 @@
       }
     },
     {
-      "id": "venueContact-0",
+      "id": "venueDescription-guerrero",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Colonia Guerrero, en Cuauhtémoc. El Metro Guerrero (líneas 3 y B) es una referencia para ubicar la zona. Pide por WhatsApp la dirección de la clase.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "venueMap-guerrero",
       "type": "link",
       "config": {
-        "text": "Pedir el punto de encuentro",
+        "text": "Ver la colonia en Google Maps ↗",
+        "href": "https://www.google.com/maps/search/?api=1&query=Colonia%20Guerrero%2C%20Cuauht%C3%A9moc%2C%20Ciudad%20de%20M%C3%A9xico",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "Ver la colonia en Google Maps · Guerrero"
+      }
+    },
+    {
+      "id": "venueContact-guerrero",
+      "type": "link",
+      "config": {
+        "text": "Pedir el punto por WhatsApp",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFMe%20comparten%20el%20punto%20de%20encuentro%20de%20la%20sede%20Guerrero%3F",
         "scrollRestoration": {
           "mode": "top",
@@ -297,27 +980,50 @@
           "boxSizing": "border-box",
           "color": "#004d9d",
           "fontWeight": "700"
+        },
+        "ariaLabel": "Pedir el punto por WhatsApp · Guerrero"
+      }
+    },
+    {
+      "id": "venueActions-guerrero",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "venueMap-guerrero",
+          "venueContact-guerrero"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "0 18px",
+          "marginTop": "8px"
         }
       }
     },
     {
-      "id": "venue-0",
+      "id": "venue-guerrero",
       "type": "container",
       "config": {
         "tag": "article",
         "components": [
-          "venueName-0",
-          "venueDetails-0",
-          "venueContact-0"
+          "venueName-guerrero",
+          "venueDetails-guerrero",
+          "venueDescription-guerrero",
+          "venueActions-guerrero"
         ],
         "styles": {
           "borderTop": "1px solid #decddd",
-          "paddingTop": "18px"
-        }
+          "paddingTop": "18px",
+          "scrollMarginTop": "24px"
+        },
+        "id": "guerrero",
+        "tabindex": -1
       }
     },
     {
-      "id": "venueName-1",
+      "id": "venueName-nueva-santa-maria",
       "type": "text",
       "config": {
         "tag": "h3",
@@ -330,7 +1036,7 @@
       }
     },
     {
-      "id": "venueDetails-1",
+      "id": "venueDetails-nueva-santa-maria",
       "type": "text",
       "config": {
         "tag": "p",
@@ -343,10 +1049,45 @@
       }
     },
     {
-      "id": "venueContact-1",
+      "id": "venueDescription-nueva-santa-maria",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Colonia Nueva Santa María, en Azcapotzalco. Puedes ubicar la colonia en el mapa y pedir por WhatsApp la dirección de la clase.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "venueMap-nueva-santa-maria",
       "type": "link",
       "config": {
-        "text": "Pedir el punto de encuentro",
+        "text": "Ver la colonia en Google Maps ↗",
+        "href": "https://www.google.com/maps/search/?api=1&query=Colonia%20Nueva%20Santa%20Mar%C3%ADa%2C%20Azcapotzalco%2C%20Ciudad%20de%20M%C3%A9xico",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "Ver la colonia en Google Maps · Nueva Santa María"
+      }
+    },
+    {
+      "id": "venueContact-nueva-santa-maria",
+      "type": "link",
+      "config": {
+        "text": "Pedir el punto por WhatsApp",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFMe%20comparten%20el%20punto%20de%20encuentro%20de%20la%20sede%20Nueva%20Santa%20Mar%C3%ADa%3F",
         "scrollRestoration": {
           "mode": "top",
@@ -359,27 +1100,50 @@
           "boxSizing": "border-box",
           "color": "#004d9d",
           "fontWeight": "700"
+        },
+        "ariaLabel": "Pedir el punto por WhatsApp · Nueva Santa María"
+      }
+    },
+    {
+      "id": "venueActions-nueva-santa-maria",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "venueMap-nueva-santa-maria",
+          "venueContact-nueva-santa-maria"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "0 18px",
+          "marginTop": "8px"
         }
       }
     },
     {
-      "id": "venue-1",
+      "id": "venue-nueva-santa-maria",
       "type": "container",
       "config": {
         "tag": "article",
         "components": [
-          "venueName-1",
-          "venueDetails-1",
-          "venueContact-1"
+          "venueName-nueva-santa-maria",
+          "venueDetails-nueva-santa-maria",
+          "venueDescription-nueva-santa-maria",
+          "venueActions-nueva-santa-maria"
         ],
         "styles": {
           "borderTop": "1px solid #decddd",
-          "paddingTop": "18px"
-        }
+          "paddingTop": "18px",
+          "scrollMarginTop": "24px"
+        },
+        "id": "nueva-santa-maria",
+        "tabindex": -1
       }
     },
     {
-      "id": "venueName-2",
+      "id": "venueName-jardin-pushkin",
       "type": "text",
       "config": {
         "tag": "h3",
@@ -392,7 +1156,7 @@
       }
     },
     {
-      "id": "venueDetails-2",
+      "id": "venueDetails-jardin-pushkin",
       "type": "text",
       "config": {
         "tag": "p",
@@ -405,10 +1169,45 @@
       }
     },
     {
-      "id": "venueContact-2",
+      "id": "venueDescription-jardin-pushkin",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Av. Cuauhtémoc 104, Roma Norte. Puedes llegar por la estación Jardín Pushkin del Metrobús (línea 3). Confirma en qué parte del jardín se reúne el grupo.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "venueMap-jardin-pushkin",
       "type": "link",
       "config": {
-        "text": "Pedir el punto de encuentro",
+        "text": "Ver el jardín en Google Maps ↗",
+        "href": "https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn%20Alexander%20Pushkin%2C%20Av.%20Cuauht%C3%A9moc%20104%2C%20Roma%20Norte%2C%20Ciudad%20de%20M%C3%A9xico",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "Ver el jardín en Google Maps · Jardín Pushkin"
+      }
+    },
+    {
+      "id": "venueContact-jardin-pushkin",
+      "type": "link",
+      "config": {
+        "text": "Pedir el punto por WhatsApp",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFMe%20comparten%20el%20punto%20de%20encuentro%20de%20la%20sede%20Jard%C3%ADn%20Pushkin%3F",
         "scrollRestoration": {
           "mode": "top",
@@ -421,27 +1220,50 @@
           "boxSizing": "border-box",
           "color": "#004d9d",
           "fontWeight": "700"
+        },
+        "ariaLabel": "Pedir el punto por WhatsApp · Jardín Pushkin"
+      }
+    },
+    {
+      "id": "venueActions-jardin-pushkin",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "venueMap-jardin-pushkin",
+          "venueContact-jardin-pushkin"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "0 18px",
+          "marginTop": "8px"
         }
       }
     },
     {
-      "id": "venue-2",
+      "id": "venue-jardin-pushkin",
       "type": "container",
       "config": {
         "tag": "article",
         "components": [
-          "venueName-2",
-          "venueDetails-2",
-          "venueContact-2"
+          "venueName-jardin-pushkin",
+          "venueDetails-jardin-pushkin",
+          "venueDescription-jardin-pushkin",
+          "venueActions-jardin-pushkin"
         ],
         "styles": {
           "borderTop": "1px solid #decddd",
-          "paddingTop": "18px"
-        }
+          "paddingTop": "18px",
+          "scrollMarginTop": "24px"
+        },
+        "id": "jardin-pushkin",
+        "tabindex": -1
       }
     },
     {
-      "id": "venueName-3",
+      "id": "venueName-parque-hundido",
       "type": "text",
       "config": {
         "tag": "h3",
@@ -454,7 +1276,7 @@
       }
     },
     {
-      "id": "venueDetails-3",
+      "id": "venueDetails-parque-hundido",
       "type": "text",
       "config": {
         "tag": "p",
@@ -467,10 +1289,45 @@
       }
     },
     {
-      "id": "venueContact-3",
+      "id": "venueDescription-parque-hundido",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Av. Insurgentes Sur s/n, colonia Extremadura Insurgentes. La estación Parque Hundido del Metrobús (línea 1) es una referencia para llegar. Pide por WhatsApp el punto exacto dentro del parque antes de ir.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "venueMap-parque-hundido",
       "type": "link",
       "config": {
-        "text": "Pedir el punto de encuentro",
+        "text": "Ver el parque en Google Maps ↗",
+        "href": "https://www.google.com/maps/search/?api=1&query=Parque%20Hundido%2C%20Av.%20Insurgentes%20Sur%2C%20Extremadura%20Insurgentes%2C%20Ciudad%20de%20M%C3%A9xico",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "Ver el parque en Google Maps · Parque Hundido"
+      }
+    },
+    {
+      "id": "venueContact-parque-hundido",
+      "type": "link",
+      "config": {
+        "text": "Pedir el punto por WhatsApp",
         "href": "https://wa.me/525540312687?text=Hola%2C%20Dipsy%20Doo!%20%C2%BFMe%20comparten%20el%20punto%20de%20encuentro%20de%20la%20sede%20Parque%20Hundido%3F",
         "scrollRestoration": {
           "mode": "top",
@@ -483,23 +1340,46 @@
           "boxSizing": "border-box",
           "color": "#004d9d",
           "fontWeight": "700"
+        },
+        "ariaLabel": "Pedir el punto por WhatsApp · Parque Hundido"
+      }
+    },
+    {
+      "id": "venueActions-parque-hundido",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "venueMap-parque-hundido",
+          "venueContact-parque-hundido"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "0 18px",
+          "marginTop": "8px"
         }
       }
     },
     {
-      "id": "venue-3",
+      "id": "venue-parque-hundido",
       "type": "container",
       "config": {
         "tag": "article",
         "components": [
-          "venueName-3",
-          "venueDetails-3",
-          "venueContact-3"
+          "venueName-parque-hundido",
+          "venueDetails-parque-hundido",
+          "venueDescription-parque-hundido",
+          "venueActions-parque-hundido"
         ],
         "styles": {
           "borderTop": "1px solid #decddd",
-          "paddingTop": "18px"
-        }
+          "paddingTop": "18px",
+          "scrollMarginTop": "24px"
+        },
+        "id": "parque-hundido",
+        "tabindex": -1
       }
     },
     {
@@ -508,14 +1388,14 @@
       "config": {
         "tag": "div",
         "components": [
-          "venue-0",
-          "venue-1",
-          "venue-2",
-          "venue-3"
+          "venue-guerrero",
+          "venue-nueva-santa-maria",
+          "venue-jardin-pushkin",
+          "venue-parque-hundido"
         ],
         "styles": {
           "display": "grid",
-          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 265px), 1fr))",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 360px), 1fr))",
           "gap": "25px",
           "marginTop": "22px"
         }
@@ -537,7 +1417,9 @@
           "paddingInline": "clamp(20px, 6vw, 76px)",
           "paddingBlock": "clamp(40px, 6vw, 76px)",
           "paddingTop": "0"
-        }
+        },
+        "id": "sedes",
+        "tabindex": -1
       }
     },
     {

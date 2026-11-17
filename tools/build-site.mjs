@@ -1,4 +1,6 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
+import { calendarDownloads } from './class-calendar.mjs';
+import { venues } from './venues.mjs';
 
 const domain = 'dipsydoo.com.mx';
 const origin = 'https://' + domain;
@@ -14,6 +16,7 @@ const border = '#decddd';
 const title = 'Clases de Swing y Lindy Hop en CDMX | Dipsy Doo!';
 const description = 'Aprende Lindy Hop, Rockabilly Jive y Charleston en Ciudad de México. Puedes empezar sin experiencia y venir sin pareja. Consulta horarios y sedes.';
 const period = 'Noviembre–diciembre de 2026';
+const calendarDates = {firstDate: '2026-11-16', lastDate: '2026-12-31'};
 const paths = {home: '/', classes: '/clases', schedule: '/horarios-y-sedes', community: '/comunidad', contact: '/contacto'};
 const navigation = [[paths.home, 'Inicio'], [paths.classes, 'Clases'], [paths.schedule, 'Horarios y sedes'], [paths.community, 'Comunidad'], [paths.contact, 'Contacto']];
 const width = {width: 'min(100%, 1160px)', margin: '0 auto', boxSizing: 'border-box', paddingInline: 'clamp(20px, 6vw, 76px)'};
@@ -105,6 +108,14 @@ const accordion = (id, items) => add(id, 'accordion', {
   defaultItemPanelClasses: 'ank-padding-14px'
 });
 
+const calendarHint = (id) => text(id, 'Abre «Agregar al calendario» y descarga el archivo .ics de una fecha o de la serie semanal. Al importarlo, revisa que tu app haya guardado los dos avisos: un día antes y una hora antes. Confirma posibles cambios con la escuela.', 'p', {maxWidth: '66ch', marginBlock: '12px 18px'});
+
+function classCalendar(id, [day, time, style, venue, weekend]) {
+  const html = calendarDownloads({day, time, style, venue: venues[venue], duration: weekend ? 90 : 60,
+    ...calendarDates, url: origin + paths.schedule + '#' + venues[venue].id});
+  return add(id, 'text', {tag: 'div', html, styles: {fontSize: '15px'}});
+}
+
 function pageIntro(kicker, headingText, body) {
   return box('pageIntro', [box('pageIntroLayout', [
     text('introKicker', kicker, 'p', {...eyebrow, color: blue}),
@@ -167,6 +178,7 @@ function renderClasses() {
   return [
     pageIntro('Clases presenciales · CDMX', 'Clases de swing y rock and roll en CDMX', 'Elige entre Lindy Hop, Rockabilly Jive y Charleston. Puedes empezar desde cero en clases presenciales y venir sin pareja.'),
     box('classList', [
+      calendarHint('classCalendarHint'),
       ...styles.map(([label, kicker, detail, src], index) => box('class-' + index, [
         photograph('classPhoto-' + index, src, index === 1 ? 'Una pareja de la comunidad Dipsy Doo! en una pose de baile frente a un mural.' : 'Una pareja de Dipsy Doo! bailando ' + label + '.'),
         box('classCopy-' + index, [
@@ -176,9 +188,10 @@ function renderClasses() {
         text('classScheduleLabel-' + index, 'Horarios · ' + period, 'h3', {fontSize: '16px', fontWeight: '700', marginTop: '14px'}),
         box('classScheduleList-' + index, groups
           .filter(([, , style]) => style === label)
-          .map(([day, time, , venue], row) => box('classTime-' + index + '-' + row, [
-            text('classTimeText-' + index + '-' + row, day + ' a las ' + time + ' en ' + venue, 'span')
-          ], {}, 'li')), {paddingInlineStart: '20px', marginBlock: '4px 0'}, 'ul'),
+          .map((group, row) => box('classTime-' + index + '-' + row, [
+            text('classTimeText-' + index + '-' + row, group[0] + ' a las ' + group[1] + ' en ' + group[3], 'span'),
+            classCalendar('classCalendar-' + index + '-' + row, group)
+          ], {borderTop: '1px solid ' + border, paddingTop: '8px'})), {marginBlock: '8px 0'}),
         link('classAsk-' + index, 'Preguntar por ' + label, whatsapp('Hola, Dipsy Doo! Me interesan sus clases de ' + label + '. ¿Qué grupo me recomiendan?'), {marginTop: '12px'})
         ])
       ], {...grid, alignItems: 'center', gap: 'clamp(24px, 5vw, 50px)', borderTop: '1px solid ' + border, paddingBlock: '28px 34px'}, 'article', sectionId(['lindy-hop', 'rockabilly-jive', 'charleston'][index]))),
@@ -205,24 +218,40 @@ function renderSchedule() {
     pageIntro(period + ' · CDMX', 'Horarios y sedes', 'Consulta las clases en Guerrero, Nueva Santa María, Jardín Pushkin y Parque Hundido. Las mensualidades de referencia empiezan en $350 MXN. Confirma el cupo y el punto de encuentro por WhatsApp.'),
     box('schedule', [
       heading('scheduleHeading', 'Encuentra tu clase'),
-      box('scheduleItems', [accordion('groups', groups.map(([day, time, style, venue, weekend], index) => ({
-        id: 'group-' + index,
-        title: day + ' · ' + time + ' · ' + style,
-        content: 'Sede: ' + venue + '. Mensualidad desde ' + (weekend ? '$450 MXN por hora y media semanal.' : '$350 MXN por una hora semanal.')
-      })))], {marginTop: '16px'}),
+      calendarHint('scheduleCalendarHint'),
+      box('scheduleItems', groups.map((group, index) => {
+        const [day, time, style, venue, weekend] = group;
+        const id = 'group-' + index;
+        return box(id, [
+          text(id + '-time', day + ' · ' + time, 'p', {...eyebrow, color: blue}),
+          text(id + '-style', style, 'h3', {fontSize: '21px', fontWeight: '700', marginBlock: '4px 0'}),
+          link(id + '-venue', venue, '#' + venues[venue].id, {}, {ariaLabel: 'Cómo llegar a ' + venue}),
+          text(id + '-price', weekend ? 'Desde $450 MXN al mes · 90 min por clase' : 'Desde $350 MXN al mes · 60 min por clase', 'p', {fontSize: '15px'}),
+          classCalendar(id + '-calendar', group)
+        ], {minWidth: '0', border: '1px solid ' + border, borderRadius: '12px', padding: '16px', background: '#ffffff'}, 'article');
+      }), {...grid, marginTop: '16px', alignItems: 'start'}),
       box('scheduleLinks', [
         link('schedulePricing', 'Ver todas las colegiaturas', '#colegiaturas'),
         link('askSchedule', 'Confirmar sede y cupo por WhatsApp', whatsapp('Hola, Dipsy Doo! Me gustaría confirmar el cupo y el punto de encuentro de una clase.'))
       ], {...flex, marginTop: '12px'})
     ], section, 'section'),
     box('venues', [
-      heading('venuesHeading', 'Cuatro zonas para encontrarnos'),
-      box('venueList', ['Guerrero', 'Nueva Santa María', 'Jardín Pushkin', 'Parque Hundido'].map((venue, index) => box('venue-' + index, [
-        text('venueName-' + index, venue, 'h3', {fontSize: '21px', fontWeight: '700'}),
-        text('venueDetails-' + index, groups.filter(group => group[3] === venue).map(group => group[0] + ' ' + group[1] + ' · ' + group[2]).join(' / '), 'p', {marginBlock: '8px'}),
-        link('venueContact-' + index, 'Pedir el punto de encuentro', whatsapp('Hola, Dipsy Doo! ¿Me comparten el punto de encuentro de la sede ' + venue + '?'))
-      ], {borderTop: '1px solid ' + border, paddingTop: '18px'}, 'article')), {...grid, marginTop: '22px'})
-    ], {...section, paddingTop: '0'}, 'section'),
+      heading('venuesHeading', 'Cómo llegar a cada sede'),
+      box('venueList', Object.entries(venues).map(([venue, {id, description, mapUrl, mapLabel, photos = []}]) => box('venue-' + id, [
+        text('venueName-' + id, venue, 'h3', {fontSize: '21px', fontWeight: '700'}),
+        text('venueDetails-' + id, groups.filter(group => group[3] === venue).map(group => group[0] + ' ' + group[1] + ' · ' + group[2]).join(' / '), 'p', {marginBlock: '8px'}),
+        text('venueDescription-' + id, description),
+        ...photos.map(({src, alt, width, height}, index) => image('venuePhoto-' + id + '-' + index, src, alt, width, height, {
+          styles: {display: 'block', width: '100%', height: 'auto', marginTop: '12px', borderRadius: '8px'}
+        })),
+        box('venueActions-' + id, [
+          link('venueMap-' + id, mapLabel + ' ↗', mapUrl, {}, {target: '_blank', rel: 'noopener noreferrer', ariaLabel: mapLabel + ' · ' + venue}),
+          link('venueContact-' + id, 'Pedir el punto por WhatsApp', whatsapp('Hola, Dipsy Doo! ¿Me comparten el punto de encuentro de la sede ' + venue + '?'), {}, {ariaLabel: 'Pedir el punto por WhatsApp · ' + venue})
+        ], {...flex, gap: '0 18px', marginTop: '8px'})
+      ], {borderTop: '1px solid ' + border, paddingTop: '18px', scrollMarginTop: '24px'}, 'article', sectionId(id))), {
+        ...grid, marginTop: '22px', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 360px), 1fr))'
+      })
+    ], {...section, paddingTop: '0'}, 'section', sectionId('sedes')),
     box('prices', [box('priceLayout', [
       text('pricesKicker', period + ' · MXN', 'p', {...eyebrow, color: blue}),
       heading('pricesHeading', 'Colegiaturas mensuales'),
