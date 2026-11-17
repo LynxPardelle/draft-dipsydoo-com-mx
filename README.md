@@ -6,7 +6,7 @@ A Spanish-language catalog for in-person dance classes in Mexico City.
 | --- | --- |
 | `/` | School introduction and links to the catalog |
 | `/clases` | Lindy Hop, Rockabilly Jive, Charleston, and the class format |
-| `/horarios-y-sedes` | November–December 2026 class schedule, four venue areas, and monthly tuition |
+| `/horarios-y-sedes` | Weekly class schedule, four venue areas, and reference monthly tuition |
 | `/comunidad` | Social dance, school videos, event photographs, student testimonials, and the supplied code of conduct |
 | `/contacto` | WhatsApp contact and frequently asked questions |
 
@@ -23,8 +23,8 @@ Run `npm start` from the hub and open the [local preview](http://127.0.0.1:4200/
 ## Content maintenance
 
 - The business WhatsApp destination was confirmed by the client during this update. Keep all contextual contact links on that same destination.
-- Update the published schedule after December 2026. The class pages derive their visible timetables from the same group data. The supplied schedule poster takes precedence over the older price range in the introductory questionnaire.
-- When extending the schedule, update `calendarDates` in [tools/build-site.mjs](tools/build-site.mjs) and the expected downloads in [tools/check-calendar.test.mjs](tools/check-calendar.test.mjs). The generated downloads are snapshots of the dates in that window, with times set for Mexico City. Imported events do not follow later site changes; calendar apps control whether imported reminders are kept.
+- Update the shared group data in [tools/build-site.mjs](tools/build-site.mjs) and the expected timetable in [tools/check-calendar.test.mjs](tools/check-calendar.test.mjs) when the school changes its weekly schedule. Both class pages calculate the next session in Mexico City time and offer a separate weekly event. Calendar apps control whether they keep the imported reminders and imported events do not follow later site changes.
+- The monthly tuition is a reference from the school’s November–December 2026 poster. Confirm revised prices with the school before editing them.
 - The testimonials are anonymous excerpts from the school form that invited public testimonials.
 - Maintain venue descriptions, map links and arrival references in [tools/venues.mjs](tools/venues.mjs). When the school provides verified meeting points and publishable photos, update the venue details and add a `photos` array with a public CDN `src`, descriptive `alt`, `width` and `height` for each image.
 - Publish exact studio addresses, workshop dates, rules and the gender-violence prevention protocol after receiving verified publishable information.

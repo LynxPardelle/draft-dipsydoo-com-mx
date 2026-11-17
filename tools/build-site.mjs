@@ -1,5 +1,4 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { calendarDownloads } from './class-calendar.mjs';
 import { venues } from './venues.mjs';
 
 const domain = 'dipsydoo.com.mx';
@@ -15,8 +14,6 @@ const blush = '#f2deef';
 const border = '#decddd';
 const title = 'Clases de Swing y Lindy Hop en CDMX | Dipsy Doo!';
 const description = 'Aprende Lindy Hop, Rockabilly Jive y Charleston en Ciudad de México. Puedes empezar sin experiencia y venir sin pareja. Consulta horarios y sedes.';
-const period = 'Noviembre–diciembre de 2026';
-const calendarDates = {firstDate: '2026-11-16', lastDate: '2026-12-31'};
 const paths = {home: '/', classes: '/clases', schedule: '/horarios-y-sedes', community: '/comunidad', contact: '/contacto'};
 const navigation = [[paths.home, 'Inicio'], [paths.classes, 'Clases'], [paths.schedule, 'Horarios y sedes'], [paths.community, 'Comunidad'], [paths.contact, 'Contacto']];
 const width = {width: 'min(100%, 1160px)', margin: '0 auto', boxSizing: 'border-box', paddingInline: 'clamp(20px, 6vw, 76px)'};
@@ -35,6 +32,7 @@ const heroPhoto = 'https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/h
 const photo = (name) => assets + '20261110-' + name + '.webp';
 const videoUrl = (name) => 'https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-' + name + '.mp4';
 const whatsapp = (message) => 'https://wa.me/' + phone.slice(1) + '?text=' + encodeURIComponent(message);
+const weekdays = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 const groups = [
   ['Lunes', '17:00', 'Rockabilly Jive', 'Nueva Santa María', false],
   ['Lunes', '20:00', 'Lindy Hop', 'Guerrero', false],
@@ -56,7 +54,7 @@ const prices = [
 const faq = [
   {id: 'partner', title: '¿Necesito llevar pareja?', content: 'No. Puedes venir sin pareja. Durante la clase rotamos para practicar con distintas personas.'},
   {id: 'experience', title: '¿Puedo aprender si nunca he bailado?', content: 'Sí. Puedes empezar desde nivel principiante en Lindy Hop, Rockabilly Jive o Charleston.'},
-  {id: 'observe', title: '¿Puedo observar una clase?', content: 'Sí. Escribe por WhatsApp antes de ir para confirmar qué grupo puedes observar y dónde se reúne.'},
+  {id: 'observe', title: '¿Puedo observar una clase?', content: 'Sí. Puedes venir a observar una clase para ver si te gusta. Escríbenos por WhatsApp antes de ir para confirmar el horario y el punto de encuentro.'},
   {id: 'join', title: '¿Cómo confirmo cupo para mi primera clase?', content: 'Elige un estilo y horario. Escríbenos por WhatsApp con el grupo que te interesa para confirmar cupo y el punto de encuentro.'},
   {id: 'single', title: '¿Puedo pagar una sola clase?', content: 'Las clases se manejan por mensualidad. Consulta las opciones de acuerdo con tu frecuencia semanal.'},
   {id: 'format', title: '¿Cómo se desarrolla una clase?', content: 'Comenzamos con calentamiento, trabajamos las bases técnicas y practicamos en pareja. Recibirás retroalimentación durante la clase.'},
@@ -108,12 +106,24 @@ const accordion = (id, items) => add(id, 'accordion', {
   defaultItemPanelClasses: 'ank-padding-14px'
 });
 
-const calendarHint = (id) => text(id, 'Abre «Agregar al calendario» y descarga el archivo .ics de una fecha o de la serie semanal. Al importarlo, revisa que tu app haya guardado los dos avisos: un día antes y una hora antes. Confirma posibles cambios con la escuela.', 'p', {maxWidth: '66ch', marginBlock: '12px 18px'});
+const calendarHint = (id) => text(id, 'Abre «Agregar al calendario» para guardar la próxima clase o repetirla cada semana. Al importar el archivo .ics, revisa que tu calendario conserve los avisos de un día antes y una hora antes. Confirma posibles cambios con la escuela.', 'p', {maxWidth: '66ch', marginBlock: '12px 18px'});
 
 function classCalendar(id, [day, time, style, venue, weekend]) {
-  const html = calendarDownloads({day, time, style, venue: venues[venue], duration: weekend ? 90 : 60,
-    ...calendarDates, url: origin + paths.schedule + '#' + venues[venue].id});
-  return add(id, 'text', {tag: 'div', html, styles: {fontSize: '15px'}});
+  const place = venues[venue];
+  const groupSlug = [style, day, time, place.id].join('-')
+    .normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  return add(id, 'weekly-calendar', {
+    weekday: weekdays.indexOf(day),
+    localTime: time,
+    durationMinutes: weekend ? 90 : 60,
+    timeZone: 'America/Mexico_City',
+    summary: 'Dipsy Doo! · ' + style,
+    location: place.location,
+    description: 'Confirma el cupo y el punto de encuentro con Dipsy Doo! antes de ir, especialmente en días festivos.\nMapa de referencia: ' + place.mapUrl,
+    url: origin + paths.schedule + '#' + place.id,
+    uid: 'dipsy-doo-' + groupSlug,
+    ariaLabel: `Agregar al calendario: ${style}, ${day.toLowerCase()} a las ${time} en ${venue}`
+  });
 }
 
 function pageIntro(kicker, headingText, body) {
@@ -176,7 +186,7 @@ function renderHome() {
 
 function renderClasses() {
   return [
-    pageIntro('Clases presenciales · CDMX', 'Clases de swing y rock and roll en CDMX', 'Elige entre Lindy Hop, Rockabilly Jive y Charleston. Puedes empezar desde cero en clases presenciales y venir sin pareja.'),
+    pageIntro('Clases presenciales · CDMX', 'Clases de swing y rock and roll en CDMX', 'Elige entre Lindy Hop, Rockabilly Jive y Charleston. Puedes empezar desde cero y venir sin pareja. También puedes venir a observar una clase para ver si te gusta. Escríbenos por WhatsApp para confirmar el grupo y el punto de encuentro.'),
     box('classList', [
       calendarHint('classCalendarHint'),
       ...styles.map(([label, kicker, detail, src], index) => box('class-' + index, [
@@ -185,7 +195,7 @@ function renderClasses() {
         text('classKicker-' + index, kicker, 'p', {...eyebrow, color: blue}),
         heading('classHeading-' + index, label),
         text('classDetail-' + index, detail, 'p', {maxWidth: '57ch', marginTop: '10px'}),
-        text('classScheduleLabel-' + index, 'Horarios · ' + period, 'h3', {fontSize: '16px', fontWeight: '700', marginTop: '14px'}),
+        text('classScheduleLabel-' + index, 'Horarios semanales', 'h3', {fontSize: '16px', fontWeight: '700', marginTop: '14px'}),
         box('classScheduleList-' + index, groups
           .filter(([, , style]) => style === label)
           .map((group, row) => box('classTime-' + index + '-' + row, [
@@ -215,7 +225,7 @@ function renderClasses() {
 
 function renderSchedule() {
   return [
-    pageIntro(period + ' · CDMX', 'Horarios y sedes', 'Consulta las clases en Guerrero, Nueva Santa María, Jardín Pushkin y Parque Hundido. Las mensualidades de referencia empiezan en $350 MXN. Confirma el cupo y el punto de encuentro por WhatsApp.'),
+    pageIntro('Clases semanales · CDMX', 'Horarios y sedes', 'Consulta las clases en Guerrero, Nueva Santa María, Jardín Pushkin y Parque Hundido. Las mensualidades de referencia empiezan en $350 MXN. Confirma el cupo y el punto de encuentro por WhatsApp.'),
     box('schedule', [
       heading('scheduleHeading', 'Encuentra tu clase'),
       calendarHint('scheduleCalendarHint'),
@@ -253,7 +263,7 @@ function renderSchedule() {
       })
     ], {...section, paddingTop: '0'}, 'section', sectionId('sedes')),
     box('prices', [box('priceLayout', [
-      text('pricesKicker', period + ' · MXN', 'p', {...eyebrow, color: blue}),
+      text('pricesKicker', 'Precios de referencia · MXN', 'p', {...eyebrow, color: blue}),
       heading('pricesHeading', 'Colegiaturas mensuales'),
       box('priceColumns', prices.map(([label, plans], index) => box('price-' + index, [
         text('priceLabel-' + index, label, 'h3', {fontSize: '21px', fontWeight: '700', marginBottom: '8px'}),
@@ -262,9 +272,9 @@ function renderSchedule() {
           return box(id, [text(id + '-label', frequency, 'span'), text(id + '-value', amount, 'strong', {color: blue})], {...flex, justifyContent: 'space-between', paddingBlock: '10px', borderTop: '1px solid ' + border});
         })
       ], {}, 'article')), {...grid, marginBlock: '22px 14px'}),
-      text('priceNote', 'Las clases se manejan por mensualidad. Confirma con la escuela qué plan corresponde al grupo que elegiste.'),
+      text('priceNote', 'Los importes de referencia se tomaron del cartel de noviembre y diciembre de 2026. Confirma con la escuela el plan y la mensualidad vigente para tu grupo.'),
       link('priceContact', 'Ver opciones de contacto', paths.contact, {marginTop: '10px'}),
-      link('scheduleOriginal', 'Consultar el cartel de horarios de la escuela ↗', photo('horarios'), {display: 'flex', fontSize: '14px'}, {target: '_blank', rel: 'noopener noreferrer'})
+      link('scheduleOriginal', 'Consultar el cartel de noviembre y diciembre de 2026 ↗', photo('horarios'), {display: 'flex', fontSize: '14px'}, {target: '_blank', rel: 'noopener noreferrer'})
     ], section)], {background: blush}, 'section', sectionId('colegiaturas'))
   ];
 }
@@ -382,7 +392,7 @@ function renderContact() {
 const pages = [
   ['default', paths.home, 'Inicio', title, description, renderHome],
   ['clases', paths.classes, 'Clases', 'Lindy Hop, Rockabilly Jive y Charleston en CDMX | Dipsy Doo!', 'Compara los tres estilos de baile, mira videos de clase y conoce qué practicarás en tu primera visita, aunque empieces desde cero.', renderClasses],
-  ['horarios-y-sedes', paths.schedule, 'Horarios y sedes', 'Horarios, sedes y precios de clases en CDMX | Dipsy Doo!', 'Consulta los horarios de baile en Guerrero, Nueva Santa María, Jardín Pushkin y Parque Hundido, y las mensualidades de noviembre–diciembre de 2026.', renderSchedule],
+  ['horarios-y-sedes', paths.schedule, 'Horarios y sedes', 'Horarios, sedes y precios de clases en CDMX | Dipsy Doo!', 'Consulta los horarios semanales de baile en Guerrero, Nueva Santa María, Jardín Pushkin y Parque Hundido, y las mensualidades de referencia.', renderSchedule],
   ['comunidad', paths.community, 'Comunidad', 'Bailes sociales de swing en CDMX | Dipsy Doo!', 'Conoce la comunidad de Dipsy Doo! en Ciudad de México con videos, fotos de los bailes sociales y testimonios del alumnado.', renderCommunity],
   ['contacto', paths.contact, 'Contacto', 'WhatsApp y primera clase de baile | Dipsy Doo!', 'Pregunta por cupos y sedes por WhatsApp. Descubre si necesitas pareja o experiencia, cómo se desarrolla una clase y si puedes observarla.', renderContact]
 ];
