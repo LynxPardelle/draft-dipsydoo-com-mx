@@ -40,6 +40,29 @@ for (const route of site.routes) {
     assert.equal(icon.height, 24);
   }
   if (route.path === '/comunidad') {
+    const testimonialCards = definitions.filter(component => /^testimonial-\d+$/.test(component.id));
+    assert.equal(testimonialCards.length, 6, 'Keep all six published testimonials');
+    assert.equal(definitions.filter(component => /^testimonialPhoto-\d+$/.test(component.id)).length, 5, 'Publish the five photos provided with the matching testimonials');
+    const testimonialSources = [
+      ['Me encanta la paciencia', 480],
+      ['Los compañeros de las clases', 480],
+      ['he adquirido confianza y fluidez', 504],
+      ['La forma de enseñanza', 480],
+      ['Saber que puedo día a día', 377]
+    ];
+    for (const [index, [excerpt, width]] of testimonialSources.entries()) {
+      const card = components.get('testimonial-' + index)?.config;
+      assert(card.components.includes('testimonialPhoto-' + index), 'Keep the source photo inside its own testimonial');
+      assert(components.get('testimonialQuote-' + index)?.config.text.includes(excerpt), 'Source quote and photo association changed');
+      const portrait = components.get('testimonialPhoto-' + index)?.config;
+      assert(portrait.src.endsWith('20261118-testimonio-' + (index + 1) + '.webp'), 'Incorrect source photo association');
+      assert.equal(portrait.width, width);
+      assert.equal(portrait.height, 640);
+      assert.equal(portrait.loading, 'lazy');
+      assert.equal(portrait.styles.objectFit, 'contain', 'Keep the supplied photo composition visible');
+      assert(portrait.alt.trim(), 'Describe testimonial photos for screen readers');
+    }
+    assert.equal(components.get('testimonial-5').config.components.length, 1, 'The source response without a photo must remain text-only');
     assert.equal(components.get('protocolHeading')?.config.text, 'Protocolo Violencia de Género');
     assert.equal(definitions.filter(component => /^protocolImage[1-5]$/.test(component.id)).length, 5);
     for (const [index, height] of [3780, 3296, 3780, 3313, 3436].entries()) {
