@@ -514,7 +514,7 @@ function writeDefaults(prefix, pageId) {
 write('site-config.json', {
   version: 1, domain, aliases: ['www.dipsydoo.com.mx'], defaultPageId: 'default',
   routes: pages.map(([pageId, path, label]) => ({path, pageId, label})),
-  runtime: {analytics: {enabled: false, consentUI: 'none', track: []}, features: {debugMode: false}},
+  runtime: {analytics: {enabled: true, consentUI: 'none', track: []}, features: {debugMode: false}},
   environments: {test: {aliases: []}},
   site: {
     appIdentity: {identifier: 'dipsydoo', name: 'Dipsy Doo!', version: '0.3.0', description},

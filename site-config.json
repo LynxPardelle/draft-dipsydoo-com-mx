@@ -34,7 +34,7 @@
   ],
   "runtime": {
     "analytics": {
-      "enabled": false,
+      "enabled": true,
       "consentUI": "none",
       "track": []
     },
