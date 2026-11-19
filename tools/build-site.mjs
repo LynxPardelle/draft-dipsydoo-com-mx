@@ -93,16 +93,24 @@ const testimonials = [
 ];
 
 let components = [];
-const add = (id, type, config) => {
-  components.push({id, type, config});
+const add = (id, type, config, eventInstructions) => {
+  components.push({id, type, config, ...(eventInstructions ? {eventInstructions} : {})});
   return id;
 };
 const text = (id, value, tag = 'p', css = {}) =>
   add(id, 'text', {tag, text: value, styles: {margin: '0', fontWeight: tag === 'strong' ? '700' : '400', ...css}});
 const box = (id, children, css = {}, tag = 'div', attributes = {}) =>
   add(id, 'container', {tag, components: children, styles: css, ...attributes});
-const link = (id, label, href, css = {}, attributes = {}) =>
-  add(id, 'link', {text: label, href, scrollRestoration: {mode: 'top', behavior: 'instant'}, styles: {...tap, color: blue, fontWeight: '700', ...css}, ...attributes});
+const link = (id, label, href, css = {}, attributes = {}) => {
+  const isWhatsApp = href.startsWith('https://wa.me/');
+  const config = {text: label, href, scrollRestoration: {mode: 'top', behavior: 'instant'}, styles: {...tap, color: blue, fontWeight: '700', ...css}, ...attributes};
+  if (isWhatsApp) {
+    config.target = '_blank';
+    config.rel = 'nofollow noopener noreferrer';
+    config.ariaLabel = (config.ariaLabel || label) + ' (abre en una pestaña nueva)';
+  }
+  return add(id, 'link', config, isWhatsApp ? 'trackEvent:whatsapp_click,cta,' + id : undefined);
+};
 const image = (id, src, alt, w, h, options = {}) =>
   add(id, 'media', {tag: 'image', src, alt, width: w, height: h, loading: 'lazy', decoding: 'async', ...options});
 const photograph = (id, src, alt, w = 1440, h = 1440) => image(id, src, alt, w, h, {

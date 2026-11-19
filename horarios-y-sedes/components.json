@@ -880,8 +880,12 @@
           "boxSizing": "border-box",
           "color": "#004d9d",
           "fontWeight": "700"
-        }
-      }
+        },
+        "target": "_blank",
+        "rel": "nofollow noopener noreferrer",
+        "ariaLabel": "Confirmar sede y cupo por WhatsApp (abre en una pestaña nueva)"
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,askSchedule"
     },
     {
       "id": "scheduleLinks",
@@ -1016,8 +1020,11 @@
           "color": "#004d9d",
           "fontWeight": "700"
         },
-        "ariaLabel": "Pedir el punto por WhatsApp · Guerrero"
-      }
+        "ariaLabel": "Pedir el punto por WhatsApp · Guerrero (abre en una pestaña nueva)",
+        "target": "_blank",
+        "rel": "nofollow noopener noreferrer"
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,venueContact-guerrero"
     },
     {
       "id": "venueActions-guerrero",
@@ -1136,8 +1143,11 @@
           "color": "#004d9d",
           "fontWeight": "700"
         },
-        "ariaLabel": "Pedir el punto por WhatsApp · Nueva Santa María"
-      }
+        "ariaLabel": "Pedir el punto por WhatsApp · Nueva Santa María (abre en una pestaña nueva)",
+        "target": "_blank",
+        "rel": "nofollow noopener noreferrer"
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,venueContact-nueva-santa-maria"
     },
     {
       "id": "venueActions-nueva-santa-maria",
@@ -1256,8 +1266,11 @@
           "color": "#004d9d",
           "fontWeight": "700"
         },
-        "ariaLabel": "Pedir el punto por WhatsApp · Jardín Pushkin"
-      }
+        "ariaLabel": "Pedir el punto por WhatsApp · Jardín Pushkin (abre en una pestaña nueva)",
+        "target": "_blank",
+        "rel": "nofollow noopener noreferrer"
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,venueContact-jardin-pushkin"
     },
     {
       "id": "venueActions-jardin-pushkin",
@@ -1376,8 +1389,11 @@
           "color": "#004d9d",
           "fontWeight": "700"
         },
-        "ariaLabel": "Pedir el punto por WhatsApp · Parque Hundido"
-      }
+        "ariaLabel": "Pedir el punto por WhatsApp · Parque Hundido (abre en una pestaña nueva)",
+        "target": "_blank",
+        "rel": "nofollow noopener noreferrer"
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,venueContact-parque-hundido"
     },
     {
       "id": "venueActions-parque-hundido",

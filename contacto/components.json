@@ -133,8 +133,12 @@
           "borderRadius": "28px",
           "background": "#004d9d",
           "textDecoration": "none"
-        }
-      }
+        },
+        "target": "_blank",
+        "rel": "nofollow noopener noreferrer",
+        "ariaLabel": "WhatsApp +52 55 4031 2687 ↗ (abre en una pestaña nueva)"
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,whatsapp"
     },
     {
       "id": "contactSchedule",
