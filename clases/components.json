@@ -384,8 +384,12 @@
           "color": "#004d9d",
           "fontWeight": "700",
           "marginTop": "12px"
-        }
-      }
+        },
+        "target": "_blank",
+        "rel": "nofollow noopener noreferrer",
+        "ariaLabel": "Preguntar por Lindy Hop (abre en una pestaña nueva)"
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,classAsk-0"
     },
     {
       "id": "classCopy-0",
@@ -623,8 +627,12 @@
           "color": "#004d9d",
           "fontWeight": "700",
           "marginTop": "12px"
-        }
-      }
+        },
+        "target": "_blank",
+        "rel": "nofollow noopener noreferrer",
+        "ariaLabel": "Preguntar por Rockabilly Jive (abre en una pestaña nueva)"
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,classAsk-1"
     },
     {
       "id": "classCopy-1",
@@ -818,8 +826,12 @@
           "color": "#004d9d",
           "fontWeight": "700",
           "marginTop": "12px"
-        }
-      }
+        },
+        "target": "_blank",
+        "rel": "nofollow noopener noreferrer",
+        "ariaLabel": "Preguntar por Charleston (abre en una pestaña nueva)"
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,classAsk-2"
     },
     {
       "id": "classCopy-2",

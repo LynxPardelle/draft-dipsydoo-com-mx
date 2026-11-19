@@ -259,8 +259,12 @@
           "borderRadius": "28px",
           "background": "#004d9d",
           "textDecoration": "none"
-        }
-      }
+        },
+        "target": "_blank",
+        "rel": "nofollow noopener noreferrer",
+        "ariaLabel": "Preguntar por el próximo baile (abre en una pestaña nueva)"
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,socialContact"
     },
     {
       "id": "communityCopy",
@@ -2094,8 +2098,12 @@
           "borderRadius": "28px",
           "background": "#004d9d",
           "textDecoration": "none"
-        }
-      }
+        },
+        "target": "_blank",
+        "rel": "nofollow noopener noreferrer",
+        "ariaLabel": "Consultar próximas actividades (abre en una pestaña nueva)"
+      },
+      "eventInstructions": "trackEvent:whatsapp_click,cta,communityNextContact"
     },
     {
       "id": "communityNext",
