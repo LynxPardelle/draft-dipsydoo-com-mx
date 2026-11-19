@@ -164,6 +164,26 @@
       }
     },
     {
+      "id": "communityProtocolShortcut",
+      "type": "link",
+      "config": {
+        "text": "Protocolo Violencia de Género",
+        "href": "#protocolo-violencia-de-genero",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
       "id": "communityShortcuts",
       "type": "container",
       "config": {
@@ -172,7 +192,8 @@
           "communityVideosShortcut",
           "communityGalleryShortcut",
           "communityTestimonialsShortcut",
-          "communityConductShortcut"
+          "communityConductShortcut",
+          "communityProtocolShortcut"
         ],
         "styles": {
           "width": "min(100%, 1160px)",
@@ -1425,6 +1446,490 @@
       }
     },
     {
+      "id": "protocolHeading",
+      "type": "text",
+      "config": {
+        "tag": "h2",
+        "text": "Protocolo Violencia de Género",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "700",
+          "fontFamily": "Georgia, serif",
+          "fontSize": "clamp(27px, 4vw, 42px)",
+          "lineHeight": "1.06",
+          "letterSpacing": "-.045em"
+        }
+      }
+    },
+    {
+      "id": "protocolIntro",
+      "type": "text",
+      "config": {
+        "tag": "p",
+        "text": "Protocolo de acción compartido por Dipsy Doo! para atender denuncias de violencia de género. Consulta las cinco láminas en orden o abre cada una en tamaño completo.",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400",
+          "marginBlock": "14px 22px",
+          "maxWidth": "66ch"
+        }
+      }
+    },
+    {
+      "id": "protocolShortcut1",
+      "type": "link",
+      "config": {
+        "text": "Lámina 1",
+        "href": "#protocolo-lamina-1",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "protocolShortcut2",
+      "type": "link",
+      "config": {
+        "text": "Lámina 2",
+        "href": "#protocolo-lamina-2",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "protocolShortcut3",
+      "type": "link",
+      "config": {
+        "text": "Lámina 3",
+        "href": "#protocolo-lamina-3",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "protocolShortcut4",
+      "type": "link",
+      "config": {
+        "text": "Lámina 4",
+        "href": "#protocolo-lamina-4",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "protocolShortcut5",
+      "type": "link",
+      "config": {
+        "text": "Lámina 5",
+        "href": "#protocolo-lamina-5",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700"
+        }
+      }
+    },
+    {
+      "id": "protocolNavigation",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "components": [
+          "protocolShortcut1",
+          "protocolShortcut2",
+          "protocolShortcut3",
+          "protocolShortcut4",
+          "protocolShortcut5"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "12px 22px",
+          "marginBottom": "24px"
+        },
+        "ariaLabel": "Láminas del protocolo"
+      }
+    },
+    {
+      "id": "protocolImage1",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-protocolo-1.webp",
+        "alt": "Protocolo de acción ante denuncias de violencia de género de Dipsy Doo!, lámina 1 de 5.",
+        "width": 1890,
+        "height": 3780,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "background": "#000000"
+        }
+      }
+    },
+    {
+      "id": "protocolOriginal1",
+      "type": "link",
+      "config": {
+        "text": "Abrir lámina 1 de 5 en tamaño completo ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-protocolo-1.webp",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "marginTop": "12px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "protocolFigure1",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "protocolImage1",
+          "protocolOriginal1"
+        ],
+        "styles": {
+          "margin": "0"
+        },
+        "id": "protocolo-lamina-1",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "protocolImage2",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-protocolo-2.webp",
+        "alt": "Protocolo de acción ante denuncias de violencia de género de Dipsy Doo!, lámina 2 de 5.",
+        "width": 1890,
+        "height": 3296,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "background": "#000000"
+        }
+      }
+    },
+    {
+      "id": "protocolOriginal2",
+      "type": "link",
+      "config": {
+        "text": "Abrir lámina 2 de 5 en tamaño completo ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-protocolo-2.webp",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "marginTop": "12px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "protocolFigure2",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "protocolImage2",
+          "protocolOriginal2"
+        ],
+        "styles": {
+          "margin": "0"
+        },
+        "id": "protocolo-lamina-2",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "protocolImage3",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-protocolo-3.webp",
+        "alt": "Protocolo de acción ante denuncias de violencia de género de Dipsy Doo!, lámina 3 de 5.",
+        "width": 1890,
+        "height": 3780,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "background": "#000000"
+        }
+      }
+    },
+    {
+      "id": "protocolOriginal3",
+      "type": "link",
+      "config": {
+        "text": "Abrir lámina 3 de 5 en tamaño completo ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-protocolo-3.webp",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "marginTop": "12px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "protocolFigure3",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "protocolImage3",
+          "protocolOriginal3"
+        ],
+        "styles": {
+          "margin": "0"
+        },
+        "id": "protocolo-lamina-3",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "protocolImage4",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-protocolo-4.webp",
+        "alt": "Protocolo de acción ante denuncias de violencia de género de Dipsy Doo!, lámina 4 de 5.",
+        "width": 1890,
+        "height": 3313,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "background": "#000000"
+        }
+      }
+    },
+    {
+      "id": "protocolOriginal4",
+      "type": "link",
+      "config": {
+        "text": "Abrir lámina 4 de 5 en tamaño completo ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-protocolo-4.webp",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "marginTop": "12px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "protocolFigure4",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "protocolImage4",
+          "protocolOriginal4"
+        ],
+        "styles": {
+          "margin": "0"
+        },
+        "id": "protocolo-lamina-4",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "protocolImage5",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-protocolo-5.webp",
+        "alt": "Protocolo de acción ante denuncias de violencia de género de Dipsy Doo!, lámina 5 de 5.",
+        "width": 1890,
+        "height": 3436,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto",
+          "background": "#000000"
+        }
+      }
+    },
+    {
+      "id": "protocolOriginal5",
+      "type": "link",
+      "config": {
+        "text": "Abrir lámina 5 de 5 en tamaño completo ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-protocolo-5.webp",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "marginTop": "12px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "protocolFigure5",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "protocolImage5",
+          "protocolOriginal5"
+        ],
+        "styles": {
+          "margin": "0"
+        },
+        "id": "protocolo-lamina-5",
+        "tabindex": -1
+      }
+    },
+    {
+      "id": "protocolPosters",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "protocolFigure1",
+          "protocolFigure2",
+          "protocolFigure3",
+          "protocolFigure4",
+          "protocolFigure5"
+        ],
+        "styles": {
+          "display": "grid",
+          "gap": "30px",
+          "maxWidth": "860px",
+          "marginInline": "auto"
+        }
+      }
+    },
+    {
+      "id": "protocol",
+      "type": "container",
+      "config": {
+        "tag": "section",
+        "components": [
+          "protocolHeading",
+          "protocolIntro",
+          "protocolNavigation",
+          "protocolPosters"
+        ],
+        "styles": {
+          "width": "min(100%, 1160px)",
+          "margin": "0 auto",
+          "boxSizing": "border-box",
+          "paddingInline": "clamp(20px, 6vw, 76px)",
+          "paddingBlock": "clamp(40px, 6vw, 76px)"
+        },
+        "id": "protocolo-violencia-de-genero",
+        "tabindex": -1
+      }
+    },
+    {
       "id": "communityNextHeading",
       "type": "text",
       "config": {
@@ -2180,6 +2685,7 @@
           "communityGallery",
           "testimonials",
           "conduct",
+          "protocol",
           "communityNext"
         ],
         "styles": {},

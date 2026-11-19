@@ -35,6 +35,9 @@ const socialProfiles = [
   {id: 'facebook', name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61562416997881'},
   {id: 'tiktok', name: 'TikTok', href: 'https://www.tiktok.com/@dipsy_doo'}
 ];
+const protocolPosters = [3780, 3296, 3780, 3313, 3436].map((height, index) => ({
+  src: assets + '20261118-protocolo-' + (index + 1) + '.webp', width: 1890, height
+}));
 const videoUrl = (name) => 'https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-' + name + '.mp4';
 const whatsapp = (message) => 'https://wa.me/' + phone.slice(1) + '?text=' + encodeURIComponent(message);
 const weekdays = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
@@ -206,7 +209,7 @@ function renderHome() {
 
 function renderClasses() {
   return [
-    pageIntro('Clases presenciales · CDMX', 'Clases de swing y rock and roll en CDMX', 'Elige entre Lindy Hop, Rockabilly Jive y Charleston. Puedes empezar desde cero y venir sin pareja. También puedes venir a observar una clase para ver si te gusta. Escríbenos por WhatsApp para confirmar el grupo y el punto de encuentro.'),
+    pageIntro('Clases presenciales · CDMX', 'Clases para bailar música swing y rock and roll en CDMX', 'Elige entre Lindy Hop, Rockabilly Jive y Charleston. Puedes empezar desde cero y venir sin pareja. También puedes venir a observar una clase para ver si te gusta. Escríbenos por WhatsApp para confirmar el grupo y el punto de encuentro.'),
     box('classList', [
       calendarHint('classCalendarHint'),
       ...styles.map(([label, kicker, detail, src], index) => box('class-' + index, [
@@ -306,7 +309,8 @@ function renderCommunity() {
       link('communityVideosShortcut', 'Videos de la comunidad', '#momentos'),
       link('communityGalleryShortcut', 'Galería de encuentros', '#galeria'),
       link('communityTestimonialsShortcut', 'Testimonios', '#testimonios'),
-      link('communityConductShortcut', 'Código de conducta', '#convivencia')
+      link('communityConductShortcut', 'Código de conducta', '#convivencia'),
+      link('communityProtocolShortcut', 'Protocolo Violencia de Género', '#protocolo-violencia-de-genero')
     ], {...width, ...flex, paddingBlock: '18px'}, 'nav', {ariaLabel: 'En esta página'}),
     box('social', [
       box('communityCopy', [
@@ -375,6 +379,22 @@ function renderCommunity() {
       ].map((rule, index) => box('conductRule-' + index, [text('conductText-' + index, rule)], {paddingBlock: '8px'}, 'li')), {paddingLeft: '22px', margin: '0', maxWidth: '75ch'}, 'ul'),
       text('conductSupport', 'Si percibes una situación incómoda, avisa a las personas organizadoras para que puedan apoyarte.', 'p', {fontWeight: '700', marginBlock: '20px 12px'})
     ], section)], {background: blush}, 'section', sectionId('convivencia')),
+    box('protocol', [
+      heading('protocolHeading', 'Protocolo Violencia de Género'),
+      text('protocolIntro', 'Protocolo de acción compartido por Dipsy Doo! para atender denuncias de violencia de género. Consulta las cinco láminas en orden o abre cada una en tamaño completo.', 'p', {marginBlock: '14px 22px', maxWidth: '66ch'}),
+      box('protocolNavigation', protocolPosters.map((poster, index) =>
+        link('protocolShortcut' + (index + 1), 'Lámina ' + (index + 1), '#protocolo-lamina-' + (index + 1))
+      ), {...flex, marginBottom: '24px'}, 'nav', {ariaLabel: 'Láminas del protocolo'}),
+      box('protocolPosters', protocolPosters.map((poster, index) => {
+        const part = index + 1;
+        return box('protocolFigure' + part, [
+          image('protocolImage' + part, poster.src, 'Protocolo de acción ante denuncias de violencia de género de Dipsy Doo!, lámina ' + part + ' de 5.', poster.width, poster.height, {
+            styles: {display: 'block', width: '100%', height: 'auto', background: '#000000'}
+          }),
+          link('protocolOriginal' + part, 'Abrir lámina ' + part + ' de 5 en tamaño completo ↗', poster.src, {marginTop: '12px'}, {target: '_blank', rel: 'noopener noreferrer'})
+        ], {margin: '0'}, 'figure', sectionId('protocolo-lamina-' + part));
+      }), {display: 'grid', gap: '30px', maxWidth: '860px', marginInline: 'auto'})
+    ], section, 'section', sectionId('protocolo-violencia-de-genero')),
     box('communityNext', [
       heading('communityNextHeading', 'Encuentra tu siguiente baile'),
       text('communityNextDetails', 'Pregunta por el próximo social, las clases regulares y los talleres especiales disponibles.', 'p', {marginBlock: '12px 18px'}),
