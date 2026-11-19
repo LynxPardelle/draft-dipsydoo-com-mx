@@ -30,6 +30,11 @@ const logo = assets + 'dipsy-doo.webp';
 const dancePhoto = assets + 'pareja-baile.webp';
 const heroPhoto = 'https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/hero-images/portada-web-1200-20261111.webp';
 const photo = (name) => assets + '20261110-' + name + '.webp';
+const socialProfiles = [
+  {id: 'instagram', name: 'Instagram', href: 'https://www.instagram.com/dipsydoo/'},
+  {id: 'facebook', name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61562416997881'},
+  {id: 'tiktok', name: 'TikTok', href: 'https://www.tiktok.com/@dipsy_doo'}
+];
 const videoUrl = (name) => 'https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/videos/20261110-' + name + '.mp4';
 const whatsapp = (message) => 'https://wa.me/' + phone.slice(1) + '?text=' + encodeURIComponent(message);
 const weekdays = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
@@ -85,6 +90,21 @@ const image = (id, src, alt, w, h, options = {}) =>
 const photograph = (id, src, alt, w = 1440, h = 1440) => image(id, src, alt, w, h, {
   styles: {display: 'block', width: '100%', height: 'auto', aspectRatio: '4 / 3', objectFit: 'cover', borderRadius: '8px'}
 });
+function socialLinks(id, css = {}) {
+  return box(id, socialProfiles.map(profile => link(id + '-' + profile.id, '', profile.href, {
+    gap: '10px', padding: '9px 15px', borderRadius: '24px', border: '1px solid ' + border,
+    background: '#ffffff', color: ink, textDecoration: 'none', fontSize: '15px'
+  }, {
+    target: '_blank', rel: 'noopener noreferrer',
+    ariaLabel: profile.name + ' de Dipsy Doo! (abre en una pestaña nueva)',
+    components: [
+      image(id + '-' + profile.id + '-icon', 'https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/logos/20261118-' + profile.id + '-simple-icons-16-14-0.svg', '', 24, 24, {
+        styles: {display: 'block', width: '24px', height: '24px', flexShrink: '0'}
+      }),
+      text(id + '-' + profile.id + '-label', profile.name, 'span')
+    ]
+  })), {...flex, gap: '10px', ...css}, 'nav', {ariaLabel: 'Redes sociales de Dipsy Doo!'});
+}
 function videoFigure(id, name, label, detail, portrait = false) {
   return box(id, [
     add(id + 'Player', 'media', {tag: 'video', src: videoUrl(name), styles: {
@@ -334,8 +354,16 @@ function renderCommunity() {
     ], section, 'section', sectionId('testimonios')),
     box('conduct', [box('conductLayout', [
       text('conductKicker', 'Cuidemos la pista', 'p', {...eyebrow, color: blue}),
-      heading('conductHeading', 'Bailar con respeto'),
+      heading('conductHeading', 'Código de etiqueta para bailes sociales'),
       text('conductIntro', 'El código de etiqueta y conducta de Dipsy Doo! nos invita a cuidarnos y disfrutar los bailes sociales.', 'p', {marginBlock: '14px 22px', maxWidth: '63ch'}),
+      box('conductPosters', [1, 2].map(part => box('conductFigure' + part, [
+        image('conductPosterImage' + part, photo('codigo-de-conducta-' + part), 'Código de etiqueta y conducta para bailes sociales de Dipsy Doo!, parte ' + part + ' de 2.', 1080, 1350, {
+          styles: {display: 'block', width: '100%', height: 'auto'}
+        }),
+        link('conductPoster' + part, 'Abrir código de etiqueta · parte ' + part + ' ↗', photo('codigo-de-conducta-' + part), {marginTop: '10px'}, {target: '_blank', rel: 'noopener noreferrer'})
+      ], {margin: '0', minWidth: '0'}, 'figure')), {
+        ...grid, gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))', alignItems: 'start', marginBottom: '24px'
+      }),
       box('conductList', [
         'Respeta cuando alguien no quiere bailar y acepta su respuesta sin insistir.',
         'Ajusta tus movimientos a tu pareja y baila con suavidad.',
@@ -345,11 +373,7 @@ function renderCommunity() {
         'Comparte observaciones sobre la forma de bailar solo cuando tu pareja te las pida.',
         'Reserva los aéreos para exhibiciones y círculos de jam, con personas con quienes los hayas practicado y acordado.'
       ].map((rule, index) => box('conductRule-' + index, [text('conductText-' + index, rule)], {paddingBlock: '8px'}, 'li')), {paddingLeft: '22px', margin: '0', maxWidth: '75ch'}, 'ul'),
-      text('conductSupport', 'Si percibes una situación incómoda, avisa a las personas organizadoras para que puedan apoyarte.', 'p', {fontWeight: '700', marginBlock: '20px 12px'}),
-      box('conductOriginals', [
-        link('conductPoster1', 'Ver código de conducta · parte 1 ↗', photo('codigo-de-conducta-1'), {}, {target: '_blank', rel: 'noopener noreferrer'}),
-        link('conductPoster2', 'Ver código de conducta · parte 2 ↗', photo('codigo-de-conducta-2'), {}, {target: '_blank', rel: 'noopener noreferrer'})
-      ], flex)
+      text('conductSupport', 'Si percibes una situación incómoda, avisa a las personas organizadoras para que puedan apoyarte.', 'p', {fontWeight: '700', marginBlock: '20px 12px'})
     ], section)], {background: blush}, 'section', sectionId('convivencia')),
     box('communityNext', [
       heading('communityNextHeading', 'Encuentra tu siguiente baile'),
@@ -370,6 +394,10 @@ function renderContact() {
         link('contactSchedule', 'Consultar horarios y sedes', paths.schedule),
         link('contactQuestions', 'Ver preguntas frecuentes', '#preguntas')
       ], flex)
+    ], section, 'section'),
+    box('contactSocial', [
+      heading('contactSocialHeading', 'Síguenos en redes'),
+      socialLinks('contactSocialLinks', {marginTop: '18px'})
     ], section, 'section'),
     box('faq', [box('faqLayout', [
       heading('faqHeading', 'Preguntas frecuentes antes de tu primera clase'),
@@ -405,7 +433,7 @@ const structuredData = {
       '@context': 'https://schema.org', '@type': 'Organization', '@id': organizationId,
       name: 'Dipsy Doo!', url: origin + '/', logo,
       description: 'Escuela de Lindy Hop, Rockabilly Jive y Charleston en Ciudad de México.',
-      telephone: phone, areaServed: mexicoCity
+      telephone: phone, areaServed: mexicoCity, sameAs: socialProfiles.map(profile => profile.href)
     },
     {
       '@context': 'https://schema.org', '@type': 'WebSite', '@id': origin + '/#sitio',
@@ -436,7 +464,8 @@ function shell(path, children) {
       text('footerBrand', 'Dipsy Doo!', 'p', {fontFamily: 'Georgia, serif', fontSize: '26px', fontWeight: '700'}),
       text('footerText', 'Clases presenciales de baile en Ciudad de México.', 'p', {fontSize: '14px'})
     ]),
-    box('footerNavigation', navigation.map(([href, label], index) => link('footerNav-' + index, label, href, {fontSize: '14px', color: '#ffffff'})), {...flex, gap: '4px 18px'}, 'nav', {ariaLabel: 'Pie de página'})
+    box('footerNavigation', navigation.map(([href, label], index) => link('footerNav-' + index, label, href, {fontSize: '14px', color: '#ffffff'})), {...flex, gap: '4px 18px'}, 'nav', {ariaLabel: 'Pie de página'}),
+    socialLinks('footerSocialLinks', {width: '100%', paddingTop: '20px', borderTop: '1px solid #746881'})
   ], {...width, ...flex, paddingBlock: '30px', justifyContent: 'space-between'})], {background: ink, color: '#ffffff'}, 'footer');
   return box('page', [
     link('skip', 'Saltar al contenido', '#contenido', {...tap, display: 'flex', justifyContent: 'center', fontSize: '13px', background: blush}),

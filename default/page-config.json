@@ -30,7 +30,12 @@
         "areaServed": {
           "@type": "City",
           "name": "Ciudad de México"
-        }
+        },
+        "sameAs": [
+          "https://www.instagram.com/dipsydoo/",
+          "https://www.facebook.com/profile.php?id=61562416997881",
+          "https://www.tiktok.com/@dipsy_doo"
+        ]
       },
       {
         "@context": "https://schema.org",
