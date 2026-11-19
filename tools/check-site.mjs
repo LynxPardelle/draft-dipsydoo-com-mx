@@ -8,6 +8,11 @@ const pages = new Map();
 const media = new Set();
 const titles = new Set();
 const descriptions = new Set();
+const socialProfiles = new Map([
+  ['www.instagram.com', 'https://www.instagram.com/dipsydoo/'],
+  ['www.facebook.com', 'https://www.facebook.com/profile.php?id=61562416997881'],
+  ['www.tiktok.com', 'https://www.tiktok.com/@dipsy_doo']
+]);
 
 for (const route of site.routes) {
   assert(!pages.has(route.path), 'Duplicate route ' + route.path);
@@ -22,6 +27,28 @@ for (const route of site.routes) {
   titles.add(page.seo.title.es);
   descriptions.add(page.seo.description.es);
   assert.equal(definitions.filter(component => component.config.tag === 'h1').length, 1);
+  for (const [hostname, href] of socialProfiles) {
+    const id = hostname.split('.')[1];
+    const socialLink = components.get('footerSocialLinks-' + id)?.config;
+    assert.equal(socialLink?.href, href, 'Missing social profile in the footer on ' + route.path);
+    assert.equal(socialLink.target, '_blank');
+    assert.match(socialLink.ariaLabel, /Dipsy Doo!/);
+    const icon = components.get('footerSocialLinks-' + id + '-icon')?.config;
+    assert.equal(icon?.tag, 'image');
+    assert(icon.src.endsWith('-' + id + '-simple-icons-16-14-0.svg'), 'Missing SVG brand logo');
+    assert.equal(icon.width, 24);
+    assert.equal(icon.height, 24);
+  }
+  if (route.path === '/comunidad') {
+    for (const part of [1, 2]) {
+      const poster = components.get('conductPosterImage' + part)?.config;
+      assert(poster?.src.endsWith('codigo-de-conducta-' + part + '.webp'), 'Missing complete code-of-conduct poster');
+      assert.equal(poster.width, 1080);
+      assert.equal(poster.height, 1350);
+      assert.equal(poster.styles.height, 'auto');
+      assert.equal(poster.styles.objectFit, undefined, 'Code-of-conduct posters must retain their full composition');
+    }
+  }
   if (route.path === '/') {
     const hero = components.get('heroPhoto')?.config;
     assert.equal(hero?.tag, 'image', 'Homepage hero must be discoverable as an image in the initial document');
@@ -57,7 +84,8 @@ for (const [path, page] of pages) {
       assert(!url.search, 'Preview parameters in authored links');
     } else {
       assert.equal(url.protocol, 'https:');
-      assert(['wa.me', 'assets.zoolandingpage.com.mx', 'www.google.com'].includes(url.hostname), 'Unexpected external destination');
+      assert(['wa.me', 'assets.zoolandingpage.com.mx', 'www.google.com', ...socialProfiles.keys()].includes(url.hostname), 'Unexpected external destination');
+      if (socialProfiles.has(url.hostname)) assert.equal(url.href, socialProfiles.get(url.hostname), 'Incorrect social profile');
       if (url.hostname === 'www.google.com') {
         assert.equal(url.pathname, '/maps/search/', 'Unexpected Google Maps action');
         assert.equal(url.searchParams.get('api'), '1');

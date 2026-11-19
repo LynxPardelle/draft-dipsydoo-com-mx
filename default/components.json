@@ -1125,6 +1125,223 @@
       }
     },
     {
+      "id": "footerSocialLinks-instagram-icon",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/logos/20261118-instagram-simple-icons-16-14-0.svg",
+        "alt": "",
+        "width": 24,
+        "height": 24,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "24px",
+          "height": "24px",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "footerSocialLinks-instagram-label",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "Instagram",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "footerSocialLinks-instagram",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://www.instagram.com/dipsydoo/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#251938",
+          "fontWeight": "700",
+          "gap": "10px",
+          "padding": "9px 15px",
+          "borderRadius": "24px",
+          "border": "1px solid #decddd",
+          "background": "#ffffff",
+          "textDecoration": "none",
+          "fontSize": "15px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "Instagram de Dipsy Doo! (abre en una pestaña nueva)",
+        "components": [
+          "footerSocialLinks-instagram-icon",
+          "footerSocialLinks-instagram-label"
+        ]
+      }
+    },
+    {
+      "id": "footerSocialLinks-facebook-icon",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/logos/20261118-facebook-simple-icons-16-14-0.svg",
+        "alt": "",
+        "width": 24,
+        "height": 24,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "24px",
+          "height": "24px",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "footerSocialLinks-facebook-label",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "Facebook",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "footerSocialLinks-facebook",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://www.facebook.com/profile.php?id=61562416997881",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#251938",
+          "fontWeight": "700",
+          "gap": "10px",
+          "padding": "9px 15px",
+          "borderRadius": "24px",
+          "border": "1px solid #decddd",
+          "background": "#ffffff",
+          "textDecoration": "none",
+          "fontSize": "15px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "Facebook de Dipsy Doo! (abre en una pestaña nueva)",
+        "components": [
+          "footerSocialLinks-facebook-icon",
+          "footerSocialLinks-facebook-label"
+        ]
+      }
+    },
+    {
+      "id": "footerSocialLinks-tiktok-icon",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/logos/20261118-tiktok-simple-icons-16-14-0.svg",
+        "alt": "",
+        "width": 24,
+        "height": 24,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "24px",
+          "height": "24px",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "footerSocialLinks-tiktok-label",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "TikTok",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "footerSocialLinks-tiktok",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://www.tiktok.com/@dipsy_doo",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#251938",
+          "fontWeight": "700",
+          "gap": "10px",
+          "padding": "9px 15px",
+          "borderRadius": "24px",
+          "border": "1px solid #decddd",
+          "background": "#ffffff",
+          "textDecoration": "none",
+          "fontSize": "15px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "TikTok de Dipsy Doo! (abre en una pestaña nueva)",
+        "components": [
+          "footerSocialLinks-tiktok-icon",
+          "footerSocialLinks-tiktok-label"
+        ]
+      }
+    },
+    {
+      "id": "footerSocialLinks",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "components": [
+          "footerSocialLinks-instagram",
+          "footerSocialLinks-facebook",
+          "footerSocialLinks-tiktok"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "10px",
+          "width": "100%",
+          "paddingTop": "20px",
+          "borderTop": "1px solid #746881"
+        },
+        "ariaLabel": "Redes sociales de Dipsy Doo!"
+      }
+    },
+    {
       "id": "footerLayout",
       "type": "container",
       "config": {
@@ -1132,7 +1349,8 @@
         "components": [
           "footerLogo",
           "footerCopy",
-          "footerNavigation"
+          "footerNavigation",
+          "footerSocialLinks"
         ],
         "styles": {
           "width": "min(100%, 1160px)",

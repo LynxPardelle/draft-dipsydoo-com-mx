@@ -1023,7 +1023,7 @@
       "type": "text",
       "config": {
         "tag": "h2",
-        "text": "Bailar con respeto",
+        "text": "Código de etiqueta para bailes sociales",
         "styles": {
           "margin": "0",
           "fontWeight": "700",
@@ -1045,6 +1045,136 @@
           "fontWeight": "400",
           "marginBlock": "14px 22px",
           "maxWidth": "63ch"
+        }
+      }
+    },
+    {
+      "id": "conductPosterImage1",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-codigo-de-conducta-1.webp",
+        "alt": "Código de etiqueta y conducta para bailes sociales de Dipsy Doo!, parte 1 de 2.",
+        "width": 1080,
+        "height": 1350,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto"
+        }
+      }
+    },
+    {
+      "id": "conductPoster1",
+      "type": "link",
+      "config": {
+        "text": "Abrir código de etiqueta · parte 1 ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-codigo-de-conducta-1.webp",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "marginTop": "10px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "conductFigure1",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "conductPosterImage1",
+          "conductPoster1"
+        ],
+        "styles": {
+          "margin": "0",
+          "minWidth": "0"
+        }
+      }
+    },
+    {
+      "id": "conductPosterImage2",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-codigo-de-conducta-2.webp",
+        "alt": "Código de etiqueta y conducta para bailes sociales de Dipsy Doo!, parte 2 de 2.",
+        "width": 1080,
+        "height": 1350,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "auto"
+        }
+      }
+    },
+    {
+      "id": "conductPoster2",
+      "type": "link",
+      "config": {
+        "text": "Abrir código de etiqueta · parte 2 ↗",
+        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-codigo-de-conducta-2.webp",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#004d9d",
+          "fontWeight": "700",
+          "marginTop": "10px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      }
+    },
+    {
+      "id": "conductFigure2",
+      "type": "container",
+      "config": {
+        "tag": "figure",
+        "components": [
+          "conductPosterImage2",
+          "conductPoster2"
+        ],
+        "styles": {
+          "margin": "0",
+          "minWidth": "0"
+        }
+      }
+    },
+    {
+      "id": "conductPosters",
+      "type": "container",
+      "config": {
+        "tag": "div",
+        "components": [
+          "conductFigure1",
+          "conductFigure2"
+        ],
+        "styles": {
+          "display": "grid",
+          "gridTemplateColumns": "repeat(auto-fit, minmax(min(100%, 380px), 1fr))",
+          "gap": "25px",
+          "alignItems": "start",
+          "marginBottom": "24px"
         }
       }
     },
@@ -1258,67 +1388,6 @@
       }
     },
     {
-      "id": "conductPoster1",
-      "type": "link",
-      "config": {
-        "text": "Ver código de conducta · parte 1 ↗",
-        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-codigo-de-conducta-1.webp",
-        "scrollRestoration": {
-          "mode": "top",
-          "behavior": "instant"
-        },
-        "styles": {
-          "display": "inline-flex",
-          "alignItems": "center",
-          "minHeight": "44px",
-          "boxSizing": "border-box",
-          "color": "#004d9d",
-          "fontWeight": "700"
-        },
-        "target": "_blank",
-        "rel": "noopener noreferrer"
-      }
-    },
-    {
-      "id": "conductPoster2",
-      "type": "link",
-      "config": {
-        "text": "Ver código de conducta · parte 2 ↗",
-        "href": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261110-codigo-de-conducta-2.webp",
-        "scrollRestoration": {
-          "mode": "top",
-          "behavior": "instant"
-        },
-        "styles": {
-          "display": "inline-flex",
-          "alignItems": "center",
-          "minHeight": "44px",
-          "boxSizing": "border-box",
-          "color": "#004d9d",
-          "fontWeight": "700"
-        },
-        "target": "_blank",
-        "rel": "noopener noreferrer"
-      }
-    },
-    {
-      "id": "conductOriginals",
-      "type": "container",
-      "config": {
-        "tag": "div",
-        "components": [
-          "conductPoster1",
-          "conductPoster2"
-        ],
-        "styles": {
-          "display": "flex",
-          "flexWrap": "wrap",
-          "alignItems": "center",
-          "gap": "12px 22px"
-        }
-      }
-    },
-    {
       "id": "conductLayout",
       "type": "container",
       "config": {
@@ -1327,9 +1396,9 @@
           "conductKicker",
           "conductHeading",
           "conductIntro",
+          "conductPosters",
           "conductList",
-          "conductSupport",
-          "conductOriginals"
+          "conductSupport"
         ],
         "styles": {
           "width": "min(100%, 1160px)",
@@ -1820,6 +1889,223 @@
       }
     },
     {
+      "id": "footerSocialLinks-instagram-icon",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/logos/20261118-instagram-simple-icons-16-14-0.svg",
+        "alt": "",
+        "width": 24,
+        "height": 24,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "24px",
+          "height": "24px",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "footerSocialLinks-instagram-label",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "Instagram",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "footerSocialLinks-instagram",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://www.instagram.com/dipsydoo/",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#251938",
+          "fontWeight": "700",
+          "gap": "10px",
+          "padding": "9px 15px",
+          "borderRadius": "24px",
+          "border": "1px solid #decddd",
+          "background": "#ffffff",
+          "textDecoration": "none",
+          "fontSize": "15px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "Instagram de Dipsy Doo! (abre en una pestaña nueva)",
+        "components": [
+          "footerSocialLinks-instagram-icon",
+          "footerSocialLinks-instagram-label"
+        ]
+      }
+    },
+    {
+      "id": "footerSocialLinks-facebook-icon",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/logos/20261118-facebook-simple-icons-16-14-0.svg",
+        "alt": "",
+        "width": 24,
+        "height": 24,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "24px",
+          "height": "24px",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "footerSocialLinks-facebook-label",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "Facebook",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "footerSocialLinks-facebook",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://www.facebook.com/profile.php?id=61562416997881",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#251938",
+          "fontWeight": "700",
+          "gap": "10px",
+          "padding": "9px 15px",
+          "borderRadius": "24px",
+          "border": "1px solid #decddd",
+          "background": "#ffffff",
+          "textDecoration": "none",
+          "fontSize": "15px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "Facebook de Dipsy Doo! (abre en una pestaña nueva)",
+        "components": [
+          "footerSocialLinks-facebook-icon",
+          "footerSocialLinks-facebook-label"
+        ]
+      }
+    },
+    {
+      "id": "footerSocialLinks-tiktok-icon",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/logos/20261118-tiktok-simple-icons-16-14-0.svg",
+        "alt": "",
+        "width": 24,
+        "height": 24,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "24px",
+          "height": "24px",
+          "flexShrink": "0"
+        }
+      }
+    },
+    {
+      "id": "footerSocialLinks-tiktok-label",
+      "type": "text",
+      "config": {
+        "tag": "span",
+        "text": "TikTok",
+        "styles": {
+          "margin": "0",
+          "fontWeight": "400"
+        }
+      }
+    },
+    {
+      "id": "footerSocialLinks-tiktok",
+      "type": "link",
+      "config": {
+        "text": "",
+        "href": "https://www.tiktok.com/@dipsy_doo",
+        "scrollRestoration": {
+          "mode": "top",
+          "behavior": "instant"
+        },
+        "styles": {
+          "display": "inline-flex",
+          "alignItems": "center",
+          "minHeight": "44px",
+          "boxSizing": "border-box",
+          "color": "#251938",
+          "fontWeight": "700",
+          "gap": "10px",
+          "padding": "9px 15px",
+          "borderRadius": "24px",
+          "border": "1px solid #decddd",
+          "background": "#ffffff",
+          "textDecoration": "none",
+          "fontSize": "15px"
+        },
+        "target": "_blank",
+        "rel": "noopener noreferrer",
+        "ariaLabel": "TikTok de Dipsy Doo! (abre en una pestaña nueva)",
+        "components": [
+          "footerSocialLinks-tiktok-icon",
+          "footerSocialLinks-tiktok-label"
+        ]
+      }
+    },
+    {
+      "id": "footerSocialLinks",
+      "type": "container",
+      "config": {
+        "tag": "nav",
+        "components": [
+          "footerSocialLinks-instagram",
+          "footerSocialLinks-facebook",
+          "footerSocialLinks-tiktok"
+        ],
+        "styles": {
+          "display": "flex",
+          "flexWrap": "wrap",
+          "alignItems": "center",
+          "gap": "10px",
+          "width": "100%",
+          "paddingTop": "20px",
+          "borderTop": "1px solid #746881"
+        },
+        "ariaLabel": "Redes sociales de Dipsy Doo!"
+      }
+    },
+    {
       "id": "footerLayout",
       "type": "container",
       "config": {
@@ -1827,7 +2113,8 @@
         "components": [
           "footerLogo",
           "footerCopy",
-          "footerNavigation"
+          "footerNavigation",
+          "footerSocialLinks"
         ],
         "styles": {
           "width": "min(100%, 1160px)",
