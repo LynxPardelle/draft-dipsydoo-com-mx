@@ -7,7 +7,7 @@ A Spanish-language catalog for in-person dance classes in Mexico City.
 | `/` | School introduction and links to the catalog |
 | `/clases` | Lindy Hop, Rockabilly Jive, Charleston, and the class format |
 | `/horarios-y-sedes` | Weekly class schedule, four venue areas, and reference monthly tuition |
-| `/comunidad` | Social dance, school videos, event photographs, student testimonials, and the supplied code of conduct |
+| `/comunidad` | Social dance, school videos, event photographs, student testimonials, etiquette posters, and the five gender-violence protocol posters |
 | `/contacto` | WhatsApp contact and frequently asked questions |
 
 ## Authoring and preview
@@ -29,8 +29,8 @@ Run `npm start` from the hub and open the [local preview](http://127.0.0.1:4200/
 - The monthly tuition is a reference from the school’s November–December 2026 poster. Confirm revised prices with the school before editing them.
 - The testimonials are anonymous excerpts from the school form that invited public testimonials.
 - Maintain venue descriptions, map links and arrival references in [tools/venues.mjs](tools/venues.mjs). When the school provides verified meeting points and publishable photos, update the venue details and add a `photos` array with a public CDN `src`, descriptive `alt`, `width` and `height` for each image.
-- Publish exact studio addresses, workshop dates, rules and the gender-violence prevention protocol after receiving verified publishable information.
-- The supplied social-dance code is displayed as two complete posters, with readable text and links to open each image. Obtain the separately requested formal prevention protocol before adding it.
+- Publish exact studio addresses, workshop dates and rules after receiving verified publishable information.
+- The supplied social-dance code is displayed as two complete posters, with readable text and links to open each image. Keep the five protocol posters in the school's supplied order, preserve their complete composition and provide access to the full-size images.
 - Route links open the destination from the top. Section shortcuts use same-page fragments so scrolling runs after the target content is present.
 - Production pages allow indexing. The draft deploy tool applies `noindex,nofollow` to page metadata when it builds the test package. Follow the hub's [draft lifecycle](https://github.com/LynxPardelle/zoolandingpage/blob/main/docs/11-draft-lifecycle.md) for release.
 

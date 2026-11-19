@@ -40,6 +40,18 @@ for (const route of site.routes) {
     assert.equal(icon.height, 24);
   }
   if (route.path === '/comunidad') {
+    assert.equal(components.get('protocolHeading')?.config.text, 'Protocolo Violencia de Género');
+    assert.equal(definitions.filter(component => /^protocolImage[1-5]$/.test(component.id)).length, 5);
+    for (const [index, height] of [3780, 3296, 3780, 3313, 3436].entries()) {
+      const part = index + 1;
+      const poster = components.get('protocolImage' + part)?.config;
+      assert(poster?.src.endsWith('20261118-protocolo-' + part + '.webp'), 'Incorrect protocol poster order');
+      assert.equal(poster.width, 1890);
+      assert.equal(poster.height, height);
+      assert.equal(poster.styles.height, 'auto');
+      assert.equal(poster.loading, 'lazy');
+      assert.equal(poster.styles.objectFit, undefined, 'Protocol posters must retain their full composition');
+    }
     for (const part of [1, 2]) {
       const poster = components.get('conductPosterImage' + part)?.config;
       assert(poster?.src.endsWith('codigo-de-conducta-' + part + '.webp'), 'Missing complete code-of-conduct poster');
@@ -48,6 +60,9 @@ for (const route of site.routes) {
       assert.equal(poster.styles.height, 'auto');
       assert.equal(poster.styles.objectFit, undefined, 'Code-of-conduct posters must retain their full composition');
     }
+  }
+  if (route.path === '/clases') {
+    assert.equal(components.get('pageHeading')?.config.text, 'Clases para bailar música swing y rock and roll en CDMX');
   }
   if (route.path === '/') {
     const hero = components.get('heroPhoto')?.config;
