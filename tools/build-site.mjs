@@ -69,12 +69,27 @@ const faq = [
   {id: 'social', title: '¿También organizan bailes sociales?', content: 'Sí. La escuela anuncia un baile social gratuito cada mes. Escríbenos para confirmar la próxima fecha y el lugar.'}
 ];
 const testimonials = [
-  'Me encanta la paciencia y la tolerancia de los profesores, fomentan un excelente ambiente de aprendizaje.',
-  'Los compañeros de las clases son buena onda y me he sentido en un buen ambiente incluyendo a los maestros.',
-  '… he adquirido confianza y fluidez para disfrutar del swing',
-  'La forma de enseñanza usada por los maestros me parece adecuada con un buen trato para cada alumno.',
-  'Saber que puedo día a día aprender algo más, me hace muy feliz y entender que en el baile siempre hay algo nuevo que aprender.',
-  '… es agradable aprender con algo que me gusta hacer'
+  {
+    quote: 'Me encanta la paciencia y la tolerancia de los profesores, fomentan un excelente ambiente de aprendizaje.',
+    photo: {src: assets + '20261118-testimonio-1.webp', width: 480, height: 640, alt: 'Persona de la comunidad bailando frente a un mural.'}
+  },
+  {
+    quote: 'Los compañeros de las clases son buena onda y me he sentido en un buen ambiente incluyendo a los maestros.',
+    photo: {src: assets + '20261118-testimonio-2.webp', width: 480, height: 640, alt: 'Persona de la comunidad con camisa clara y lentes, en una fotografía frente al espejo.'}
+  },
+  {
+    quote: '… he adquirido confianza y fluidez para disfrutar del swing',
+    photo: {src: assets + '20261118-testimonio-3.webp', width: 504, height: 640, alt: 'Alumnado de Dipsy Doo! practicando baile en pareja durante una clase.'}
+  },
+  {
+    quote: 'La forma de enseñanza usada por los maestros me parece adecuada con un buen trato para cada alumno.',
+    photo: {src: assets + '20261118-testimonio-4.webp', width: 480, height: 640, alt: 'Retrato compartido por una persona de la comunidad de Dipsy Doo!.'}
+  },
+  {
+    quote: 'Saber que puedo día a día aprender algo más, me hace muy feliz y entender que en el baile siempre hay algo nuevo que aprender.',
+    photo: {src: assets + '20261118-testimonio-5.webp', width: 377, height: 640, alt: 'Integrantes de la comunidad con vestidos azules durante una presentación.'}
+  },
+  {quote: '… es agradable aprender con algo que me gusta hacer'}
 ];
 
 let components = [];
@@ -350,7 +365,10 @@ function renderCommunity() {
     box('testimonials', [
       heading('testimonialsHeading', 'Testimonios'),
       text('testimonialsIntro', 'Respuestas del alumnado al formulario de la escuela.', 'p', {marginBlock: '12px 26px'}),
-      box('testimonialsGrid', testimonials.map((quote, index) => box('testimonial-' + index, [
+      box('testimonialsGrid', testimonials.map(({quote, photo: portrait}, index) => box('testimonial-' + index, [
+        ...(portrait ? [image('testimonialPhoto-' + index, portrait.src, portrait.alt, portrait.width, portrait.height, {
+          styles: {display: 'block', width: '100%', height: '220px', objectFit: 'contain', borderRadius: '6px', background: paper, marginBottom: '18px'}
+        })] : []),
         text('testimonialQuote-' + index, '«' + quote + '»', 'p', {
           fontFamily: 'Georgia, serif', fontSize: 'clamp(18px, 2vw, 22px)', lineHeight: '1.5'
         })

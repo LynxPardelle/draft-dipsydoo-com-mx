@@ -797,6 +797,28 @@
       }
     },
     {
+      "id": "testimonialPhoto-0",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-testimonio-1.webp",
+        "alt": "Persona de la comunidad bailando frente a un mural.",
+        "width": 480,
+        "height": 640,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "220px",
+          "objectFit": "contain",
+          "borderRadius": "6px",
+          "background": "#fff9f3",
+          "marginBottom": "18px"
+        }
+      }
+    },
+    {
       "id": "testimonialQuote-0",
       "type": "text",
       "config": {
@@ -817,6 +839,7 @@
       "config": {
         "tag": "figure",
         "components": [
+          "testimonialPhoto-0",
           "testimonialQuote-0"
         ],
         "styles": {
@@ -824,6 +847,28 @@
           "padding": "16px 18px",
           "borderInlineStart": "3px solid #d61983",
           "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialPhoto-1",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-testimonio-2.webp",
+        "alt": "Persona de la comunidad con camisa clara y lentes, en una fotografía frente al espejo.",
+        "width": 480,
+        "height": 640,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "220px",
+          "objectFit": "contain",
+          "borderRadius": "6px",
+          "background": "#fff9f3",
+          "marginBottom": "18px"
         }
       }
     },
@@ -848,6 +893,7 @@
       "config": {
         "tag": "figure",
         "components": [
+          "testimonialPhoto-1",
           "testimonialQuote-1"
         ],
         "styles": {
@@ -855,6 +901,28 @@
           "padding": "16px 18px",
           "borderInlineStart": "3px solid #d61983",
           "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialPhoto-2",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-testimonio-3.webp",
+        "alt": "Alumnado de Dipsy Doo! practicando baile en pareja durante una clase.",
+        "width": 504,
+        "height": 640,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "220px",
+          "objectFit": "contain",
+          "borderRadius": "6px",
+          "background": "#fff9f3",
+          "marginBottom": "18px"
         }
       }
     },
@@ -879,6 +947,7 @@
       "config": {
         "tag": "figure",
         "components": [
+          "testimonialPhoto-2",
           "testimonialQuote-2"
         ],
         "styles": {
@@ -886,6 +955,28 @@
           "padding": "16px 18px",
           "borderInlineStart": "3px solid #d61983",
           "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialPhoto-3",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-testimonio-4.webp",
+        "alt": "Retrato compartido por una persona de la comunidad de Dipsy Doo!.",
+        "width": 480,
+        "height": 640,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "220px",
+          "objectFit": "contain",
+          "borderRadius": "6px",
+          "background": "#fff9f3",
+          "marginBottom": "18px"
         }
       }
     },
@@ -910,6 +1001,7 @@
       "config": {
         "tag": "figure",
         "components": [
+          "testimonialPhoto-3",
           "testimonialQuote-3"
         ],
         "styles": {
@@ -917,6 +1009,28 @@
           "padding": "16px 18px",
           "borderInlineStart": "3px solid #d61983",
           "background": "#ffffff"
+        }
+      }
+    },
+    {
+      "id": "testimonialPhoto-4",
+      "type": "media",
+      "config": {
+        "tag": "image",
+        "src": "https://assets.zoolandingpage.com.mx/dipsydoo.com.mx/shared/images/20261118-testimonio-5.webp",
+        "alt": "Integrantes de la comunidad con vestidos azules durante una presentación.",
+        "width": 377,
+        "height": 640,
+        "loading": "lazy",
+        "decoding": "async",
+        "styles": {
+          "display": "block",
+          "width": "100%",
+          "height": "220px",
+          "objectFit": "contain",
+          "borderRadius": "6px",
+          "background": "#fff9f3",
+          "marginBottom": "18px"
         }
       }
     },
@@ -941,6 +1055,7 @@
       "config": {
         "tag": "figure",
         "components": [
+          "testimonialPhoto-4",
           "testimonialQuote-4"
         ],
         "styles": {
