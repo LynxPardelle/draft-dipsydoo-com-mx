@@ -22,6 +22,14 @@ The footer and Contact page link to the school's Instagram, Facebook, and TikTok
 
 Run `npm start` from the hub and open the [local preview](http://127.0.0.1:4200/?draftDomain=dipsydoo.com.mx). Use the [shared test preview](https://test.zoolandingpage.com.mx/?draftDomain=dipsydoo.com.mx) after promoting through the protected `dev → test` workflow.
 
+## WhatsApp campaign analytics
+
+The generator adds one `whatsapp_click` event in category `cta` to every direct WhatsApp link. Its label is the static component ID, so reporting can distinguish the button without collecting the phone number, destination URL or prefilled message. Keep the instruction on the component definition, outside its `config` object.
+
+WhatsApp links open in a new tab with the existing safe `rel` policy and an accessible new-tab announcement. This keeps the source page available while the analytics request completes.
+
+The shared analytics service attaches the current URL's non-sensitive `queryParams` and the visit's `sessionId`. Internal navigation can remove campaign queries; attribute those later clicks by joining their session to the preceding campaign-bearing page view. Count distinct click sessions when estimating contact intent. A click does not confirm that a WhatsApp message was sent.
+
 ## Content maintenance
 
 - The business WhatsApp destination was confirmed by the client during this update. Keep all contextual contact links on that same destination.
