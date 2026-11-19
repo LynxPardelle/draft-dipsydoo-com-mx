@@ -18,6 +18,8 @@ The homepage uses a 1200 × 900 WebP with eager loading and high fetch priority.
 
 The school-supplied photos and four H.264/AAC MP4 videos use public Zoolanding CDN URLs. Web copies are compressed and video metadata is placed before the media payload for streaming. Keep original client materials outside the repository.
 
+The footer and Contact page link to the school's Instagram, Facebook, and TikTok profiles. Their SVG logos come from [Simple Icons 16.14.0](https://github.com/simple-icons/simple-icons/tree/16.14.0/icons) and are served by the public asset CDN.
+
 Run `npm start` from the hub and open the [local preview](http://127.0.0.1:4200/?draftDomain=dipsydoo.com.mx). Use the [shared test preview](https://test.zoolandingpage.com.mx/?draftDomain=dipsydoo.com.mx) after promoting through the protected `dev → test` workflow.
 
 ## Content maintenance
@@ -28,7 +30,7 @@ Run `npm start` from the hub and open the [local preview](http://127.0.0.1:4200/
 - The testimonials are anonymous excerpts from the school form that invited public testimonials.
 - Maintain venue descriptions, map links and arrival references in [tools/venues.mjs](tools/venues.mjs). When the school provides verified meeting points and publishable photos, update the venue details and add a `photos` array with a public CDN `src`, descriptive `alt`, `width` and `height` for each image.
 - Publish exact studio addresses, workshop dates, rules and the gender-violence prevention protocol after receiving verified publishable information.
-- The supplied social-dance code is available as readable text and links to its original posters. Obtain the separately requested formal prevention protocol before adding it.
+- The supplied social-dance code is displayed as two complete posters, with readable text and links to open each image. Obtain the separately requested formal prevention protocol before adding it.
 - Route links open the destination from the top. Section shortcuts use same-page fragments so scrolling runs after the target content is present.
 - Production pages allow indexing. The draft deploy tool applies `noindex,nofollow` to page metadata when it builds the test package. Follow the hub's [draft lifecycle](https://github.com/LynxPardelle/zoolandingpage/blob/main/docs/11-draft-lifecycle.md) for release.
 
